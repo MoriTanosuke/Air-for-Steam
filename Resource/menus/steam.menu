@@ -44,6 +44,9 @@
 
 		ChangeUser								{ text="Change User"									command="ChangeUser" }
 		GoOnline									{ text="Go Online"										command="goonline" }
+
+		Divider 									{ }
+
 		GoOffline									{ text="Go Offline"										command="gooffline" }
 
 		Divider 									{ }

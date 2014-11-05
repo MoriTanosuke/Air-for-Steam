@@ -4,7 +4,7 @@
 
 	basefont		"Roboto"
 	condensed		"Roboto Condensed"
-	//light				"Roboto Light"
+	light				"Roboto Light"
 
 	basefont		"Helvetica" [$OSX]
 
@@ -247,6 +247,7 @@
 	inbox_button:selected 	{ textcolor=WhiteHover }
 
 	AccountBalanceStyle		{ font-family=basefont font-size=18 textcolor=White font-style=none }
+	AccountBalanceStyle:hover		{ textcolor=WhiteHover }
 	NavLabel2							{ font-family=condensed font-size=24 textcolor=White } //small mode filter name
 	online_friends 				{ font-family=condensed font-size=24 textcolor=White }
 
