@@ -55,6 +55,10 @@
 			image="graphics/lock"
 		}
 
+		TextEntryURL {
+			render_bg { } //reset necessary to remove square of color from top-left of client
+		}
+
 		URLBarSecure {
 			textcolor=html.secureurl
 		}

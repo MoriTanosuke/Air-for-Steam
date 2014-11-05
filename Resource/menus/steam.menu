@@ -45,7 +45,7 @@
 		ChangeUser								{ text="Change User"									command="ChangeUser" }
 		GoOnline									{ text="Go Online"										command="goonline" }
 
-		Divider 									{ }
+		Divider 									{ } //if this divider isn't here, the next one doesn't show in offline mode
 
 		GoOffline									{ text="Go Offline"										command="gooffline" }
 
