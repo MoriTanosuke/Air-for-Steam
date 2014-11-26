@@ -953,7 +953,7 @@ steam.styles
 
 		"CFriendsDialog Scrollbar" {
 			inset-bottom=6
-			inset-top=2
+			inset-top=-1
 		}
 
 		SectionedListPanel {

@@ -45,7 +45,7 @@
 		place [!$OSX] { control=MenuBar align=top y=10 x=10 width=30 height=30 }
 
 		region { name=nav height=36 width=max y=10 x=56 }
-		region { name=body y=47 height=max width=max }
+		region { name=body y=50 height=max width=max }
 
 		place { control=FriendsDialogSheet region=body width=max height=max }
 
