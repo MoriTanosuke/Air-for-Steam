@@ -1,0 +1,8 @@
+"" {
+
+	colors {
+		Focus="45 45 45 255"	//dark-grey
+		Focus2="214 73 55 255"	//light-red
+		Focus3="214 73 55 255"	//light-red
+	}
+}

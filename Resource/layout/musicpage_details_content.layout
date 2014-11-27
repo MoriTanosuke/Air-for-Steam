@@ -30,9 +30,9 @@
 		DetailsBorderPanel {
 			render_bg {
 				0="fill( x0, y0, x1, y1 - 1, Details.Background )"
-				1="fill( x0, y1 - 1, x1, y1, A2.Ribbon )" //because semi-transparent pixels at bottom are buggy
-				2="fill( x0, y0, x0 + 1, y1, A2.Ribbon )" //left 255 color
-				3="fill( x1 - 1, y0, x1, y1, A2.Ribbon )"	//right 255 color
+				1="fill( x0, y0, x0 + 1, y1, A2.Ribbon )" //do not delete these three lines
+				2="fill( x1 - 1, y0, x1, y1, A2.Ribbon )" //they remove the 1px line aorund the edges
+				3="fill( x0, y1 - 1, x1, y1, A2.Ribbon )" //in empty search results view
 			}
 		}
 	}
