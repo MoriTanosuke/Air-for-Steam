@@ -12,7 +12,7 @@
 
 		CMusicPage_Details_Content {
 			bgcolor=none
-			render { }
+			//render { }
 			render_bg { }
 		}
 

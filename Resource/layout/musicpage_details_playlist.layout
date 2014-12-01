@@ -10,11 +10,9 @@
 		}
 
 		ActionButtonStyle {
-			render_bg { }
 		}
 
 		AdditionalActionButtonStyle {
-			render_bg { }
 		}
 	}
 

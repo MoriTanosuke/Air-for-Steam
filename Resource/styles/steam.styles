@@ -189,63 +189,53 @@ steam.styles
 		}
 
 		Button {
-			render_bg {
-				0="fill( x0, y0, x1, y1 , A2.Button )"
-				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
-			}
+			padding-left=4 padding-right=4
+			minimum-height=30
+			render_bg { }
 		}
 
 		Button:hover {
 			render_bg {
-				0="fill( x0, y0, x1, y1, A2.ButtonHover )"
-				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
+				0="fill( x0, y0, x1, y1, Button.Hover )"
 			}
 		}
 
 		Button:active {
 			render_bg {
-				0="fill( x0, y0, x1, y1, A2.ButtonActive )"
-				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
+				0="fill( x0, y0, x1, y1, Button.Pressed )"
 			}
 		}
 
 		Button:disabled	{
+			render_bg { }
+		}
+
+		ToggleButton:selected {
 			render_bg {
-				0="fill( x0, y0, x1, y1, A2.ButtonDisabled )"
+				0="fill( x0, y0, x1, y1, Button.Pressed )"
 			}
 		}
 
 		ComboBox {
-			inset="3 0 0 0"
+			padding-left=4
+			padding-right=4
+			minimum-height=30
+			inset-left=7
 			render {
-				0="image ( x1 - 17, y0 + 8, x1, y1, graphics/buttons/sm_down )"
+				0="image ( x1 - 20, y0 + 9, x1, y1, graphics/buttons/caret_down )"
 			}
-			render_bg {
-				0="fill( x0, y0, x1, y1, A2.Button )"
-				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
-			}
+			render_bg { }
 		}
 
 		ComboBox:hover {
-			render {
-				0="image ( x1 - 17, y0 + 8, x1, y1, graphics/buttons/sm_down_hover )"
-			}
 			render_bg {
-				0="fill( x0, y0, x1, y1, A2.ButtonActive )"
-				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
+				0="fill( x0, y0, x1, y1, Button.Hover )"
 			}
 		}
 
 		ComboBoxButton {
 			textcolor=none
 			render_bg { }
-		}
-
-		ToggleButton:selected {
-			render_bg {
-				0="fill( x0, y0, x1, y1, A2.ButtonActive )"
-				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
-			}
 		}
 
 		//"Hold+Resume" button in normal chat
@@ -302,10 +292,10 @@ steam.styles
 		leftarrow:hover 	{ image="graphics/buttons/sm_left_hover" }
 
 		CheckButton 										{ image=graphics/chkUnselStd }
-		CheckButton:hover 							{ image=graphics/chkUnselStd_hover }
+		CheckButton:hover 							{ }
 		CheckButton:selected 						{ image=graphics/chkSelStd }
-		CheckButton:selected:hover 			{ image=graphics/chkSelStd_hover }
-		CheckButton:disabled			 			{ image=graphics/chkUnselDis	}
+		CheckButton:selected:hover 			{ }
+		CheckButton:disabled			 			{ image=graphics/chkUnselDis }
 		CheckButton:selected:disabled 	{ image=graphics/chkSelDis }
 
 		CheckButtonList { }
@@ -321,9 +311,9 @@ steam.styles
 		}
 
 		RadioButton 								{ image=graphics/RadUnselStd }
-		RadioButton:hover 					{ image=graphics/RadUnselStd_hover }
+		RadioButton:hover 					{ }
 		RadioButton:selected 				{ image=graphics/RadSelStd }
-		RadioButton:selected:hover 	{ image=graphics/RadSelStd_hover }
+		RadioButton:selected:hover 	{ }
 
 		RadioButtonList { }
 
@@ -480,13 +470,14 @@ steam.styles
 		ListPanel {
 			padding-left=8
 			selectedbgcolor=A2.Ribbon  // games list selected game bg color
-			shadowtextcolor="Light"	// the color of disabled line items
+			shadowtextcolor="Text.Hint"	// the color of disabled line items
 		}
 
 		ListPanelInterior {
 		}
 
 		ListPanelColumnheader {
+			minimum-height=0 //reset for button height
 			inset-top=1
 			render_bg {
 				0="fill( x0, y0, x1, y1, focus )"
@@ -584,8 +575,9 @@ steam.styles
 		}
 
 		ListPanelSectionCollapser {
+			minimum-height=0 //reset for button height
 			textcolor=none
-			padding-left=7
+			padding-left=6 padding-right=0
 			render_bg {
 				0="image( x0 + 9, y0 + 8, x1, y1, graphics/buttons/sm_right )"
 			}
@@ -598,7 +590,7 @@ steam.styles
 		}
 
 		ListPanelSectionCollapser:selected {
-			padding-left=3
+			padding-left=4 padding-right=0
 			render_bg {
 				0="image( x0 + 9, y0 + 8, x1, y1, graphics/buttons/sm_down )"
 			}
@@ -664,7 +656,7 @@ steam.styles
 
 		"ComboBox Menu" {
 			inset="0 0 0 0"
-			bgcolor=A2.Button
+			bgcolor=A2.Menu
 			render {
 				1="fill( x0, y1 - 1, x1, y1, A2.MenuDivider )" //btm
 			}
@@ -735,14 +727,12 @@ steam.styles
 		}
 
 		PageTab:selected {
-			textcolor=Text
 			render_bg {
 				0="fill( x0, y0, x1 + 2, y1, A2.Background )"
 			}
 		}
 
 		PageTab:selected:hover {
-			textcolor=Text
 			render_bg {
 				0="fill( x0, y0, x1 + 2, y1, A2.Background )"
 			}
@@ -821,6 +811,7 @@ steam.styles
 		}
 
 		ScrollBarButton.up {
+			padding-left=0 padding-right=0 //reset
 			bgcolor=Scroll.Gutter
 			minimum-height=19
 			image=graphics/buttons/sm_up
@@ -834,6 +825,7 @@ steam.styles
 		}
 
 		ScrollBarButton.down {
+			padding-left=0 padding-right=0 //reset
 			bgcolor=Scroll.Gutter
 			minimum-height=19
 			inset-top=3
@@ -848,6 +840,7 @@ steam.styles
 		}
 
 		ScrollBarButton.left {
+			padding-left=0 padding-right=0 //reset
 			bgcolor=Scroll.Gutter
 			minimum-width=19
 			image=graphics/buttons/sm_left
@@ -861,6 +854,7 @@ steam.styles
 		}
 
 		ScrollBarButton.right {
+			padding-left=0 padding-right=0 //reset
 			bgcolor=Scroll.Gutter
 			minimum-width=19
 			image=graphics/buttons/sm_right
@@ -972,15 +966,16 @@ steam.styles
 		}
 
 		TextEntry {
-			inset-left=3
+			minimum-height=30
+			inset-left=-3
 			render_bg {
-				0="fill( x0, y0, x1, y1, A2.Button )"
+				0="fill( x0, y1 - 1, x1, y1, Text.Hint )"
 			}
 		}
 
 		TextEntry:focus {
 			render_bg {
-				0="fill( x0, y0, x1, y1, A2.ButtonActive )"
+				0="fill( x0, y1 - 1, x1, y1 + 1, Focus )"
 			}
 		}
 
@@ -998,20 +993,27 @@ steam.styles
 
 		// the background and frame of a tooltip
 		TooltipWindow {
-			bgcolor=A2.Menu
+			bgcolor=A2.Notification
+			padding-left=8
+			padding-right=8
+			padding-top=4
+			padding-bottom=4
 		}
 
 		// body text inside a tooltip
 		"TooltipWindow Label" {
-			padding-left=4
-			padding-right=4
+			padding-left=8
+			padding-right=8
+			padding-bottom=4
+			padding-top=2
 		}
 
 		// headline text inside a tooltip
 		tooltip_headline {
-			padding-left=4
-			padding-top=-1
-			padding-bottom=1
+			padding-left=8
+			padding-right=8
+			padding-top=2
+			padding-bottom=0
 		}
 
 		TreeNode {
@@ -1082,6 +1084,8 @@ steam.styles
 		ForwardButtonSm:disabled 	{ render_bg { } image=graphics/none }
 
 		LibrarySearch {
+			minimum-height=0 //reset for text entry height
+			inset-left=3 //rest for text entry inset
 			render_bg { }
 		}
 
@@ -1100,6 +1104,8 @@ steam.styles
 		}
 
 		FriendsSearch {
+			minimum-height=0 //reset for text entry height
+			inset-left=3 //rest for text entry inset
 			render_bg { }
 		}
 

@@ -17,16 +17,13 @@
 		A2.MenuDivider			"Air215"							//menu dividers
 		A2.Ribbon						"Air205"							//bg for section emphasis (ie. left side of settings dialog)
 		A2.Divider					"Air190"							//client dividers
-		A2.StatusPanel			"50 50 50 175"				//semi-transparent bg for download notification
+		A2.Notification			"Air50"								//bg for download notification
 		A2.Bar							"Air110"							//bg for greater section emphasis (ie. voice chat and trade notifications)
 
 		//button colors
 
-		A2.Button						"Air220"							//button bg
-		A2.ButtonHover			"Air225"							//button bg on hover
-		A2.ButtonActive			"Air210"							//button bg on click
-		A2.ButtonDisabled		"Air230"							//disabled button bg
-		A2.ButtonShadow			"AD25"								//1px shadow beneath buttons
+		Button.Hover				"155 155 155 50"			//button bg on hover
+		Button.Pressed			"155 155 155 100"			//button bg on click
 
 		//scroll colors
 
@@ -34,14 +31,25 @@
 		Scroll.Hover				"Air155"							//scrollbar handle on hover
 		Scroll.Gutter				"A2.Ribbon"						//scrollbar gutter/backdrop
 
+		//new text colors
+
+		Text.Primary				"Air35"								//black 87%, text
+		Text.Secondary			"Air115"							//black 54%, caption
+		Text.Label					"Air155"							//black 39%, label
+		Text.Hint						"Air190"							//black 26%, hint text, disabled items
+		Text.Black					"Air0"								//black,
+		Text.BlackHover			"0 0 0 220"						//black hover,
+		Text.White					"Air255"							//white,
+		Text.WhiteHover			"255 255 255 220"			//white hover,
+
 		//text colors
 
-		Text			"Air115"		TextHover			"Air90"			TextActive			"Air65"			//Normal Text
-		Label			"Air145"		LabelHover		"Air120"		LabelActive			"Air95"			//Light "blend in" text on AirBackground
-		Light			"Air175"		LightHover		"Air150"		LightActive			"Air125"		//Light text for uninstalled games, disabled items
+		Text			"Text.Primary"		TextHover			"Air90"			TextActive			"Air65"			//Normal Text
+		Label			"Text.Secondary"		LabelHover		"Air120"		LabelActive			"Air95"			//Light "blend in" text on AirBackground
+		Light			"Text.Label"		LightHover		"Air150"		LightActive			"Air125"		//Light text for uninstalled games, disabled items
 		Dark			"Air85"			DarkHover			"Air60"			DarkActive			"Air35"			//Dark highlight text
 		Black			"Air0"			BlackHover		"Air25"			BlackActive			"Air50"			//Black text
-		White			"Air255"		WhiteHover		"Air230"		WhiteActive			"Air205"		//White text, selectedtext (with focus as bg)
+		White			"Air255"		WhiteHover		"Text.WhiteHover"		WhiteActive			"Air205"		//White text, selectedtext (with focus as bg)
 
 		//friends colors
 
@@ -51,9 +59,9 @@
 
 		//chat colors
 
-		Chat.Friend					"Text"								//chat window friend text
-		Chat.Self						"Label"								//chat window self text
-		Chat.History				"Light"								//chat window history text
+		Chat.Friend					"Text.Primary"				//chat window friend text
+		Chat.Self						"Text.Secondary"			//chat window self text
+		Chat.History				"Text.Label"					//chat window history text
 
 		//details colors
 
@@ -101,18 +109,18 @@
 		ButtonBorderActive="140 135 129 255"
 		ButtonBorderFocus="153 147 141 255"
 
-		Text="Text"
-		Text2="Text"
-		TextHover="TextHover"
-		TextSelected="TextActive"
-		TextentrySelected="White" // color of any selected text
-		TextDisabled="Light"
+		Text="Text.Primary"
+		Text2="Text.Primary"
+		TextHover="Text.Primary"
+		TextSelected="Text.Primary"
+		TextentrySelected="Text.White" // color of any selected text
+		TextDisabled="Text.Hint"
 		TextSelectedBG="Focus2" // background color of any selected text
 
-		Label="Label"
-		Label2="Label"
-		LabelDisabled="Light"
-		LabelFocus="LabelHover"
+		Label="Text.Label"
+		Label2="Text.Label"
+		LabelDisabled="Text.Hint"
+		LabelFocus="Text.Label"
 
 		NavLabel="158 153 149 255"
 
