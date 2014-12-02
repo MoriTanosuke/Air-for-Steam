@@ -9,6 +9,7 @@
 		}
 
 		Textentryfocus_chat {
+			inset-left=3
 			render_bg { }
 		}
 

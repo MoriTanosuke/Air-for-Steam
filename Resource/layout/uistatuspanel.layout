@@ -18,9 +18,6 @@
 		}
 
 		StatusLabelDim {
-			font-weight=700
-			font-style=uppercase
-			textcolor=white
 			render_bg {
 				0="fill( x0, y0, x1 - 3, y1, A2.Notification )"
 			}

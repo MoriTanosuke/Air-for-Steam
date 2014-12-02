@@ -55,7 +55,7 @@
 
 		Friends.Online			"103 161 184 255"			//friend online text
 		Friends.InGame			"117 165 112 255"			//friend in-game text
-		Friends.Offline			"Light"								//friend offline text
+		Friends.Offline			"Text.Label"					//friend offline text
 
 		//chat colors
 

@@ -5,21 +5,15 @@
 		zoomslider {
 			inset-top=-2
 			textcolor=Air255
-			render_bg {
-				0="fill( x0 - 26, y0 - 6, x1 + 26, y1 + 7, focus )"
-			}
+			render_bg { }
 		}
 
 		zoomslider:hover {
-			render_bg {
-				0="fill( x0 - 26, y0 - 6, x1 + 26, y1 + 7, focus2 )"
-			}
+			render_bg { }
 		}
 
 		zoomslider:focus {
-			render_bg {
-				0="fill( x0 - 26, y0 - 6, x1 + 26, y1 + 7, focus2 )"
-			}
+			render_bg { }
 		}
 
 		LibrarySeparator {
@@ -123,7 +117,7 @@
 
 		place { control=PageLoadThrobber y=18 x=26 height=14 width=18 }
 
-		place { control=library_zoom y=56 height=8 width=max margin-right=26 margin-left=26 }
+		place { control=library_zoom y=61 height=8 width=max margin-right=26 margin-left=26 }
 
 		place { control=library_music_menu align=left x=256 y=49 height=21 width=20 }
 
@@ -131,8 +125,8 @@
 
 		place { control=WebPanel 							region=body width=max height=max start=emailreminderbar dir=down margin-top=-2 margin-bottom=-2 margin-right=-2 margin-left=-2 }
 		place { control=GamesPage_Details 		region=body width=max height=max start=emailreminderbar dir=down margin-top=-1 }
-		place { control=GamesPage_List 				region=body width=max height=max start=emailreminderbar dir=down }
-		place { control=GamesPage_Grid 				region=body width=max height=max start=emailreminderbar dir=down margin-top=21 margin-bottom=-2 }
+		place { control=GamesPage_List 				region=body width=max height=max start=emailreminderbar dir=down y=9 }
+		place { control=GamesPage_Grid 				region=body width=max height=max start=emailreminderbar dir=down y=30 margin-bottom=-2 }
 		place { control=DownloadsPage 				region=body width=max height=max start=emailreminderbar dir=down }
 		place { control=ScreenshotsPage 			region=body width=max height=max start=emailreminderbar dir=down }
 		place { control=MediaPage 						region=body width=max height=max start=emailreminderbar dir=down }

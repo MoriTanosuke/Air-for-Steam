@@ -27,14 +27,12 @@
 		}
 
 		PageTab {
-			minimum-height=26
-			inset-top=-6
+			inset-top=-5
+			padding-left=10
 		}
 
 		PageTab:selected {
-			render_bg {
-				0="fill( x0, y0 - 4, x1 + 2, y1, A2.Background )"
-			}
+			render_bg { }
 		}
 	}
 
@@ -44,17 +42,17 @@
 		place { control=frame_captiongrip margin=2 width=max height=77 } //entire blue area grabbable
 		place [!$OSX] { control=MenuBar align=top y=10 x=10 width=30 height=30 }
 
-		region { name=nav height=36 width=max y=10 x=56 }
+		region { name=nav height=50 width=max }
 		region { name=body y=50 height=max width=max }
 
-		place { control=FriendsDialogSheet region=body width=max height=max }
+		place { control=FriendsDialogSheet region=body y=2 width=max height=max }
 
-		place { control=friends_search region=nav y=3 height=22 width=92 }
+		place { control=friends_search region=nav y=13 x=56 height=22 width=92 }
 
 		place { control=DownLabel y=77 width=max margin=16 }
 		place { control=NoFriendsAddFriendButton start=DownLabel dir=down margin-top=13 }
 
 		place { control=FriendPanelSelf margin-left=-9999 }
-		place { control=frame_title,friends_search_icon,addFriendsButton height=0 width=0 }
+		place { control=friends_search_icon,addFriendsButton height=0 width=0 }
 		}
 }

@@ -12,6 +12,16 @@
 
 	styles {
 
+	//Title				24px, 400, condensed, text.white, regular					//
+
+	//Body				16px, 400, basefont, text.primary, regular				//
+	//Caption			16px, 400, basefont, text.secondary, regular			//
+	//Bold				16px, 500, medium, text.primary, regular					//
+	//Subhead			20px, 400, basefont, text.secondary, regular			//
+	//Headline		40px, 400, condensed, text.secondary, regular			//
+
+	//Button			16px, 500, medium, focus, uppercase								//
+
 	Label 	{ font-family=basefont font-size=16 textcolor=Text.Primary selectedtextcolor=Text.Primary }
 	Panel 	{ font-family=basefont font-size=16 textcolor=Text.Primary selectedtextcolor=Text.Primary }
 
@@ -38,7 +48,8 @@
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
-	TextEntry 												{ font-family=basefont font-size=16 textcolor=Text.Primary selectedtextcolor=Text.White selectedbgcolor=Focus2 shadowtextcolor=Focus } // shadowtext is the cursor color
+	TextEntry 												{ font-family=basefont font-size=16 textcolor=Text.Secondary selectedtextcolor=Text.White selectedbgcolor=Focus2 shadowtextcolor=Focus } // shadowtext is the cursor color
+	TextEntry:focus										{ textcolor=Text.Primary }
 	TextEntry:disabled 								{ textcolor=Text.Hint }
 	TextEntry:empty 									{ textcolor=Text.Hint }
 	TextEntryURL 											{ font-family=medium textcolor=White selectedtextcolor=Text.White selectedbgcolor=Focus2 } // url strings such as htmlpopup (paypal window)
@@ -71,10 +82,12 @@
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
 	PageTab 								{ font-family=basefont font-size=16 textcolor=Text.White }
-	PageTab:selected 				{ textcolor=Text.Primary }
 	PageTab:hover 					{ textcolor=Text.WhiteHover }
+	PageTab:selected 				{ textcolor=Text.Primary }
 	PageTab:selected:hover 	{ textcolor=Text.Primary }
-	PageTab:focus 					{ textcolor=Text.WhiteHover }
+	//PageTab:focus 				{ }
+
+	"CFriendsDialog PageTab:selected" { textcolor=Text.WhiteHover }
 
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
@@ -222,10 +235,10 @@
 
 	//Voice Chat, Game Invite, Trade Invite
 
-	"ToolWindow status_label" 		{ font-weight=700 font-style=uppercase textcolor=White }
-	ControlButton 								{ font-weight=700 font-style=uppercase textcolor=White }
-	Chat_MenuButton_withChrome 		{ font-weight=700 font-style=uppercase textcolor=White }
-	"CChatInfoBar Label" 					{ font-weight=700 font-style=uppercase textcolor=White }
+	"ToolWindow status_label" 		{ font-family=medium textcolor=Text.White font-style=uppercase }
+	ControlButton 								{ font-family=medium textcolor=Text.White font-style=uppercase }
+	Chat_MenuButton_withChrome 		{ font-family=medium textcolor=Text.White font-style=uppercase }
+	"CChatInfoBar Label" 					{ font-family=medium textcolor=Text.White font-style=uppercase }
 
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
@@ -245,10 +258,13 @@
 	inbox_button:hover 			{ textcolor=Text.WhiteHover }
 	inbox_button:selected 	{ textcolor=Text.WhiteHover }
 
-	AccountBalanceStyle					{ font-family=medium font-size=18 textcolor=Text.White font-style=none }
+	AccountBalanceStyle					{ font-family=medium font-size=18 textcolor=Text.WhiteHover }
 	AccountBalanceStyle:hover		{ textcolor=Text.WhiteHover }
 
 	NavLabel2							{ font-family=condensed font-size=24 textcolor=Text.White } //mini mode filter name
+	NavLabel2:hover				{ textcolor=Text.WhiteHover }
+	NavLabel2:selected		{ textcolor=Text.WhiteHover }
+
 	online_friends 				{ font-family=condensed font-size=24 textcolor=Text.White }
 
 	//-------------------------------------------------------------------------------------------------------------------------------//
@@ -256,19 +272,22 @@
 
 	//Downloads
 
-	bigtext { }
-	bigtextlabel { }
+	bigtext { font-family=medium textcolor=Text.White font-style=uppercase }
+	bigtextlabel { font-family=medium textcolor=Text.WhiteHover font-style=uppercase }
+	PauseButton { textcolor=Text.White }
+	ResumeButton { textcolor=Text.White }
 	bigtextHeader { }
 	bigTextNumbers { }
 	throttleLabel { }
 	throttleValue { }
 	GamesGridPlaceholder { }
-	"CSteamRootDialog SectionedListPanel label" { }
-	"CSteamRootDialog SectionedListPanel label2" { }
-	"CSteamRootDialog ModuleHeading" { font-family=condensed font-size=24 }
-	"CSteamRootDialog ModuleHeading2" { font-family=condensed font-size=24 }
+	"CSteamRootDialog SectionedListPanel label" { font-family=medium textcolor=Text.Primary font-style=uppercase }
+	"CSteamRootDialog SectionedListPanel label2" { font-family=medium textcolor=Text.Secondary font-style=uppercase }
+	links { font-family=basefont font-weight=700 textcolor=Focus }
+	"CSteamRootDialog ModuleHeading" { font-family=condensed font-size=40 textcolor=Text.Secondary }
+	"CSteamRootDialog ModuleHeading2" { font-family=condensed font-size=40 textcolor=Text.Secondary }
 
-	StatusLabelDim { textcolor=label font-style=none }
+	StatusLabelDim { font-family=medium textcolor=Text.White font-style=uppercase } //floating download status notification
 
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
@@ -285,23 +304,23 @@
 
 	sidemenu 				{ font-family=condensed font-size=40 textcolor=Air210 font-style=uppercase } // web browser, settings, music buttons in overlaydesktop
 	taskbar 				{ font-family=condensed font-size=60 textcolor=Air210 font-style=uppercase } // in overlaytaskbar
-	sidemenu:hover 	{ textcolor=white }
-	taskbar:hover 	{ textcolor=white }
+	sidemenu:hover 	{ textcolor=Text.White }
+	taskbar:hover 	{ textcolor=Text.White }
 
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
 	//Email Reminder Bar
 
-	"CSteamRootDialog soft" 		{ font-weight=700 font-style=uppercase textcolor=Air210 }
-	"CSteamRootDialog bright" 	{ font-weight=700 font-style=uppercase textcolor=White }
+	"CSteamRootDialog soft" 		{ font-family=medium textcolor=Air210 font-style=uppercase }
+	"CSteamRootDialog bright" 	{ font-family=medium textcolor=Text.White font-style=uppercase }
 
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
 	emptylisttext 	{ textcolor=none selectedtextcolor=none } //search results empty
-	support_alert 	{ font-family=basefont font-size=16 textcolor=White font-weight=700 }
-	TreeNodeText 		{ font-family=Arial font-size=13 textcolor=Text.Primary selectedtextcolor=White selectedbgcolor=Focus2 }
+	support_alert 	{ font-family=basefont font-size=16 textcolor=Text.White font-weight=700 }
+	TreeNodeText 		{ font-family=Arial font-size=13 textcolor=Text.Primary selectedtextcolor=Text.White selectedbgcolor=Focus2 }
 
 	StatusLabel 				{ textcolor=Label }
 	StatusLabel:hover 	{ textcolor=LabelHover }

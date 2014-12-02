@@ -7,12 +7,12 @@
 			render_bg {
 				0="fill( x0, y0, x1, y0 + 50, Focus )"
 			}
-			render {
-				//0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow )"
-			}
 		}
 
 		CGamesPage_List {
+			render_bg {
+				0="fill( x0, y0 - 10, x1, y0 + 21, Focus4 )"
+			}
 			render {
 				0="image_tiled( x0, y0 + 21, x1, y0 + 27, graphics/material/shadow )"
 			}
@@ -25,6 +25,9 @@
 		}
 
 		CGamesPage_Grid {
+			render_bg {
+				0="fill( x0, y0 - 30, x1, y0, Focus4 )"
+			}
 			render {
 				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/shadow )"
 			}
@@ -33,6 +36,15 @@
 		CMusicPage_Details {
 			render {
 				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/shadow )"
+			}
+		}
+
+		CDownloadsPage {
+			render_bg {
+				0="fill( x0, y0, x1, y0 + 130, Focus4 )"
+			}
+			render {
+				0="image_tiled( x0, y0 + 130, x1, y0 + 136, graphics/material/shadow )"
 			}
 		}
 
@@ -52,7 +64,11 @@
 			minimum-height=250
 			bgcolor=A2.Background
 			render_bg {
-				0="fill( x0, y0, x1, y0 + 78, Focus )"
+				0="fill( x0, y0, x1, y0 + 50, Focus )"
+				1="fill( x0, y0 + 50, x1, y0 + 80, Focus4 )"
+			}
+			render {
+				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/shadow )"
 			}
 		}
 

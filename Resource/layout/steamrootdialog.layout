@@ -28,11 +28,8 @@
 		}
 
 		inbox_button {
-			padding-left=16
-			render_bg {
-				0="fill( x0, y0, x1, y1, A2.Notification )"
-				1="image( x0 + 12, y0 + 5, x1, y1, graphics/icons/inbox_active )"
-			}
+			padding-left=26
+			render_bg { }
 		}
 
 		inbox_button:hover {
@@ -44,20 +41,23 @@
 		}
 
 		inbox_button_active {
+		textcolor=none
 			render_bg {
-				1="image( x0 - 4, y0 + 4, x1, y1, graphics/icons/inbox_active )"
+				2="image( x0 + 9, y0 + 8, x1, y1, graphics/icons/inbox )"
 			}
 		}
 
 		inbox_button_active:hover {
 			render_bg {
-				1="image( x0 - 4, y0 + 4, x1, y1, graphics/icons/inbox_active_hover )"
+				2="image( x0 + 9, y0 + 8, x1, y1, graphics/icons/inbox )"
 			}
 		}
 
 		inbox_button_active:selected {
 			render_bg {
-				1="image( x0 - 4, y0 + 4, x1, y1, graphics/icons/inbox_active_hover )"
+				1="image( x0, y0, x1, y1, graphics/material/active_circle )"
+				2="image( x0 + 9, y0 + 8, x1, y1, graphics/icons/inbox )"
+
 			}
 		}
 
@@ -101,16 +101,16 @@
 		place { control=frame_captiongrip margin=2 width=max height=50 }
 		place [!$OSX] { control=MenuBar align=top y=10 x=20 width=30 height=30 }
 
-		region { name=nav height=50 width=max y=9 }
+		region { name=nav height=50 width=max }
 		region { name=notification height=40 width=max align=bottom }
 
 		place {
 			control=account_balance
-			region=nav align=right y=1 height=30 margin-right=126 //height=30
+			region=nav align=right y=10 height=30 margin-right=126 //height=30
 		}
 		place {
 			control=InboxButton
-			region=notification align=right y=0 height=30 width=46 margin-right=26
+			region=nav align=right y=7 height=50 width=36 margin-right=195
 		}
 		place {
 			control=online_friends

@@ -250,26 +250,26 @@ steam.styles
 		controlbutton:active 		{ render_bg { } }
 		controlbutton:disabled 	{ render_bg { } }
 
-		DetailsLaunchButton 					{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play )" } }
-		DetailsLaunchButton:hover 		{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play_hover )" } }
-		DetailsLaunchButton:active 		{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play_hover )" } }
-		DetailsLaunchButton:disabled 	{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play )" } }
+		//DetailsLaunchButton 					{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play )" } }
+		//DetailsLaunchButton:hover 		{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play_hover )" } }
+		//DetailsLaunchButton:active 		{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play_hover )" } }
+		//DetailsLaunchButton:disabled 	{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play )" } }
 
-		DetailsInstallButton 					{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install)" } }
-		DetailsInstallButton:hover 		{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
-		DetailsInstallButton:active 	{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
+		//DetailsInstallButton 					{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install)" } }
+		//DetailsInstallButton:hover 		{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
+		//DetailsInstallButton:active 	{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
 
-		DetailsBuyButton 							{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/buy )" } }
-		DetailsBuyButton:hover 				{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/buy_hover )" } }
-		DetailsBuyButton:active 			{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/buy_hover )" } }
+		//DetailsBuyButton 							{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/buy )" } }
+		//DetailsBuyButton:hover 				{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/buy_hover )" } }
+		//DetailsBuyButton:active 			{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/buy_hover )" } }
 
-		PauseButton 									{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/pause )" } }
-		PauseButton:hover 						{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/pause_hover )" } }
-		PauseButton:active 						{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/pause_hover )" } }
+		//PauseButton 									{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/pause )" } }
+		//PauseButton:hover 						{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/pause_hover )" } }
+		//PauseButton:active 						{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/pause_hover )" } }
 
-		ResumeButton 									{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install )" } }
-		ResumeButton:hover 						{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
-		ResumeButton:active 					{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
+		//ResumeButton 									{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install )" } }
+		//ResumeButton:hover 						{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
+		//ResumeButton:active 					{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
 
 		SmRemoveButton				 				{ inset="30 0 0 0" render_bg { } render { 1="image( x0 + 6, y0 + 4, x1, y1, graphics/icons/close )" } }
 		SmRemoveButton:hover 					{ render_bg { } render { 1="image( x0 + 6, y0 + 4, x1, y1, graphics/icons/close_hover )" } }
@@ -485,7 +485,9 @@ steam.styles
 		}
 
 		"CSteamRootDialog ListPanelColumnheader" {
+			inset-top=-8
 			padding-left=2
+			render_bg { }
 		}
 
 		ListPanelColumnSelectButton {
@@ -502,25 +504,22 @@ steam.styles
 
 		"CGamesListPanel ListPanelColumnSelectButton" {
 			image=graphics/none
-			render_bg {
-				0="fill( x0, y0, x1, y1, focus )"
-			}
 			render {
-				0="image( x0 + 4, y0 + 2, x1, y1, graphics/icons/collapse )"
+				0="image( x0 - 1, y0 - 2, x1, y1, graphics/icons/collapse )"
 			}
 		}
 
 		"CGamesListPanel ListPanelColumnSelectButton:hover" {
 			image=graphics/none
 			render {
-				0="image( x0 + 4, y0 + 2, x1, y1, graphics/icons/collapse_hover )"
+				0="image( x0 - 1, y0 - 2, x1, y1, graphics/icons/collapse_hover )"
 			}
 		}
 
 		"CGamesListPanel ListPanelColumnSelectButton:selected" {
 			image=graphics/none
 			render {
-				0="image( x0 + 4, y0 + 2, x1, y1, graphics/icons/collapse_hover )"
+				0="image( x0 - 1, y0 - 2, x1, y1, graphics/icons/collapse_hover )"
 			}
 		}
 
@@ -602,9 +601,10 @@ steam.styles
 			}
 		}
 
-		SectionedlistpanelCollapser {
+		SectionedListPanelCollapser {
+			minimum-height=0 //reset for button height
 			textcolor=none
-			padding-left=7
+			padding-left=6 padding-right=0
 			render_bg {
 				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/sm_right )"
 			}
@@ -617,7 +617,7 @@ steam.styles
 		}
 
 		SectionedListPanelCollapser:selected {
-			padding-left=3
+			padding-left=4 padding-right=0
 			render_bg {
 				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/sm_down )"
 			}
@@ -719,6 +719,8 @@ steam.styles
 		Page { }
 
 		PageTab {
+			minimum-height=0 //reset for button height
+			padding-left=0 padding-right=0 //reset for button padding
 			render_bg { }
 		}
 
@@ -918,16 +920,9 @@ steam.styles
 			inset-right=1
 		}
 
-		"CSteamRootDialog ListPanelInterior" {
-			render_bg {
-				0="fill( x0, y0 - 1, x1 + 13, y0, Focus )"
-			}
-		}
-
 		"CSteamRootDialog ListPanelInterior:scrollbar" {
 			render_bg {
-				0="fill( x1, y0, x1 + 1, y1, Scroll.Gutter )"
-				1="fill( x0, y0 - 1, x1 + 13, y0, Focus )"
+				0="fill( x1, y0, x1 + 1, y1, Scroll.Gutter )" //1px missing from scrollbar on right side of list panel
 			}
 		}
 
@@ -1035,7 +1030,7 @@ steam.styles
 
 		GameColumnHeaderFavorites {
 			textcolor=none
-			inset-top=0
+			inset-top=-10
 			inset-left=-1
 			image=graphics/icons/fav
 		}
