@@ -87,28 +87,28 @@
 
 	layout
 	{
-		region { name=nav height=50 width=max y=9 x=61 }
+		region { name=nav height=50 width=max x=61 }
 		region { name=body height=max width=max y=50 }
 
 		place {
 			control=back
-			region=nav height=30 width=28
+			region=nav height=30 width=28 y=9
 		}
 		place {
 			control=label_store,label_library
-			region=nav start=back height=30 spacing=16 x=10 y=1
+			region=nav start=back height=44 spacing=16 x=10 margin-top=-6
 		}
 		place {
 			control=library_filters
-			region=nav start=label_library height=30 width=15 x=0 y=0
+			region=nav start=label_library height=30 width=15 x=0 y=7
 		}
 		place {
 			control=label_community,label_me
-			region=nav start=library_filters height=30 spacing=16 x=10 y=0
+			region=nav start=library_filters height=44 spacing=16 x=10 y=0 margin-top=-7
 		}
 		place {
-			control=library_search,label_console
-			region=nav start=label_me height=22 x=12 y=3
+			control=library_search
+			region=nav start=label_me height=22 x=12 y=10
 		}
 		place {
 			control=label_console

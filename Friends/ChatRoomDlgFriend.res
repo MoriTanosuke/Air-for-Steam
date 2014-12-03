@@ -41,7 +41,7 @@
 
 		place { control="VoiceBar,TradeInviteBar,GameInviteBar,ChatInfoBar" width=max height=55 }
 
-		place { control="VoiceChat" region=chat align=right y=15 margin-right=18 }
+		place { control="VoiceChat" region=chat align=right y=12 margin-right=26 }
 		place { control="VoiceBar" region=chat align=left width=max height=55 end-right=VoiceChat }
 
 		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,ChatHistory" region=chat start=VoiceBar width=max height=max dir=down margin-bottom=-15 }

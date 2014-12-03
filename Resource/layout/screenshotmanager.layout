@@ -10,37 +10,26 @@
 
 	styles
 	{
-		CScreenshotManager {
-			minimum-height=450
-			minimum-width=578
-		} 
-
 		ThumbnailUnpublished {
-			render_bg
-			{
+			render_bg {
 				0="fill( x0, y0, x1 - 1, y1, BorderThumbnailUnpublished )"
 			}
 		}
 
 		ThumbnailPublished {
-			render_bg
-			{
+			render_bg {
 				0="fill( x0, y0, x1 - 1, y1, BorderThumbnailPublished )"
 			}
 		}
 
 		ThumbnailSelected {
-			bgcolor=Air200
-			render
-			{
-				2="fill( x0, y0, x0 + 2, y1, Air200 )" //left
-				3="fill( x1 - 2, y0, x1, y1, Air200 )" //right
+			render {
+				0="fill( x0, y0 + 8, x1, y1 - 11, AL150 )"
 			}
 		}
 
 		ThumbnailUploaded {
-			render_bg
-			{
+			render_bg {
 				0="fill( x0, y0, x1 - 1, y1, BorderThumbnailUploaded )"
 			}
 		}
@@ -51,8 +40,11 @@
 
 		SSDetails {
 			minimum-width=320
-			minimum-height=240
-			bgcolor=A2.Ribbon
+			minimum-height=180
+		}
+
+		CScreenshotCaptionEntry {
+			inset-left=0
 		}
 
 		publishcaption { }
@@ -63,57 +55,68 @@
 			textcolor=red
 		}
 
-		WrapPanel { }
-		
-		gameselector {
-			minimum-width=190
+		WrapPanel {
+			//inset-bottom=2
+			inset-top=-1
+			//inset-top=-2
 		}
-		
+
+		gameselector {
+			minimum-width=220
+			render_bg { }
+		}
+
 		ScreenshotLoadingThrobber {
 			minimum-width=100
 			minimum-height=75
 			bgcolor=black
 		}
-
-		NoSelectionTitle { }
-		NoSelectionInstructions { }
 	}
-	
-	layout
-	{
-		region { name="selectorbar" x=16 margin-right=340 margin-top=26 height=80 }
-		place { control="selectorlabel" region="selectorbar" x=0 y=6 }
-		place { control="game_selector" region="selectorbar" start="selectorlabel" dir=right margin-left=4 y=-3 }
-	
-		region { name="list" x=16 y=8 margin-right=340 margin-top=56 margin-bottom=48 width=max }
-		place {	control="grid" region="list" x=0 y=0 width=max height=max }
-		place { control="no_screenshots" region="list" y=70 align="top-center" }
 
-		region { name="details" align=right margin-right=16 margin-top=65 margin-bottom=10 width=335 height=max }
-		place { control="DarkRegionDetails" region="details" x=0 y=0 width=max height=max z="-1" }
-		place { control="SSDetails" region="details" y=0 width=333 height=250 align="top-center"  }
-		place { control="SSDate" start="SSDetails" dir=down y=-28 margin-left=8 margin-top=4 align=left }
-		place { control="SSSize,SSSizeOriginal" start="SSDate" margin-right=24 align=right dir=left }
+	layout {
+		place { control=frame_minimize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
+		place { control=frame_captiongrip margin=2 width=max height=50 }
 
-		place { control="publish_caption" region="details" x=0 y=266 margin-bottom=60 height=40 width=max  }
-		place { control="publish_charsleft" region="details" start=publish_caption dir=down margin-top=4 align=right}
+		region { name=nav height=50 width=max }
+		region { name=buttons height=40 width=max y=60 }
+		region { name=body height=max width=max y=100 }
 
-		place { control="null_placer" region="details" width=1 align=bottom margin-bottom=2 }
-		place { control="delete_button,details_button,publish_button" start="null_placer" align=right height=24 spacing=10 width=92 margin-right=9 }
-		place { control="multiselect_button,view_local_library_button,view_screenshots" x=9 align="bottom" margin-bottom=12 spacing=10 }
-				
-		place { control="spoiler_checkbox" region="details" align=left x=5 margin-top=1 margin-right=7 spacing=5 }
+		place { control=game_selector region=nav y=9 x=16 }
 
-		place { control="details_caption" region="details" x=5 align=bottom margin-bottom=35 height=60 width=max margin-right=7 }
+		region { name=list region=body x=26 width=max margin-right=366 }
 
-		place { control="multi_img" region="details" y=60 align="top-center" }
-		place { control="multi_img_count" region="details" y=69 margin-right=6 align="top-center" }
-		place { control="multi_img_selected" region=details y=160  align="top-center" }
-		place { control="multi_img_upload_size,multi_img_upload_size_info" region=details y=185 align="top-center" spacing=5 }
-		place { control="multi_img_storage_remaining,multi_img_storage_remaining_info" region=details y=200 align="top-center" spacing=5 }
-		place { control="multi_img_delete,multi_img_upload" region=details y=240 align="top-center" spacing=8 width=92 }
+		place {	control=grid region=list width=max height=max margin-bottom=-3 }
+		place { control=no_screenshots region=list y=70 align=top-center }
 
-		place { control="file_not_loaded_label" region="details" y=140 align="top-center" }
-		place { control="instr_no_selection_title,instr_no_selection" region="details" y=20 width=max margin-left=15 margin-right=15 dir=down spacing=20 }
+		region { name=details region=body width=366 height=max align=right margin-right=26 margin-left=20 }
+
+		place { control=DarkRegionDetails 				region=details width=max height=max z=-1 }
+		place { control=SSDetails 								region=details y=60 width=320 height=180 align=top-center }
+		place { control=SSDate 										region=details y=22 }
+		place { control=SSSize,SSSizeOriginal 		region=details y=22 align=right }
+
+		place { control=spoiler_checkbox 					region=details start=SSDetails y=10 dir=down }
+
+		place { control=publish_caption 					region=details start=spoiler_checkbox dir=down width=max y=10 }
+		place { control=publish_charsleft 				region=details start=publish_caption dir=down margin-top=6 align=right }
+
+		place { control=details_caption 					region=details start=SSDetails y=20 dir=down } //published caption
+
+		//place { control="null_placer" region="details" width=1 align=bottom margin-bottom=2 }
+
+		place { control=multi_img 																											region=details y=60 align=top-center }
+		place { control=multi_img_count 																								region=details y=69 align=top-center margin-right=6 }
+		place { control=multi_img_selected 																							region=details y=160 align=top-center }
+		place { control=multi_img_upload_size,multi_img_upload_size_info 								region=details y=185 align=top-center spacing=5 }
+		place { control=multi_img_storage_remaining,multi_img_storage_remaining_info 		region=details y=200 align=top-center spacing=5 }
+		place { control=multi_img_delete,multi_img_upload 															region=details y=240 align=top-center spacing=10 }
+
+		place { control=file_not_loaded_label 													region=details y=140 align=top-center }
+		place { control=instr_no_selection_title,instr_no_selection 		region=details y=50 width=max dir=down spacing=10 margin-left=40 margin-right=40 }
+
+		place { control=multiselect_button,view_local_library_button,view_screenshots 		region=buttons align=left spacing=10 margin-left=26 margin-bottom=10 }
+		place { control=delete_button,details_button,publish_button 											region=buttons align=right spacing=10 margin-right=26 margin-bottom=10 }
+
+		place { control=selectorlabel,null_placer height=0 width=0 }
 	}
 }

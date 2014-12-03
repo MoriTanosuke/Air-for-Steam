@@ -3,30 +3,38 @@
 	styles
 	{
 		CDialogSettings {
-			minimum-width="645"
-			minimum-height="585"
+			minimum-width=601
+			minimum-height=585
+			bgcolor=A2.Ribbon
 			render_bg {
-				0="fill( x0, y0, x0 + 165, y1, A2.Ribbon )"
+				0="fill( x0, y0, x0 + 175, y1, A2.Background )"
+				1="fill( x0, y0, x1, y0 + 50, Focus )"
+			}
+			render {
+				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow )"
 			}
 		}
 
 		SettingsList {
-			selectedbgcolor=A2.Background
-			font-family=condensed
-			font-size=20
-			padding-left=20
+			selectedbgcolor=none
+			font-family=basefont
+			font-size=18
+			padding-left=26
+			selectedtextcolor=Focus
 		}
 
 		PropertySheet { }
 	}
 
-	layout
-	{
-		region { name=buttons width=max height=40 align=bottom }
-		region { name=body margin-right=20 margin-bottom=46 margin-top=32 }
+	layout {
+		place { control=frame_minimize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
+		place { control=frame_captiongrip margin=2 width=max height=50 }
 
-		place { control="settingslist" end=sheet region=body width=165 height=max }
-		place { control="sheet" start=settingslist region=body width=440 height=max y=14 x=20 }
+		region { name=buttons width=max height=40 align=bottom }
+		region { name=body margin-bottom=50 margin-top=40 }
+
+		place { control=settingslist end=sheet region=body width=180 height=max }
+		place { control=sheet start=settingslist region=body width=380 height=max y=29 x=15 }
 		place {
 			control=okbutton,cancelbutton
 			region=buttons

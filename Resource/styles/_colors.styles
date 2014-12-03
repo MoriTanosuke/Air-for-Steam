@@ -13,12 +13,16 @@
 		//background colors
 
 		A2.Background				"Air235"							//client bg
-		A2.Menu							"Air235"							//menu bg
-		A2.MenuDivider			"Air215"							//menu dividers
+
 		A2.Ribbon						"Air205"							//bg for section emphasis (ie. left side of settings dialog)
 		A2.Divider					"Air190"							//client dividers
 		A2.Notification			"Air50"								//bg for download notification
 		A2.Bar							"Air110"							//bg for greater section emphasis (ie. voice chat and trade notifications)
+
+		A2.Menu							"Air235"							//menu bg
+		A2.MenuDivider			"Air215"							//menu dividers
+		A2.Combo						"Air185"							//combobox menu bg
+		A2.ComboDivider			"Air165"							//combobos menu dividers
 
 		//button colors
 

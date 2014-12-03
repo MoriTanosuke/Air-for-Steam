@@ -7,7 +7,7 @@
 		}
 
 		GraphPanel {
-			textcolor=white // graph bars color
+			textcolor=AL100 // graph bars color
 			bgcolor=none
 			inset-left=1
 		}
@@ -26,7 +26,7 @@
 		place { region=notification control="peak_download_rate,peak_download_rate_value" 	x=20 spacing=10 start=download_rate_value }
 		place { region=notification control="total_downloaded,total_downloaded_value" 			x=20 spacing=10 start=peak_download_rate_value }
 		place { region=notification control="blackout_label,blackout_value" 								x=20 spacing=10 start=total_downloaded_value }
-		place { region=notification control="throttling_label,throttling_value" 						x=20 spacing=5 start=blackout_value }
+		place { region=notification control="throttling_label,throttling_value" 						x=20 spacing=10 start=blackout_value }
 		place { region=notification control="disk_status_label" 														x=20 start=throttling_value }
 
 		place { control=header height=0 width=0 } //Network label

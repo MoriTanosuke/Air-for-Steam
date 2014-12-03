@@ -4,10 +4,10 @@
 	{
 		CAppSubscriptionsDownloadPanel {
 			render_bg {
-				0="fill( x0, y0 + 4, x1, y1 - 2, A2.Ribbon )"
+				0="fill( x0, y0, x1, y1, A2.Ribbon )"
 			}
 			render {
-				0="fill( x0, y1 - 2, x1, y1 - 1, A2.Divider )"
+				0="fill( x0, y1 - 1, x1, y1, A2.Divider )"
 			}
 		}
 
@@ -17,37 +17,46 @@
 			}
 			render { }
 		}
+
+		SmRemoveButton {
+			padding-left=8 padding-right=8
+			minimum-height=30
+			render { }
+		}
+
+		SmRemoveButton:hover {
+			render_bg {
+				0="fill( x0, y0, x1, y1, Button.Hover )"
+			}
+		}
+
+		SmRemoveButton:active {
+			render_bg {
+				0="fill( x0, y0, x1, y1, Button.Pressed )"
+			}
+		}
 	}
 
 
-	layout
-	{
-		region { name="global" height=max width=max margin-left=16 margin-right=16 margin-top=2 }
-		region { name="column1" region=global x=0 width=200 }
-		region { name="column2" region=global x=216 width=284 }
-		region { name="column3" region=global x=516 width=max }
-		region { name="column4" region=global x=700 width=max overflow=allow-horizontal }
+	layout {
+		region { name=box height=max width=max margin-left=26 margin-right=26 }
+		region { name=column1 region=box width=184 height=max align=left }
+		region { name=column2 region=box x=184 width=max height=max align=left margin-left=20 margin-right=330 }
+		region { name=column3 region=box width=330 height=max align=right margin-left=20 }
 
-		place { control="downloadprogressbar" region=global align=bottom height=3 width=max margin-bottom=2 }
+		place { control=downloadprogressbar align=bottom height=5 width=max }
 
 		// left column
-		place { control="gameimage" region="column1" width=184 height=69 align=top-center margin-top=25 margin-left=16 }
-		place { control="workshopminibanner" region="column1" width=184 height=26 margin-top=68 margin-left=16  }
+		place { control=gameimage region=column1 height=69 width=184 align=left y=25 }
 
-		// left-mid column
-		place { control="namelabel" region="column2" y=19 }
-		place { control="viewmodsbutton" region=column2 y=50 height=24 spacing=8 }
-
-		// right-mid column
-		place { control="downloadtotallabel,starttimelabel,timeremaininglabel" region=column3 dir=down spacing=8 y=20 height=19 }
-		place { control="downloadtotalfield,starttimefield,timeremainingfield" region=column3 dir=down spacing=8 y=20 x=110 height=19 }
+		// mid column
+		place { control=namelabel,updatetypelabel region=column2 y=16 spacing=20 }
+		place { control=viewmodsbutton,pauseresumebutton region=column2 y=64 spacing=10 }
 
 		// right column
-		place { control="pauseresumebutton" region="column4" y=44 align=right height=24 width=24 margin-right=12 }
-		place { control="updatetypelabel" region="column4" y=42 align=right margin-right=43 }
-		place { control="graphdownloadrate" region=column4 align=right y=74 margin-right=43 }
+		place { control=downloadtotallabel,starttimelabel,timeremaininglabel region=column3 dir=down spacing=11 y=20 height=19 }
+		place { control=downloadtotalfield,starttimefield,timeremainingfield region=column3 dir=down spacing=11 y=20 x=116 height=19 }
 
-		//hidden
-		place { control="downloadfileslabel,downloadfilesfield" height=0 width=0 }
+		place { control=graphdownloadrate,dashlabel,workshopminibanner,downloadfileslabel,downloadfilesfield height=0 width=0 }
 	}
 }

@@ -26,7 +26,7 @@
 			inset-left=999 //remove default dropdown arrow
 		}
 
-		DetailsLaunchButton 					{
+		DetailsLaunchButton {
 			inset-left=1
 			padding-right=50
 			padding-left=50
@@ -41,7 +41,7 @@
 			}
 		}
 
-		DetailsInstallButton 					{
+		DetailsInstallButton {
 			inset-left=1
 			padding-right=50
 			padding-left=50
@@ -56,7 +56,7 @@
 			}
 		}
 
-		DetailsBuyButton 							{
+		DetailsBuyButton {
 			inset-left=1
 			padding-right=50
 			padding-left=50

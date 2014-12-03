@@ -99,7 +99,7 @@
 	{
 		place { control=frame_minimize,frame_maximize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
 		place { control=frame_captiongrip margin=2 width=max height=50 }
-		place [!$OSX] { control=MenuBar align=top y=10 x=20 width=30 height=30 }
+		place [!$OSX] { control=MenuBar align=top width=50 height=49 }
 
 		region { name=nav height=50 width=max }
 		region { name=notification height=40 width=max align=bottom }

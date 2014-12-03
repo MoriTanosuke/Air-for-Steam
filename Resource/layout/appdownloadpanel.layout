@@ -4,7 +4,7 @@
 	{
 		panelStyle {
 			render_bg {
-				//0="fill( x0, y0 + 4, x1, y1 - 2, A2.Ribbon )"
+				0="fill( x0, y0, x1, y1, A2.Ribbon )"
 			}
 			render {
 				0="fill( x0, y1 - 1, x1, y1, A2.Divider )"
@@ -13,10 +13,10 @@
 
 		panelStyleHighlight {
 			render_bg {
-				0="fill( x0, y1 - 50, x1, y1, A2.Ribbon )"
+				0="fill( x0, y0, x1, y1, A2.Ribbon )"
 			}
 			render {
-				//0="fill( x0, y1 - 1, x1, y1, A2.Divider )"
+				0="fill( x0, y1 - 1, x1, y1, A2.Divider )"
 			}
 		}
 
@@ -36,7 +36,25 @@
 			render_bg {
 				0="fill( x0, y0, x1, y1, Button.Pressed )"
 			}
+		}
+
+		settingslink {
+			padding-left=8 padding-right=8
+			minimum-height=30
+			render_bg { }
+		}
+
+		settingslink:hover {
+			render_bg {
+				0="fill( x0, y0, x1, y1, Button.Hover )"
 			}
+		}
+
+		settingslink:active {
+			render_bg {
+				0="fill( x0, y0, x1, y1, Button.Pressed )"
+			}
+		}
 
 		SlimProgressBar {
 			bgcolor=none
@@ -47,39 +65,28 @@
 		}
 	}
 
-	layout
-	{
-		region { name="global" height=max width=max margin-left=26 margin-right=26 }
-		region { name="column1" region=global x=0 width=200 }
-		region { name="column2" region=global x=216 width=284 }
-		region { name="column3" region=global x=516 width=max }
-		region { name="column4" region=global x=700 width=max overflow=allow-horizontal }
+	layout {
+		region { name=box height=max width=max margin-left=26 margin-right=26 }
+		region { name=column1 region=box width=184 height=max align=left }
+		region { name=column2 region=box x=184 width=max height=max align=left margin-left=20 margin-right=330 }
+		region { name=column3 region=box width=330 height=max align=right margin-left=20 }
 
-		place { control="downloadprogressbar" align=bottom height=5 width=max }
+		place { control=downloadprogressbar align=bottom height=5 width=max }
 
 		// left column
-		place { control="gameimage" region="column1" align=left y=25 }
-		//place { control="newslink" region="column2" align=top-center margin-top=25 margin-left=16 }
+		place { control=gameimage region=column1 height=69 width=184 align=left y=25 }
 
-		// left-mid column
-		place { control="namelabel" region="column2" y=19 }
-		place { control="launchbutton,newslink" region=column2 y=50 spacing=10 }
-
-		// right-mid column
-		//place { control="downloadtotallabel,starttimelabel,timecompletedlabel,timeremaininglabel" region=column3 dir=down spacing=8 y=20 height=19 }
-		//place { control="downloadtotalfield,starttimefield,timecompletedfield,timeremainingfield" region=column3 dir=down spacing=8 y=20 x=110 height=19 }
-
-		region { name=notification height=50 width=max align=bottom }
-
-		place { region=notification control="downloadtotallabel,downloadtotalfield" 				y=15 x=236 spacing=10 }
-		place { region=notification control="starttimelabel,starttimefield" 								x=20 spacing=10 start=downloadtotalfield }
-		place { region=notification control="timeremaininglabel,timeremainingfield" 				x=20 spacing=10 start=starttimefield }
-		place { region=notification control="timecompletedlabel,timecompletedfield" 				x=20 spacing=10 start=timeremainingfield }
+		// mid column
+		place { control=namelabel,updatetypelabel region=column2 y=16 spacing=20 }
+		place { control=launchbutton,newslink,settingslink region=column2 y=64 spacing=10 }
 
 		// right column
-		place { control="topofqueuebutton" region="column4" y=8 align=right height=24 width=24 }
-		place { control="removefromqueuebutton" region="column4" y=44 align=right height=24 width=24 margin-right=1 }
-		place { control="updatetypelabel" region="column4" y=42 align=right margin-right=43 }
-		place { control="settingslink" region=column4 align=right y=75 margin-right=43 }
+		place { control=downloadtotallabel,starttimelabel,timecompletedlabel,timeremaininglabel region=column3 dir=down spacing=11 y=20 height=19 }
+		place { control=downloadtotalfield,starttimefield,timecompletedfield,timeremainingfield region=column3 dir=down spacing=11 y=20 x=116 height=19 }
+
+		place { control=topofqueuebutton region=column3 y=18 align=right height=24 width=24 }
+		place { control=removefromqueuebutton region=column3 y=48 align=right height=24 width=24 }
+
+		place { control=dashlabel,spacer,workshopbanner height=0 width=0 }
 	}
 }

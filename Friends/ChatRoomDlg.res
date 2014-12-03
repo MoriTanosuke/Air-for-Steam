@@ -39,7 +39,7 @@
 		region { name=status align=bottom height=90 width=max margin-bottom=60 }
 		region { name=bottom align=bottom height=60 width=max }
 
-		place { control="VoiceChat"			region=chat align=right y=15 margin-right=18 }
+		place { control="VoiceChat"			region=chat align=right y=12 margin-right=26 }
 		place { control="VoiceBar"			region=chat align=left width=max height=55 end-right=VoiceChat }
 
 		place { control="ChatHistory"		region=chat start=VoiceBar width=max height=max dir=down margin-bottom=-15 margin-right=4 end-right=UserList }

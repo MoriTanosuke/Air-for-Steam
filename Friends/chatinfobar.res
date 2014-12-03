@@ -21,7 +21,7 @@
 			}
 		}
 
-		Label { font-weight=700 font-style=uppercase textcolor=White }
+		Label { font-family=medium font-size=16 font-weight=500 textcolor=Text.White font-style=regular }
 	}
 
 	layout
