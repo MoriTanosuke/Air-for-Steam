@@ -604,6 +604,13 @@ steam.styles
 			}
 		}
 
+		"CGamesPage_Mini ListPanelSectionHeader" {
+			minimum-height=30
+			render_bg {
+				0="fill( x0 - 26, y1 - 1, x1, y1, A2.Divider )"
+			}
+		}
+
 		ListPanelSectionHeader {
 			padding-left=5
 			padding-bottom=2
