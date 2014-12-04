@@ -25,7 +25,7 @@
 			}
 		}
 
-		Label { font-family=medium font-size=16 font-weight=500 textcolor=Text.White font-style=regular }
+		Label { font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
 	}
 
 	layout

@@ -1,21 +1,24 @@
 "resource/layout/subpaneloptionscloud.layout"
 {
+	styles {
+		ListPanel {
+			bgcolor=A2.Ribbon
+			selectedtextcolor=Focus
+		}
+	}
+
 	layout {
-
-
 		place { control=BorrowersLabel							width=max }
-		place { control=BorrowersList								dir=down width=max height=108 start=BorrowersLabel margin-top=20 }
+		place { control=BorrowersList								dir=down width=max height=120 start=BorrowersLabel y=20 }
 
-		place { control=AuthorizeDeviceButton				dir=down start=BorrowersList margin-top=30 }
-		place { control=DeauthorizeDeviceButton			dir=down start=BorrowersList margin-top=30 }
-		place { control=ManageSharingButton					dir=down start=BorrowersList margin-top=60 }
+		place { control=ShowNotificationsCheck			dir=down start=BorrowersList y=10 }
 
-		place { control=ShowNotificationsCheck			dir=down start=ManageSharingButton margin-top=30 }
+		place { control=AuthorizeDeviceButton				dir=down start=ShowNotificationsCheck y=10 }
+		place { control=DeauthorizeDeviceButton			dir=down start=ShowNotificationsCheck y=10 }
+		place { control=ManageSharingButton					dir=down start=ShowNotificationsCheck y=40 }
 
-		place { control=FamilyOptionsText						dir=down width=max start=ShowNotificationsCheck margin-top=30 }
-		place { control=ManageOptionsButton					dir=down start=FamilyOptionsText margin-top=10 }
-
-
+		place { control=FamilyOptionsText						dir=down width=max start=ManageSharingButton y=30 }
+		place { control=ManageOptionsButton					dir=down start=FamilyOptionsText y=10 }
 
 		place { control=FamilySharingTextState,Divider1,FamilySharingTitle,FamilyOptionsTitle height=0 width=0 }
 	}

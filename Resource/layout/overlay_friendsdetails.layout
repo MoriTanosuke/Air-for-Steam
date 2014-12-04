@@ -5,23 +5,23 @@
 		detailsbox {
 			bgcolor=AL10
 		}
-		
-		button
-		{
-			padding-right=4
+
+		button {
+			minimum-height=0 //reset for button height
+			padding-right=4 padding-left=0
 			font-family=condensed
-			font-size=30
-			font-style=uppercase
+			font-size=40
+			font-weight=700
 			textcolor=Focus
+			font-style=uppercase
 			render_bg { }
 		}
 
-		button:hover
-		{
-			textcolor=focus2
+		button:hover {
+			textcolor=Focus2
 		}
 	}
-	
+
 	layout
 	{
 		place { control=AllFriendsButton,ViewPlayersButton spacing=12 height=60 margin-left=32 align=top-center }

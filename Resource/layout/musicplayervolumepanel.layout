@@ -3,15 +3,22 @@
 	styles {
 
 		CMusicPlayerVolumePanel {
-			minimum-width = 130
-			minimum-height = 24
+			minimum-width=150
+			minimum-height=30
+			bgcolor=A2.Notification
 		}
 
-		VolumeSlider { render_bg { } }
+		VolumeSlider {
+			textcolor=Text.Notification //slider color
+		}
+
+		VolumeSlider:focus {
+			textcolor=Text.Notification //slider color
+		}
 	}
 
 	layout
 	{
-		place { control="VolumeSlider" y=2 height=18 width=max align=top-center margin-right=10 margin-left=10 }
+		place { control="VolumeSlider" height=max width=max align=top-center margin-left=10 margin-right=10 }
 	}
 }

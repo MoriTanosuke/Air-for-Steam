@@ -3,6 +3,9 @@
 	styles {
 
 		sidemenu {
+			font-family=condensed
+			font-size=40
+			font-weight=700
 			textcolor=Focus
 			font-style=uppercase
 			render_bg {

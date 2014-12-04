@@ -11,7 +11,7 @@
 				1="image( x0, y0, x1, y1, steam/cached/icon_game_frame )"
 			}
 		}
-	
+
 		GGPlaceholderBG {
 			bgcolor=none
 		}
@@ -22,12 +22,10 @@
 	layout
 	{
 		region { name="icon_region" width=max height=max }
-		
+
 		place { control = "background" width=max height=max }
 		place { control = "appname" margin=12 width=max align=center margin-top=41 }
 
-		//Hidden Items
-		region { name=hidden height=0 width=0 }
-		place { control="noappimage_border,noappimage" region=hidden }
+		place { control="noappimage_border,noappimage" height=0 width=0 }
 	}
 }

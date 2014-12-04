@@ -1,15 +1,29 @@
 "resource/layout/downloadspage.layout"
 {
 	styles {
+		//listpanel column headers
 		label {
-			// listpanel column headers
 			padding-left=8
-			padding-top=1
-			textcolor=Text.Label
+			inset-top=-1
+		}
+
+		SectionedListPanelCollapser {
+			minimum-width=30
+			padding-left=0
+			render_bg {
+				0="image( x0 + 9, y0 + 2, x1, y1, graphics/buttons/collapser_down )"
+			}
+		}
+
+		SectionedListPanelCollapser:selected {
+			padding-left=0
+			render_bg {
+				0="image( x0 + 9, y0 + 2, x1, y1, graphics/buttons/collapser_up )"
+			}
 		}
 	}
 
 	layout {
-		place { control="downloadsummarypanel,panel_list" dir=down width=max height=max }
+		place { control=downloadsummarypanel,panel_list dir=down width=max height=max }
 	}
 }

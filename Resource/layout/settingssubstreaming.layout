@@ -1,46 +1,27 @@
 "resource/layout/settingssubstreaming.layout"
 {
-	styles
-	{
-		ListPanelColumnHeader {
-			padding-left=3
-		}
-
-		ListPanelSectionHeader {
-			padding-left=8
+	styles {
+		ListPanel {
+			bgcolor=A2.Ribbon
+			selectedtextcolor=Focus
 		}
 	}
 
-	layout
-	{
-		region { name=box width=max height=max }
-		
-		place { control="AdvancedHostOptions,AdvancedClientOptions" height=24 }
-		
-		place { control=DescriptionLabel		region=box dir=down width=max }
-		place { control=RemoteClientList		start=DescriptionLabel region=box dir=down width=max margin-top=10 margin-left=0 }
-		place { control=EnableStreaming			start=RemoteClientList region=box dir=down width=max margin-top=10 }
+	layout {
+		place { control=DescriptionLabel				dir=down width=max }
+		place { control=RemoteClientList				start=DescriptionLabel dir=down width=max height=120 y=20 }
 
-		place { control=HostDivider				start=EnableStreaming region=box dir=down width=max margin-top=15 }
-		place {	control=HostLabel				start=HostDivider region=box dir=down width=max margin-top=15 }
-		place { control=AdvancedHostOptions		start=HostLabel region=box dir=down width=280 margin-top=10 }
-		
-		place { control=ClientDivider			start=AdvancedHostOptions region=box dir=down width=max margin-top=21 }
-		place { control=ClientLabel				start=ClientDivider region=box dir=down width=max margin-top=16 }
+		place { control=EnableStreaming					start=RemoteClientList dir=down width=max y=10 }
 
-		place { control=QualityFast				start=ClientLabel region=box dir=down margin-top=10 }
-		
-		place
-		{
-			control="QualityBalanced,QualityBeautiful"
-			start=QualityFast
-			region=box
-			dir=right
-			spacing=10
-		}
+		place { control=AdvancedHostOptions			start=EnableStreaming dir=down y=10 }
+		place { control=AdvancedClientOptions		start=AdvancedHostOptions dir=down y=0 }
 
-		place { control=AdvancedClientOptions	start=QualityFast region=box dir=down width=280 margin-top=10 }
+		place { control=ClientLabel							start=AdvancedClientOptions dir=down width=max y=30 }
 
-		place { control=SupportInformationLabel start=AdvancedClientOptions region=box dir=down margin-top=10 }		
+		place { control=QualityFast							start=ClientLabel dir=down y=5 }
+		place { control=QualityBalanced					start=QualityFast dir=right margin-left=10 }
+		place { control=QualityBeautiful				start=QualityBalanced dir=right margin-left=10 }
+
+		place { control=HostLabel,HostDivider,ClientDivider,SupportInformationLabel height=0 width=0 }
 	}
 }

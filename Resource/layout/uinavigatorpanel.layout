@@ -3,6 +3,7 @@
 	styles
 	{
 		zoomslider {
+			minimum-height=0 //reset for slider height
 			inset-top=-2
 			textcolor=Air255
 			render_bg { }

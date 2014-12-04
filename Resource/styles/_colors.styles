@@ -10,71 +10,71 @@
 		AL5 "255 255 255 5" AL10 "255 255 255 10" AL15 "255 255 255 15" AL20 "255 255 255 20" AL25 "255 255 255 25" AL30 "255 255 255 30" AL35 "255 255 255 35" AL40 "255 255 255 40" AL45 "255 255 255 45" AL50 "255 255 255 50" AL55 "255 255 255 55" AL60 "255 255 255 60" AL65 "255 255 255 65" AL70 "255 255 255 70" AL75 "255 255 255 75" AL80 "255 255 255 80" AL85 "255 255 255 85" AL90 "255 255 255 90" AL95 "255 255 255 95" AL100 "255 255 255 100" AL105 "255 255 255 105" AL110 "255 255 255 110" AL115 "255 255 255 115" AL120 "255 255 255 120" AL125 "255 255 255 125" AL130 "255 255 255 130" AL135 "255 255 255 135" AL140 "255 255 255 140" AL145 "255 255 255 145" AL150 "255 255 255 150" AL155 "255 255 255 155" AL160 "255 255 255 160" AL165 "255 255 255 165" AL170 "255 255 255 170" AL175 "255 255 255 175" AL180 "255 255 255 180" AL185 "255 255 255 185" AL190 "255 255 255 190" AL195 "255 255 255 195" AL200 "255 255 255 200" AL205 "255 255 255 205" AL210 "255 255 255 210" AL215 "255 255 255 215" AL220 "255 255 255 220" AL225 "255 255 255 225" AL230 "255 255 255 230" AL235 "255 255 255 235" AL240 "255 255 255 240" AL245 "255 255 255 245" AL250 "255 255 255 250"
 		AD5 "0 0 0 5" AD10 "0 0 0 10" AD15 "0 0 0 15" AD20 "0 0 0 20" AD25 "0 0 0 25" AD30 "0 0 0 30" AD35 "0 0 0 35" AD40 "0 0 0 40" AD45 "0 0 0 45" AD50 "0 0 0 50" AD55 "0 0 0 55" AD60 "0 0 0 60" AD65 "0 0 0 65" AD70 "0 0 0 70" AD75 "0 0 0 75" AD80 "0 0 0 80" AD85 "0 0 0 85" AD90 "0 0 0 90" AD95 "0 0 0 95" AD100 "0 0 0 100" AD105 "0 0 0 105" AD110 "0 0 0 110" AD115 "0 0 0 115" AD120 "0 0 0 120" AD125 "0 0 0 125" AD130 "0 0 0 130" AD135 "0 0 0 135" AD140 "0 0 0 140" AD145 "0 0 0 145" AD150 "0 0 0 150" AD155 "0 0 0 155" AD160 "0 0 0 160" AD165 "0 0 0 165" AD170 "0 0 0 170" AD175 "0 0 0 175" AD180 "0 0 0 180" AD185 "0 0 0 185" AD190 "0 0 0 190" AD195 "0 0 0 195" AD200 "0 0 0 200" AD205 "0 0 0 205" AD210 "0 0 0 210" AD215 "0 0 0 215" AD220 "0 0 0 220" AD225 "0 0 0 225" AD230 "0 0 0 230" AD235 "0 0 0 235" AD240 "0 0 0 240" AD245 "0 0 0 245" AD250 "0 0 0 250"
 
+		White		"Air255"
+		Black		"Air0"
+
 		//background colors
 
-		A2.Background				"Air235"							//client bg
+		A2.Background						"Air235"							//client bg
 
-		A2.Ribbon						"Air205"							//bg for section emphasis (ie. left side of settings dialog)
-		A2.Divider					"Air190"							//client dividers
-		A2.Notification			"Air50"								//bg for download notification
-		A2.Bar							"Air110"							//bg for greater section emphasis (ie. voice chat and trade notifications)
+		A2.Ribbon								"Air205"							//bg for section emphasis (ie. left side of settings dialog)
+		A2.Divider							"Air190"							//client dividers
+		A2.Notification					"Air50"								//bg for download notification
+		A2.Bar									"Air110"							//bg for greater section emphasis (ie. voice chat and trade notifications)
 
-		A2.Menu							"Air235"							//menu bg
-		A2.MenuDivider			"Air215"							//menu dividers
-		A2.Combo						"Air185"							//combobox menu bg
-		A2.ComboDivider			"Air165"							//combobos menu dividers
+		A2.Menu									"Air235"							//menu bg
+		A2.MenuDivider					"Air215"							//menu dividers
 
 		//button colors
 
-		Button.Hover				"155 155 155 50"			//button bg on hover
-		Button.Pressed			"155 155 155 100"			//button bg on click
+		Button.Hover						"155 155 155 50"			//button bg on hover
+		Button.Pressed					"155 155 155 100"			//button bg on click
 
 		//scroll colors
 
-		Scroll.Std					"Air180"							//scrollbar handle
-		Scroll.Hover				"Air155"							//scrollbar handle on hover
-		Scroll.Gutter				"A2.Ribbon"						//scrollbar gutter/backdrop
+		Scroll.Std							"Air180"							//scrollbar handle
+		Scroll.Hover						"Air155"							//scrollbar handle on hover
+		Scroll.Gutter						"A2.Ribbon"						//scrollbar gutter/backdrop
 
 		//new text colors
 
-		Text.Primary				"Air35"								//black 87%, text
-		Text.Secondary			"Air115"							//black 54%, caption
-		Text.Label					"Air155"							//black 39%, label
-		Text.Hint						"Air190"							//black 26%, hint text, disabled items
-		Text.Black					"Air0"								//black,
-		Text.BlackHover			"0 0 0 220"						//black hover,
-		Text.White					"Air255"							//white,
-		Text.WhiteHover			"255 255 255 220"			//white hover,
+		Text.Primary						"Air35"								//black 87%, text
+		Text.Secondary					"Air115"							//black 54%, caption
+		Text.Label							"Air155"							//black 39%, label
+		Text.Hint								"Air190"							//black 26%, hint text, disabled items
+		Text.Black							"Air0"								//black text
+		Text.BlackHover					"0 0 0 220"						//hover
+		Text.White							"Air255"							//white text
+		Text.WhiteHover					"255 255 255 220"			//hover
 
-		//text colors
+		Text.OnFocus						"Air255"							//text color on focus color (header)
+		Text.OnFocusHover				"255 255 255 220"			//hover
+		Text.Notification				"Air255"							//text color of a notification
+		Text.NotificationSoft		"Air210"							//softer text color on notification (also used for hover)
+		Text.Selected						"Air255"							//selected text color (usually on focus2)
 
-		Text			"Text.Primary"		TextHover			"Air90"			TextActive			"Air65"			//Normal Text
-		Label			"Text.Secondary"		LabelHover		"Air120"		LabelActive			"Air95"			//Light "blend in" text on AirBackground
-		Light			"Text.Label"		LightHover		"Air150"		LightActive			"Air125"		//Light text for uninstalled games, disabled items
-		Dark			"Air85"			DarkHover			"Air60"			DarkActive			"Air35"			//Dark highlight text
-		Black			"Air0"			BlackHover		"Air25"			BlackActive			"Air50"			//Black text
-		White			"Air255"		WhiteHover		"Text.WhiteHover"		WhiteActive			"Air205"		//White text, selectedtext (with focus as bg)
+		Text.Overlay						"Air255"							//overlay text color
+		Text.OverlaySoft				"Air210"							//softer overlay text color (also used for hover)
 
 		//friends colors
 
-		Friends.Online			"103 161 184 255"			//friend online text
-		Friends.InGame			"117 165 112 255"			//friend in-game text
-		Friends.Offline			"Text.Label"					//friend offline text
+		Friends.Online					"103 161 184 255"			//friend online text
+		Friends.InGame					"117 165 112 255"			//friend in-game text
+		Friends.Offline					"Text.Label"					//friend offline text
 
 		//chat colors
 
-		Chat.Friend					"Text.Primary"				//chat window friend text
-		Chat.Self						"Text.Secondary"			//chat window self text
-		Chat.History				"Text.Label"					//chat window history text
+		Chat.Friend							"Text.Primary"				//chat window friend text
+		Chat.Self								"Text.Secondary"			//chat window self text
+		Chat.History						"Text.Label"					//chat window history text
 
 		//details colors
 
-		Details.FocusText			"Focus"							//games details section header text
-		Details.Background		"184 184 184 150"		//games details semi-transparent overlay on top of screenshots
+		Details.Background				"184 184 184 150"		//games details semi-transparent overlay on top of screenshots, resolves into A2.Ribbon
 
 		//overlay colors
 
-		Overlay.Background	"50 50 50 150"				//overlay bg
+		Overlay.Background				"50 50 50 150"				//overlay bg
 
 
 		almostBlack="23 22 20 255"

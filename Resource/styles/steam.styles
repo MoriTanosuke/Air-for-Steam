@@ -5,11 +5,7 @@ steam.styles
 	include "resource/styles/_fonts.styles"
 	include "resource/styles/_header.styles"
 
-	include "resource/tweaks/grid_fade.styles"
-	include "resource/tweaks/friends_nohover.styles"
-
-	colors
-	{
+	colors {
 		Frame.ClientInsetX       	 						"10"
 		Frame.ClientInsetY        						"35"
 		Frame.FocusTransitionEffectTime   		"0"		// time it takes for a window to fade in/out on focus/out of focus
@@ -601,10 +597,20 @@ steam.styles
 			render { } //fill makes dragger visible
 		}
 
+		"CSteamRootDialog ListPanelSectionHeader" {
+			minimum-height=30
+			render_bg {
+				0="fill( x0 - 26, y1 - 1, x1, y1, A2.Divider )"
+			}
+		}
+
 		ListPanelSectionHeader {
-			padding-left=2
-			padding-top=4
+			padding-left=5
 			padding-bottom=2
+		}
+
+		CFriendsListSectionHeader {
+			inset-left=3
 		}
 
 		ListPanelSectionCollapser {
@@ -612,26 +618,26 @@ steam.styles
 			textcolor=none
 			padding-left=6 padding-right=0
 			render_bg {
-				0="image( x0 + 9, y0 + 8, x1, y1, graphics/buttons/sm_right )"
+				0="image( x0 + 9, y0 + 9, x1, y1, graphics/buttons/collapser_down )"
 			}
 		}
 
 		ListPanelSectionCollapser:hover {
 			render_bg {
-				0="image( x0 + 9, y0 + 8, x1, y1, graphics/buttons/sm_right_hover )"
+				0="image( x0 + 9, y0 + 9, x1, y1, graphics/buttons/collapser_down )"
 			}
 		}
 
 		ListPanelSectionCollapser:selected {
 			padding-left=4 padding-right=0
 			render_bg {
-				0="image( x0 + 9, y0 + 8, x1, y1, graphics/buttons/sm_down )"
+				0="image( x0 + 9, y0 + 9, x1, y1, graphics/buttons/collapser_up )"
 			}
 		}
 
 		ListPanelSectionCollapser:selected:hover {
 			render_bg {
-				0="image( x0 + 9, y0 + 8, x1, y1, graphics/buttons/sm_down_hover )"
+				0="image( x0 + 9, y0 + 9, x1, y1, graphics/buttons/collapser_up )"
 			}
 		}
 
@@ -640,26 +646,26 @@ steam.styles
 			textcolor=none
 			padding-left=6 padding-right=0
 			render_bg {
-				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/sm_right )"
+				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/collapser_down )"
 			}
 		}
 
 		SectionedListPanelCollapser:hover {
 			render_bg {
-				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/sm_right_hover )"
+				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/collapser_down )"
 			}
 		}
 
 		SectionedListPanelCollapser:selected {
 			padding-left=4 padding-right=0
 			render_bg {
-				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/sm_down )"
+				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/collapser_up )"
 			}
 		}
 
 		SectionedListPanelCollapser:selected:hover {
 			render_bg {
-				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/sm_down_hover )"
+				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/collapser_up )"
 			}
 		}
 
@@ -686,12 +692,12 @@ steam.styles
 		}
 
 		"ComboBox Menu" {
-			bgcolor=A2.Combo
+			bgcolor=A2.Menu
 			inset="0 -2 1 1"
 			render {
-				1="fill( x0, y1 - 1, x1, y1, A2.ComboDivider )" //btm
-				2="gradient( x0, y0, x0 + 1, y1, A2.Combo, A2.ComboDivider )"
-				3="gradient( x1 - 1, y0, x1, y1, A2.Combo, A2.ComboDivider )"
+				1="fill( x0, y1 - 1, x1, y1, A2.MenuDivider )" //btm
+				2="gradient( x0, y0, x0 + 1, y1, A2.Menu, A2.MenuDivider )"
+				3="gradient( x1 - 1, y0, x1, y1, A2.Menu, A2.MenuDivider )"
 			}
 		}
 
@@ -979,11 +985,13 @@ steam.styles
 		}
 
 		Slider {
-			textcolor=A2.Ribbon //slider color
+			minimum-height=30
+			inset-top=5
+			textcolor=Text.Secondary //slider color
 		}
 
 		Slider:focus {
-		  textcolor=A2.Ribbon
+			textcolor=Text.Secondary //slider color
 		}
 
 		TextEntry {

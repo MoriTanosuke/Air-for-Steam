@@ -3,24 +3,26 @@
 	layout {
 		place { control=EnableOverlayCheck									width=max margin-top=-4 }
 
-		place { control=HotKeySelectorLabel									dir=down x=200 start=EnableOverlayCheck margin-top=20 }
-		place { control=HotKeySelector											dir=down width=180 start=HotKeySelectorLabel margin-top=10 }
-		place { control=OverlayHomePageLabel								dir=down start=EnableOverlayCheck margin-top=20 }
-		place { control=OverlayHomePage											dir=down width=180 start=OverlayHomePageLabel margin-top=10 }
+		place { control=OverlayHomePageLabel								dir=down x=200 start=EnableOverlayCheck y=30 }
+		place { control=OverlayHomePage											dir=down width=180 start=OverlayHomePageLabel y=5 }
 
-		place { control=PingRateLabel												dir=down width=max start=OverlayHomePage margin-top=30 }
-		place { control=PingRateCombo												dir=down width=180 start=PingRateLabel margin-top=10 }
+		place { control=HotKeySelectorLabel									dir=down start=EnableOverlayCheck y=30 }
+		place { control=HotKeySelector											dir=down width=180 start=HotKeySelectorLabel y=5 }
 
-		place { control=ScreenshotLabel											dir=down start=PingRateCombo margin-top=30 }
-		place { control=ScreenshotHotKeySelector						dir=down width=180 start=ScreenshotLabel margin-top=10 }
+		place { control=ScreenshotLabel											dir=down start=HotKeySelector y=30 }
+		place { control=ScreenshotHotKeySelector						dir=down width=180 start=ScreenshotLabel y=5 }
 
-		place { control=ScreenshotActionLabel								dir=down start=ScreenshotHotKeySelector margin-top=20 }
-		place { control=ScreenshotNotifyCheck								dir=down start=ScreenshotActionLabel margin-top=5 }
-		place { control=ScreenshotPlaySoundCheck						dir=down start=ScreenshotNotifyCheck margin-top=-2 }
-		place { control=ScreenshotSaveUncompressedCheck			dir=down start=ScreenshotPlaySoundCheck margin-top=-2 }
+		place { control=ScreenshotActionLabel								dir=down start=ScreenshotHotKeySelector y=30 }
+		place {
+			control=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck
+			dir=down start=ScreenshotActionLabel y=5
+		}
 
-		place { control=SetScreenshotFolderButton						dir=down start=ScreenshotSaveUncompressedCheck margin-top=10 }
+		place { control=SetScreenshotFolderButton						dir=down start=ScreenshotSaveUncompressedCheck y=10 }
 
-		place { control=DescriptionLabel,Divider1,TitleLabel,PingRateInfo height=0 width=0 }
+		place { control=PingRateLabel												dir=down width=max start=SetScreenshotFolderButton y=30 }
+		place { control=PingRateCombo												dir=down width=max start=PingRateLabel y=5 }
+
+		place { control=Divider1,DescriptionLabel,TitleLabel,PingRateInfo height=0 width=0 }
 	}
 }

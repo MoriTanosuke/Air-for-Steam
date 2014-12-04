@@ -104,18 +104,18 @@
 
 		//place { control="null_placer" region="details" width=1 align=bottom margin-bottom=2 }
 
-		place { control=multi_img 																											region=details y=60 align=top-center }
-		place { control=multi_img_count 																								region=details y=69 align=top-center margin-right=6 }
-		place { control=multi_img_selected 																							region=details y=160 align=top-center }
-		place { control=multi_img_upload_size,multi_img_upload_size_info 								region=details y=185 align=top-center spacing=5 }
-		place { control=multi_img_storage_remaining,multi_img_storage_remaining_info 		region=details y=200 align=top-center spacing=5 }
-		place { control=multi_img_delete,multi_img_upload 															region=details y=240 align=top-center spacing=10 }
+		place { control=multi_img 																											region=details y=80 align=top-center }
+		place { control=multi_img_count 																								region=details y=89 align=top-center margin-right=6 }
+		place { control=multi_img_selected 																							region=details y=180 align=top-center }
+		place { control=multi_img_upload_size,multi_img_upload_size_info 								region=details y=205 align=top-center spacing=5 }
+		place { control=multi_img_storage_remaining,multi_img_storage_remaining_info 		region=details y=220 align=top-center spacing=5 }
 
 		place { control=file_not_loaded_label 													region=details y=140 align=top-center }
 		place { control=instr_no_selection_title,instr_no_selection 		region=details y=50 width=max dir=down spacing=10 margin-left=40 margin-right=40 }
 
 		place { control=multiselect_button,view_local_library_button,view_screenshots 		region=buttons align=left spacing=10 margin-left=26 margin-bottom=10 }
 		place { control=delete_button,details_button,publish_button 											region=buttons align=right spacing=10 margin-right=26 margin-bottom=10 }
+		place { control=multi_img_delete,multi_img_upload 																region=buttons align=right spacing=10 margin-right=26 margin-bottom=10 }
 
 		place { control=selectorlabel,null_placer height=0 width=0 }
 	}

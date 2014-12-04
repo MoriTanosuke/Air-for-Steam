@@ -3,7 +3,7 @@
 	styles
 	{
 		GridItemChrome {
-			bgcolor=AD80
+			bgcolor=Overlay.Background
 		}
 
 		ChromeBorderItem { }
@@ -23,8 +23,6 @@
 		place { control="launch" region="touchscreen" height=max align=top-center }
 		place { control="chromeborder" width=max height=max }
 
-		//Hidden Items
-		region { name=hidden height=0 width=0 }
-		place { control="divider,details" region=hidden }
+		place { control="divider,details" height=0 width=0 }
 	}
 }

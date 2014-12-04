@@ -10,13 +10,13 @@
 
 		topbar {
 			font-family=condensed
-			textcolor=White
+			textcolor=Text.Overlay
 			font-size=120
 		}
 
 		clocksuffix {
 			font-family=condensed
-			textcolor=Air210
+			textcolor=Text.OverlaySoft
 			font-size=120
 		}
 
@@ -26,11 +26,11 @@
 
 		OverlayURLLabel {
 			textcolor=none
-			bgcolor=AL10
 		}
 
 		OverlayURLLabel:Hover {
 			textcolor=none
+			bgcolor=AL10
 		}
 
 		bottomfade {

@@ -6,13 +6,18 @@
 		detailsboxtitle {
 			font-family=condensed
 			font-size=40
-			font-style=uppercase
+			font-weight=700
 			textcolor=Focus
+			font-style=uppercase
 		}
 
 		button {
 			textcolor=none
 			render_bg { }
+		}
+
+		button:hover {
+			bgcolor=AL10
 		}
 
 		highlight {
@@ -36,7 +41,7 @@
 
 	layout
 	{
-		place { control=TitleText align=top-center }
+		place { control=TitleText align=top-center y=33 }
 
 		place { control=*achievement y=51 width=0 height=0 align=top-center }
 
