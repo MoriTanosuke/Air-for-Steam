@@ -15,7 +15,7 @@
 		FriendsSearch:empty {
 			textcolor=none
 			padding-top=3
-			image="graphics/icons/search"
+			image="graphics/material/icons/search"
 		}
 
 		CFriendsListSectionAffordance {

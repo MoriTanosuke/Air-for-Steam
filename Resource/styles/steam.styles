@@ -714,21 +714,21 @@ steam.styles
 			minimum-width=50
 			textcolor=none
 			render_bg {
-				1="image( x0 + 24, y0 + 14, x1, y1, graphics/icons/hamburger )"
+				1="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger )"
 			}
 		}
 
 		"MenuBar MenuButton:hover" {
 			textcolor=none
 			render_bg {
-				1="image( x0 + 24, y0 + 14, x1, y1, graphics/icons/hamburger_hover )"
+				1="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger_hover )"
 			}
 		}
 
 		"MenuBar MenuButton:selected" {
 			textcolor=none
 			render_bg {
-				1="image( x0 + 24, y0 + 14, x1, y1, graphics/icons/hamburger_hover )"
+				1="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger_hover )"
 			}
 		}
 
@@ -1071,9 +1071,9 @@ steam.styles
 
 		GameColumnHeaderFavorites {
 			textcolor=none
-			inset-top=-10
+			inset-top=-8
 			inset-left=-1
-			image=graphics/icons/fav
+			image=graphics/material/icons/favorite_header
 		}
 
 		CGamesListFavoritesToggle {
@@ -1082,15 +1082,15 @@ steam.styles
 		}
 
 		CGamesListFavoritesToggle:hover {
-			image=graphics/icons/fav
+			image=graphics/material/icons/favorite
 		}
 
 		CGamesListFavoritesToggle:selected {
-			image=graphics/icons/fav
+			image=graphics/material/icons/favorite
 		}
 
 		CGamesListFavoritesToggle:selected:hover {
-			image=graphics/none
+			image=graphics/material/icons/favorite_outline
 		}
 
 		WrapPanel { }
@@ -1136,7 +1136,7 @@ steam.styles
 		}
 
 		LibrarySearchIcon {
-			image="graphics/icons/search"
+			image="graphics/material/icons/search"
 		}
 
 		FriendsSearch {
@@ -1156,7 +1156,7 @@ steam.styles
 		}
 
 		FriendsSearchIcon {
-			image="graphics/icons/search"
+			image="graphics/material/icons/search"
 		}
 
 		rightcolumnheadertext {

@@ -1,3 +1,11 @@
+Material Light:
+Primary		115
+Secondary	190
+
+OnFocus		255
+OnFocusSoft	255 (190 alpha)
+
+
 Dark img on light bg:
 Primary 	175 175 175 255
 Primary hover 	150 150 150 255

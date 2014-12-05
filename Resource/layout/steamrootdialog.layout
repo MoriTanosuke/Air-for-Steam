@@ -43,20 +43,20 @@
 		inbox_button_active {
 		textcolor=none
 			render_bg {
-				2="image( x0 + 9, y0 + 8, x1, y1, graphics/icons/inbox )"
+				2="image( x0 + 9, y0 + 8, x1, y1, graphics/material/icons/inbox )"
 			}
 		}
 
 		inbox_button_active:hover {
 			render_bg {
-				2="image( x0 + 9, y0 + 8, x1, y1, graphics/icons/inbox )"
+				2="image( x0 + 9, y0 + 8, x1, y1, graphics/material/icons/inbox )"
 			}
 		}
 
 		inbox_button_active:selected {
 			render_bg {
 				1="image( x0, y0, x1, y1, graphics/material/active_circle )"
-				2="image( x0 + 9, y0 + 8, x1, y1, graphics/icons/inbox )"
+				2="image( x0 + 9, y0 + 8, x1, y1, graphics/material/icons/inbox )"
 
 			}
 		}

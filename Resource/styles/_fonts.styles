@@ -78,7 +78,7 @@
 	friends_chat_text_self														{ textcolor=Chat.Self }
 	friends_chat_history															{ textcolor=Chat.History }
 	friends_chat_bright_event													{ font-family=medium }
-	friends_chat_url																	{ textcolor=Focus }
+	friends_chat_url																	{ textcolor=Text.Secondary font-style=underline }
 	friends_chat_name_ingame													{ textcolor=Friends.InGameColor }
 	friends_chat_name																	{ textcolor=Friends.OnlineColor }
 //friends_chat_event																{ }
