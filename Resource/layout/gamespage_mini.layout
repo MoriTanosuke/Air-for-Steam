@@ -44,7 +44,7 @@
 		{
 		place { control=frame_minimize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
 		place { control=frame_captiongrip margin=2 width=max height=50 }
-		place [!$OSX] { control=MenuBar align=top width=50 height=49 }
+		place [!$OSX] { control=MenuBar align=top width=51 height=49 }
 
 		region { name=nav height=36 width=max y=10 x=55 }
 		region { name="body" y=49 height=max width=max }

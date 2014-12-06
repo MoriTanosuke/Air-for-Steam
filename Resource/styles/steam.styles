@@ -711,10 +711,10 @@ steam.styles
 		MenuBar { }
 
 		"MenuBar MenuButton" {
-			minimum-width=50
+			minimum-width=51
 			textcolor=none
 			render_bg {
-				1="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger )"
+				1="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger_soft )"
 			}
 		}
 
@@ -728,7 +728,8 @@ steam.styles
 		"MenuBar MenuButton:selected" {
 			textcolor=none
 			render_bg {
-				1="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger_hover )"
+				1="image( x0 + 17, y0 + 7, x1, y1, graphics/material/active_circle )"
+				2="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger_hover )"
 			}
 		}
 

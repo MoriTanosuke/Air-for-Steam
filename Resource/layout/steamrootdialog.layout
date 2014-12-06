@@ -43,20 +43,20 @@
 		inbox_button_active {
 		textcolor=none
 			render_bg {
-				2="image( x0 + 9, y0 + 8, x1, y1, graphics/material/icons/inbox )"
+				2="image( x0 + 9, y0 + 8, x1, y1, graphics/material/icons/inbox_soft )"
 			}
 		}
 
 		inbox_button_active:hover {
 			render_bg {
-				2="image( x0 + 9, y0 + 8, x1, y1, graphics/material/icons/inbox )"
+				2="image( x0 + 9, y0 + 8, x1, y1, graphics/material/icons/inbox_soft )"
 			}
 		}
 
 		inbox_button_active:selected {
 			render_bg {
 				1="image( x0, y0, x1, y1, graphics/material/active_circle )"
-				2="image( x0 + 9, y0 + 8, x1, y1, graphics/material/icons/inbox )"
+				2="image( x0 + 9, y0 + 8, x1, y1, graphics/material/icons/inbox_soft )"
 
 			}
 		}
@@ -99,7 +99,7 @@
 	{
 		place { control=frame_minimize,frame_maximize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
 		place { control=frame_captiongrip margin=2 width=max height=50 }
-		place [!$OSX] { control=MenuBar align=top width=50 height=49 }
+		place [!$OSX] { control=MenuBar align=top width=51 height=49 }
 
 		region { name=nav height=50 width=max }
 		region { name=notification height=40 width=max align=bottom }
