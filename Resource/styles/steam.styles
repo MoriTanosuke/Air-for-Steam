@@ -597,8 +597,14 @@ steam.styles
 			render { } //fill makes dragger visible
 		}
 
+		ListPanelSectionHeader {
+			padding-left=5
+			padding-bottom=2
+		}
+
 		"CSteamRootDialog ListPanelSectionHeader" {
 			minimum-height=30
+			padding-left=3
 			render_bg {
 				0="fill( x0 - 26, y1 - 1, x1, y1, A2.Divider )"
 			}
@@ -606,73 +612,69 @@ steam.styles
 
 		"CGamesPage_Mini ListPanelSectionHeader" {
 			minimum-height=30
+			padding-left=3
 			render_bg {
 				0="fill( x0 - 26, y1 - 1, x1, y1, A2.Divider )"
 			}
 		}
 
-		ListPanelSectionHeader {
-			padding-left=5
-			padding-bottom=2
-		}
-
 		CFriendsListSectionHeader {
-			inset-left=3
+			inset-left=1
 		}
 
 		ListPanelSectionCollapser {
 			minimum-height=0 //reset for button height
 			textcolor=none
-			padding-left=6 padding-right=0
+			padding-left=4 padding-right=0
 			render_bg {
-				0="image( x0 + 9, y0 + 9, x1, y1, graphics/buttons/collapser_down )"
+				0="image( x0 + 7, y0 + 9, x1, y1, graphics/buttons/collapser_down )"
 			}
 		}
 
 		ListPanelSectionCollapser:hover {
 			render_bg {
-				0="image( x0 + 9, y0 + 9, x1, y1, graphics/buttons/collapser_down )"
+				0="image( x0 + 7, y0 + 9, x1, y1, graphics/buttons/collapser_down )"
 			}
 		}
 
 		ListPanelSectionCollapser:selected {
-			padding-left=4 padding-right=0
+			padding-left=2 padding-right=0
 			render_bg {
-				0="image( x0 + 9, y0 + 9, x1, y1, graphics/buttons/collapser_up )"
+				0="image( x0 + 7, y0 + 9, x1, y1, graphics/buttons/collapser_up )"
 			}
 		}
 
 		ListPanelSectionCollapser:selected:hover {
 			render_bg {
-				0="image( x0 + 9, y0 + 9, x1, y1, graphics/buttons/collapser_up )"
+				0="image( x0 + 7, y0 + 9, x1, y1, graphics/buttons/collapser_up )"
 			}
 		}
 
 		SectionedListPanelCollapser {
 			minimum-height=0 //reset for button height
 			textcolor=none
-			padding-left=6 padding-right=0
+			padding-left=4 padding-right=0
 			render_bg {
-				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/collapser_down )"
+				0="image( x0 + 7, y0 + 5, x1, y1, graphics/buttons/collapser_down )"
 			}
 		}
 
 		SectionedListPanelCollapser:hover {
 			render_bg {
-				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/collapser_down )"
+				0="image( x0 + 7, y0 + 5, x1, y1, graphics/buttons/collapser_down )"
 			}
 		}
 
 		SectionedListPanelCollapser:selected {
-			padding-left=4 padding-right=0
+			padding-left=2 padding-right=0
 			render_bg {
-				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/collapser_up )"
+				0="image( x0 + 7, y0 + 5, x1, y1, graphics/buttons/collapser_up )"
 			}
 		}
 
 		SectionedListPanelCollapser:selected:hover {
 			render_bg {
-				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/collapser_up )"
+				0="image( x0 + 7, y0 + 5, x1, y1, graphics/buttons/collapser_up )"
 			}
 		}
 

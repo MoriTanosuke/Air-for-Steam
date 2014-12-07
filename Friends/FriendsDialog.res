@@ -24,9 +24,9 @@
 			padding-bottom=1
 		}
 
-		CFriendsListSectionHeader {
+		//CFriendsListSectionHeader {
 			//!bug - style does not work (can only edit with basic label tag)
-		}
+		//}
 
 		downarrow {
 			image="graphics/buttons/caret_down"
