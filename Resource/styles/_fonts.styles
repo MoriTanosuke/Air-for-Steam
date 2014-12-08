@@ -16,12 +16,13 @@
 
 	//Body					16px, 400, basefont, text.primary, regular				//
 	//Caption				16px, 400, basefont, text.secondary, regular			//
+	//Subhead (up)	16px, 500, medium, text.primary, UPPERCASE				//
 	//Subhead				18px, 500, medium, text.secondary, regular				//
-	//Headline			40px, 700, condensed, text.secondary, uppercase		//
+	//Headline			40px, 700, condensed, text.secondary, UPPERCASE		//
 	//Display				60px, 400, condensed, text.secondary, regular			//
 
 	//Notification	16px, 500, medium, text.white, regular						//
-	//Button				16px, 700, basefont, focus, uppercase							//
+	//Button				16px, 700, basefont, focus, UPPERCASE							//
 
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
@@ -244,11 +245,13 @@
 
 	//sections
 	mostrecent_label																	{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
-	mostrecent_unlockedsofar													{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Secondary font-style=regular }
+	mostrecent_unlockedsofar													{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
+
+	infolabel																					{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
 
 	//news
 	title_label																				{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
-	date_and_author																		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Secondary font-style=regular }
+	date_and_author																		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
 
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
