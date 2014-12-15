@@ -1,8 +1,8 @@
-"friends/gameinvitebar.res"
+"friends/broadcastinvitebar.res"
 {
-	styles
-	{
-		CChatInfoBar {
+	styles {
+
+		CBroadcastInviteBar {
 			render_bg {
 				0="fill( x0, y0, x1, y1, A2.Bar )"
 			}
@@ -17,7 +17,7 @@
 
 		Button:hover {
 			render_bg {
-				0="image( x0, y0, x1, y1, graphics/material/web/close_hover )"
+				1="image( x0, y0, x1, y1, graphics/material/web/close_hover )"
 			}
 		}
 
@@ -27,8 +27,11 @@
 	layout {
 		region { name=box width=max height=max margin-left=26 margin-right=26 }
 
-		place { control=InfoLabel region=box width=max y=11 margin-right=40 align=top-center }
+		place { control=InviteLabel,GameLabel region=box y=8 margin-right=40 spacing=3 align=top-center }
+		place { control=ClickHereLabel region=box y=29 margin-right=40 spacing=3 align=top-center }
 
 		place { control=CloseButton region=box align=right width=14 height=14 y=20 }
+
+		place { control=InviteImage width=0 height=0 }
 	}
 }

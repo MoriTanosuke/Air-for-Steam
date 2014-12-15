@@ -12,22 +12,23 @@
 		CloseStyle {
 			textcolor=none
 			render_bg {
-				0="image( x0 + 3, y0 + 3, x1, y1, graphics/buttons/tiny_x )"
+				0="image( x0, y0, x1, y1, graphics/material/web/close )"
 			}
 		}
 
 		CloseStyle:hover {
 			render_bg {
-				1="image( x0 + 3, y0 + 3, x1, y1, graphics/buttons/tiny_x_hover )"
+				0="image( x0, y0, x1, y1, graphics/material/web/close_hover )"
 			}
 		}
 	}
 
-	layout
-	{
-		place { control="emailreminderbarlabel,emailreminderbaremail_email,emailreminderbar_yesbutton,emailreminderbar_nobutton" y=9 x=26 margin-right=27 align=top-center spacing=10 }
-		place { control="emailreminderbar_info,emailreminderbar_infolink" y=29 x=26 margin-right=27 spacing=10 align=top-center }
+	layout {
+		region { name=box width=max height=max margin-left=26 margin-right=26 }
 
-		place { control="emailreminderbar_close" y=6 align=right width=15 height=15 margin-right=6 }
+		place { control=emailreminderbarlabel,emailreminderbaremail_email,emailreminderbar_yesbutton,emailreminderbar_nobutton y=9 margin-right=40 spacing=10 align=top-center }
+		place { control=emailreminderbar_info,emailreminderbar_infolink y=29 margin-right=40 spacing=10 align=top-center }
+
+		place { control=emailreminderbar_close region=box align=right width=14 height=14 y=20 }
 	}
 }

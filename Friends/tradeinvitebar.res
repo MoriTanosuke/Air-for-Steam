@@ -11,26 +11,27 @@
 		Button {
 			textcolor=none
 			render_bg {
-				0="image( x0 + 3, y0 + 3, x1, y1, graphics/buttons/tiny_x )"
+				0="image( x0, y0, x1, y1, graphics/material/web/close )"
 			}
 		}
 
 		Button:hover {
 			render_bg {
-				1="image( x0 + 3, y0 + 3, x1, y1, graphics/buttons/tiny_x_hover )"
+				0="image( x0, y0, x1, y1, graphics/material/web/close_hover )"
 			}
 		}
 
 		Label { font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
 	}
 
-	layout
-	{
-		place { control="InviteLabel,InviteSentLabel" y=8 x=10 margin-right=27 align=top-center }
-		place { control="ClickHereLabel,WaitingForResponseLabel" y=29 x=10 margin-right=27 align=top-center }
+	layout {
+		region { name=box width=max height=max margin-left=26 margin-right=26 }
 
-		place { control="CloseButton" y=6 align=right width=15 height=15 margin-right=6 }
+		place { control=InviteLabel,InviteSentLabel region=box y=8 margin-right=40 spacing=3 align=top-center }
+		place { control=ClickHereLabel,WaitingForResponseLabel region=box y=29 margin-right=40 spacing=3 align=top-center }
 
-		place { control="InviteImage,InviteSentImage" height=0 width=0 }
+		place { control=CloseButton region=box align=right width=14 height=14 y=20 }
+
+		place { control=InviteImage,InviteSentImage height=0 width=0 }
 	}
 }

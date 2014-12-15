@@ -28,8 +28,7 @@
 		Label { font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
 	}
 
-	layout
-	{
+	layout {
 		place { control=VoiceImage align=left x=20 y=16 }
 		place { control=StatusLabel align=left start=VoiceImage x=9 y=3 margin-right=13 end-right=action2 }
 		place { control=micvolume,speakervolume align=left x=20 y=18 spacing=23 end-right=action2 }

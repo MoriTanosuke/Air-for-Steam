@@ -39,12 +39,12 @@
 		region { name=status align=bottom height=90 width=max margin-bottom=60 }
 		region { name=bottom align=bottom height=60 width=max }
 
-		place { control="VoiceBar,TradeInviteBar,GameInviteBar,ChatInfoBar" width=max height=55 }
+		place { control="VoiceBar,TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar" width=max height=55 }
 
 		place { control="VoiceChat" region=chat align=right y=12 margin-right=26 }
 		place { control="VoiceBar" region=chat align=left width=max height=55 end-right=VoiceChat }
 
-		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,ChatHistory" region=chat start=VoiceBar width=max height=max dir=down margin-bottom=-15 }
+		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory" region=chat start=VoiceBar width=max height=max dir=down margin-bottom=-15 }
 
 		place { control="StatusLabel"					region=status width=max height=max margin-left=10 margin-right=10 }
 

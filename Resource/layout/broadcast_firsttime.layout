@@ -1,0 +1,40 @@
+"friends/broadcast_firsttime.layout"
+{
+	styles {
+
+		IntroHeading {
+			font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular
+		}
+
+		PermissionHeader {
+		}
+
+		PermissionOption {
+		}
+
+		ViewerRequest {
+		}
+	}
+
+	layout {
+		region { name=box height=max width=max y=50 margin-right=26 margin-left=26 }
+
+		place { control=Header									region=box width=max }
+
+		place { control=ViewerAvatar						region=box dir=down width=50 height=50 start=Header margin-left=-4 margin-top=6 y=17 }
+		place { control=ViewerRequest						region=box dir=right width=max start=ViewerAvatar margin-left=3 y=16 }
+
+		place { control=PermissionHeader				region=box dir=down width=max start=ViewerAvatar y=20 }
+		place {
+			control=PermissionInvite,PermissionAccept,PermissionFriends,PermissionPublic
+			region=box dir=down width=max start=PermissionHeader y=5
+		}
+
+		place { control=DesktopOnlyLabel				region=box dir=down width=max start=PermissionPublic y=20 }
+
+		place { control=FAQLink									region=box align=bottom margin-bottom=17 }
+
+		region { name=buttons region=box width=max height=40 align=bottom }
+		place { control=NextButton region=buttons align=right spacing=10 }
+	}
+}
