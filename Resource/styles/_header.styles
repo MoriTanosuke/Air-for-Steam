@@ -9,18 +9,24 @@
 			}
 		}
 
+		"CSteamRootDialog WebPanelStyle" {
+			render {
+				0="image_tiled( x0, y0 + 2, x1, y0 + 8, graphics/material/layout/shadow )"
+			}
+		}
+
 		CGamesPage_List {
 			render_bg {
 				0="fill( x0, y0 - 10, x1, y0 + 21, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 21, x1, y0 + 27, graphics/material/shadow )"
+				0="image_tiled( x0, y0 + 21, x1, y0 + 27, graphics/material/layout/shadow )"
 			}
 		}
 
 		CGamesPage_Details {
 			render {
-				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/shadow )"
+				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/layout/shadow )"
 			}
 		}
 
@@ -29,13 +35,13 @@
 				0="fill( x0, y0 - 30, x1, y0, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/shadow )"
+				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/layout/shadow )"
 			}
 		}
 
 		CMusicPage_Details {
 			render {
-				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/shadow )"
+				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/layout/shadow )"
 			}
 		}
 
@@ -44,7 +50,7 @@
 				0="fill( x0, y0, x1, y0 + 130, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 130, x1, y0 + 136, graphics/material/shadow )"
+				0="image_tiled( x0, y0 + 130, x1, y0 + 136, graphics/material/layout/shadow )"
 			}
 		}
 
@@ -55,7 +61,7 @@
 				0="fill( x0, y0, x1, y0 + 50, Focus )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow )"
+				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/layout/shadow )"
 			}
 		}
 
@@ -68,7 +74,7 @@
 				1="fill( x0, y0 + 50, x1, y0 + 80, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/shadow )"
+				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow )"
 			}
 		}
 
@@ -103,7 +109,7 @@
 				1="fill( x0, y0 + 132, x1, y1, A2.Background )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow )"
+				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/layout/shadow )"
 			}
 		}
 
@@ -117,7 +123,7 @@
 				2="fill( x0, y0 + 50, x1, y0 + 100, A2.Bar )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 100, x1, y0 + 106, graphics/material/shadow )"
+				0="image_tiled( x0, y0 + 100, x1, y0 + 106, graphics/material/layout/shadow )"
 			}
 		}
 
@@ -128,7 +134,7 @@
 				0="fill( x0, y0, x1, y0 + 50, Focus )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow )"
+				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/layout/shadow )"
 			}
 		}
 	}

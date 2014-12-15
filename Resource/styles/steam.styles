@@ -713,7 +713,7 @@ steam.styles
 		MenuBar { }
 
 		"MenuBar MenuButton" {
-			minimum-width=51
+			minimum-width=52
 			textcolor=none
 			render_bg {
 				1="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger_soft )"
@@ -730,7 +730,7 @@ steam.styles
 		"MenuBar MenuButton:selected" {
 			textcolor=none
 			render_bg {
-				1="image( x0 + 17, y0 + 7, x1, y1, graphics/material/active_circle )"
+				1="image( x0 + 17, y0 + 7, x1, y1, graphics/material/layout/active_circle )"
 				2="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger_hover )"
 			}
 		}
@@ -1098,8 +1098,8 @@ steam.styles
 
 		WrapPanel { }
 
-		BackButton 							{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/buttons/web_back }
-		BackButton:hover 				{ render_bg { } image=graphics/buttons/web_back_hover }
+		BackButton 							{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/material/web/back }
+		BackButton:hover 				{ render_bg { } image=graphics/material/web/back }
 		BackButton:disabled 		{ render_bg { } image=graphics/none }
 
 		ForwardButton 					{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/buttons/web_forward }
@@ -1114,8 +1114,8 @@ steam.styles
 		StopButton:hover 				{ render_bg { } image=graphics/buttons/web_stop_hover }
 		StopButton:disabled 		{ render_bg { } image=graphics/none }
 
-		BackButtonSm 							{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/buttons/web_back }
-		BackButtonSm:hover 				{ render_bg { } image=graphics/buttons/web_back_hover }
+		BackButtonSm 							{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/material/web/back }
+		BackButtonSm:hover 				{ render_bg { } image=graphics/material/web/back_hover }
 		BackButtonSm:disabled 		{ render_bg { } image=graphics/none }
 
 		ForwardButtonSm 					{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/buttons/web_forward }

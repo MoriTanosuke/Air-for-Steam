@@ -93,11 +93,11 @@
 
 		place {
 			control=back
-			region=nav height=30 width=28 y=9
+			region=nav height=30 width=28 y=10
 		}
 		place {
 			control=label_store,label_library
-			region=nav start=back height=44 spacing=16 x=10 margin-top=-6
+			region=nav start=back height=44 spacing=16 x=10 margin-top=-7
 		}
 		place {
 			control=library_filters

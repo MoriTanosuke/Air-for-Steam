@@ -50,7 +50,7 @@
 		{
 		place { control=frame_minimize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
 		place { control=frame_captiongrip margin=2 width=max height=77 } //entire blue area grabbable
-		place [!$OSX] { control=MenuBar align=top width=51 height=49 margin-left=-10 }
+		place [!$OSX] { control=MenuBar align=top width=52 height=49 margin-left=-10 }
 
 		region { name=nav height=50 width=max }
 		region { name=body y=50 height=max width=max }
