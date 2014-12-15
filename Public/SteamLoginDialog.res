@@ -13,7 +13,7 @@
 
 		place { control=ImagePanelLogo align=top-center y=80 }
 
-		place { control=UserNameEdit,PasswordEdit 							align=top-center dir=down y=140 spacing=10 }
+		place { control=UserNameEdit,PasswordEdit 							align=top-center dir=down width=300 y=140 spacing=10 }
 		place { control=PasswordCapsLockImage										start=PasswordEdit dir=right x=-27 Y=4 }
 		place { control=SavePasswordCheck start=PasswordEdit 		align=top-center dir=down y=20 }
 
