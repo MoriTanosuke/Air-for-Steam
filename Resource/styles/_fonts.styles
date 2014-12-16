@@ -277,8 +277,8 @@
 
 	"CSteamRootDialog ModuleHeading"									{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
 	"CSteamRootDialog ModuleHeading2"									{ font-family=condensed font-size=40 font-weight=700 textcolor=Text.Label font-style=uppercase }
-	"CSteamRootDialog SectionedListPanel label"				{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Primary font-style=uppercase }
-	"CSteamRootDialog SectionedListPanel label2"			{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Secondary font-style=uppercase }
+	"CSteamRootDialog SectionedListPanel label"				{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular }
+	"CSteamRootDialog SectionedListPanel label2"			{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
 	settingslink																			{ font-family=basefont font-size=16 font-weight=700 textcolor=Focus font-style=uppercase }
 
 	PauseButton																				{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.OnFocus font-style=uppercase }
