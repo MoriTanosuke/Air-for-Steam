@@ -246,6 +246,7 @@
 	//sections
 	mostrecent_label																	{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
 	mostrecent_unlockedsofar													{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
+	everythinglabel																		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
 
 	infolabel																					{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
 
