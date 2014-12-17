@@ -106,19 +106,19 @@
 
 		place {
 			control=account_balance
-			region=nav align=right y=10 height=30 margin-right=126 //height=30
+			region=nav align=right y=10 height=30 margin-right=130
 		}
 		place {
 			control=InboxButton
-			region=nav align=right y=7 height=50 width=36 margin-right=195
+			region=nav align=right y=7 height=50 width=36 margin-right=25 end-right=account_balance
 		}
 		place {
 			control=online_friends
-			region=nav align=right height=0 margin-right=180 // height=30
+			region=nav align=right height=0 margin-right=180 //height=30
 		}
 		place {
 			control=view_friends
-			region=nav align=right height=0 width=66 margin-right=180 // height=30
+			region=nav align=right height=0 width=66 margin-right=180 //height=30
 		}
 		place {
 			control=ParentalLockButton
