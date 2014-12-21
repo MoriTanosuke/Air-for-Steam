@@ -3,7 +3,7 @@ Primary		115
 Secondary	190
 
 OnFocus		255
-OnFocusSoft	255 (190 alpha)
+Soft		20% black painted on top of 255 icon
 
 
 Dark img on light bg:

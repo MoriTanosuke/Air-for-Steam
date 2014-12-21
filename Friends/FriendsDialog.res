@@ -28,14 +28,6 @@
 			//!bug - style does not work (can only edit with basic label tag)
 		//}
 
-		downarrow {
-			image="graphics/buttons/caret_down"
-		}
-
-		downarrow:hover {
-			image="graphics/buttons/caret_down_hover"
-		}
-
 		PageTab {
 			inset-top=-5
 			padding-left=10
@@ -46,10 +38,9 @@
 		}
 	}
 
-		layout
-		{
+		layout {
 		place { control=frame_minimize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
-		place { control=frame_captiongrip margin=2 width=max height=77 } //entire blue area grabbable
+		place { control=frame_captiongrip margin=2 width=max height=80 } //entire focus area grabbable
 		place [!$OSX] { control=MenuBar align=top width=52 height=49 margin-left=-10 }
 
 		region { name=nav height=50 width=max }

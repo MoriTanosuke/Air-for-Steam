@@ -42,6 +42,7 @@
 
 		Divider 									{ }
 
+		Restart 									{ text="#steam_mustrestart_button"				command="RestartSteam" }
 		ChangeUser								{ text="#steam_menu_changeuser"						command="ChangeUser" }
 		GoOnline									{ text="#steamui_offlinemode_goonline"		command="goonline" }
 
@@ -52,7 +53,6 @@
 		Divider 									{ }
 
 		Settings									{ text="#steam_menu_settings"							command="Settings" }
-		Restart 									{ text="#steam_mustrestart_button"				command="RestartSteam" }
 		Exit											{ text="#steam_exitsteam"									command="Exit" }
 	}
 }

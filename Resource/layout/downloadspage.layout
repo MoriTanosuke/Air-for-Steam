@@ -11,14 +11,14 @@
 			minimum-width=30
 			padding-left=0
 			render_bg {
-				0="image( x0 + 7, y0 + 2, x1, y1, graphics/buttons/collapser_down )"
+				0="image( x0 + 7, y0 + 2, x1, y1, graphics/material/nav/expand_less )"
 			}
 		}
 
 		SectionedListPanelCollapser:selected {
 			padding-left=0
 			render_bg {
-				0="image( x0 + 7, y0 + 2, x1, y1, graphics/buttons/collapser_up )"
+				0="image( x0 + 7, y0 + 2, x1, y1, graphics/material/nav/expand_more )"
 			}
 		}
 	}

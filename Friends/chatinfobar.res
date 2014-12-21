@@ -11,13 +11,13 @@
 		Button {
 			textcolor=none
 			render_bg {
-				0="image( x0, y0, x1, y1, graphics/material/web/close )"
+				0="image( x0, y0, x1, y1, graphics/material/web/stop )"
 			}
 		}
 
 		Button:hover {
 			render_bg {
-				0="image( x0, y0, x1, y1, graphics/material/web/close_hover )"
+				0="image( x0, y0, x1, y1, graphics/material/web/stop_hover )"
 			}
 		}
 
@@ -29,6 +29,6 @@
 
 		place { control=InfoLabel region=box width=max y=11 margin-right=40 align=top-center }
 
-		place { control=CloseButton region=box align=right width=14 height=14 y=20 }
+		place { control=CloseButton region=box align=right width=14 height=14 y=21 }
 	}
 }

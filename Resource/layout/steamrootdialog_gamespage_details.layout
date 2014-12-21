@@ -56,14 +56,13 @@
 
 		place
 		{
-			control=welcomedetails,nonsteamdetails,achievementsdetails,friendsdetails,newsdetails,screenshotsdetails,clouddetails
+			control=welcomedetails,nonsteamdetails,communityfilesdetails,achievementsdetails,friendsdetails,newsdetails,screenshotsdetails,clouddetails
 			region=detailsbody
 			dir=down
 			width=max
 		}
 
 		place { control=tagslabel region=links_bg height=139 width=max }
-		place { control=communityfilesdetails region=headertext align=top width=max y=240 margin-right=40 height=64 }
 
 		place
 		{

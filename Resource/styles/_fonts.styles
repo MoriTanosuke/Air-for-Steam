@@ -152,6 +152,7 @@
 	PageTab:selected:hover														{ textcolor=Text.Secondary }
 
 	"CFriendsDialog PageTab:selected"									{ textcolor=Text.OnFocusHover } //mimic ListPanelColumnHeader
+	"CGamePropertiesDialog PageTab:selected"					{ textcolor=Text.OnFocusHover } //mimic ListPanelColumnHeader
 
 	ListPanelColumnHeader															{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.OnFocus font-style=uppercase }
 	ListPanelColumnHeader:hover												{ textcolor=Text.OnFocusHover }
@@ -208,6 +209,11 @@
 	"CSteamRootDialog bright"													{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
 	support_alert																			{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
 
+	FindEntry																					{
+																											font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular
+																											shadowtextcolor=Text.Notification
+																										}
+
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
@@ -243,7 +249,11 @@
 	gamedetails-headerlabel-green											{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
 	gamedetails-headerlabel-blue											{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
 
+
 	//sections
+	workshop_description															{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
+	communityfile_name																{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
+
 	mostrecent_label																	{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
 	mostrecent_unlockedsofar													{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
 	everythinglabel																		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
@@ -303,11 +313,11 @@
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
 	CUINavButton																			{ font-family=condensed font-size=24 font-weight=400 textcolor=Text.OnFocus font-style=regular }
-	CUINavButton:hover																{ textcolor=Text.OnFocusHover }
+//CUINavButton:hover																{ }
 	CUINavButton:selected															{ textcolor=Text.OnFocusHover }
 
 	NavLabel2																					{ font-family=condensed font-size=24 font-weight=400 textcolor=Text.OnFocus font-style=regular } //mini mode filter name
-	NavLabel2:hover																		{ textcolor=Text.OnFocusHover }
+//NavLabel2:hover																		{ }
 	NavLabel2:selected																{ textcolor=Text.OnFocusHover }
 
 	LibrarySearch																			{
@@ -315,13 +325,13 @@
 																											shadowtextcolor=Text.OnFocus //cursor color
 																											selectedbgcolor=Focus2
 																										}
-	LibrarySearch:empty:hover													{ textcolor=Text.OnFocusHover }
+//LibrarySearch:empty:hover													{ }
 	FriendsSearch																			{
 																											font-family=condensed font-size=24 font-weight=400 textcolor=Text.OnFocus font-style=regular
 																											shadowtextcolor=Text.OnFocus //cursor color
 																											selectedbgcolor=Focus2
 																										}
-	FriendsSearch:empty:hover													{ textcolor=Text.OnFocusHover }
+//FriendsSearch:empty:hover													{ }
 
 	"CMusicPlayerPanel StatusStyle"										{ font-family=condensed font-size=24 font-weight=400 textcolor=Text.OnFocus font-style=regular }
 
@@ -329,9 +339,9 @@
 	inbox_button:hover																{ textcolor=Text.OnFocusHover }
 	inbox_button:selected															{ textcolor=Text.OnFocusHover }
 
-	AccountBalanceStyle																{  font-family=medium font-size=18 font-weight=500 textcolor=Text.OnFocusHover font-style=regular }
-	AccountBalanceStyle:hover													{ textcolor=Text.OnFocusHover }
-	AccountBalanceStyle:selected											{ textcolor=Text.OnFocusHover }
+	AccountBalanceStyle																{ font-family=medium font-size=18 font-weight=500 textcolor=Text.OnFocus font-style=regular }
+//AccountBalanceStyle:hover													{ }
+//AccountBalanceStyle:selected											{ }
 
 //online_friends																		{ }
 

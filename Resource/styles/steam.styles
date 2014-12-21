@@ -3,7 +3,9 @@ steam.styles
 
 	include "resource/styles/_colors.styles"
 	include "resource/styles/_fonts.styles"
+	include "resource/styles/_controls.styles"
 	include "resource/styles/_header.styles"
+	include "resource/styles/_ribbon.styles"
 
 	colors {
 		Frame.ClientInsetX       	 						"10"
@@ -80,20 +82,6 @@ steam.styles
 			}
 		}
 
-		CPlayersDialog {
-			render_bg {
-				0="fill( x0, y0, x1, y0 + 54, Focus )"
-				1="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
-			}
-		}
-
-		CGamePropertiesDialog {
-			render_bg {
-				0="fill( x0, y0, x1, y0 + 54, Focus )"
-				1="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
-			}
-		}
-
 		CEditTagsDialog {
 			render_bg {
 				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
@@ -115,12 +103,6 @@ steam.styles
 		CRegisterCDKeyWizard {
 			render_bg {
 				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
-			}
-		}
-
-		CAddShortcutDialog {
-			render_bg {
-				0="fill( x0, y1 - 68, x1, y1, A2.Ribbon )"
 			}
 		}
 
@@ -149,12 +131,6 @@ steam.styles
 		}
 
 		CChooseBetaDialog {
-			render_bg {
-				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
-			}
-		}
-
-		CSetJumplistOptions {
 			render_bg {
 				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
 			}
@@ -213,7 +189,7 @@ steam.styles
 			inset-left=7
 			inset-top=1
 			render {
-				0="image ( x1 - 20, y0 + 9, x1, y1, graphics/buttons/caret_down )"
+				0="image ( x1 - 20, y0 + 8, x1, y1, graphics/material/nav/caret_down_primary )"
 			}
 			render_bg {
 				0="fill( x0, y0, x1, y1 + 1, Button.Hover )"
@@ -264,25 +240,23 @@ steam.styles
 		//ResumeButton:hover 						{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
 		//ResumeButton:active 					{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
 
-		SmRemoveButton				 				{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/close )" } }
-		SmRemoveButton:hover 					{ render_bg { } render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/close_hover )" } }
-		SmRemoveButton:active 				{ render_bg { } render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/close_hover )" } }
+		SmRemoveButton				 				{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } render { 1="image( x0 + 6, y0 + 5, x1, y1, graphics/material/web/stop )" } }
+		SmRemoveButton:hover 					{ render_bg { } render { 1="image( x0 + 6, y0 + 5, x1, y1, graphics/material/web/stop_hover )" } }
+		SmRemoveButton:active 				{ render_bg { } render { 1="image( x0 + 6, y0 + 5, x1, y1, graphics/material/web/stop_hover )" } }
 
-		topOfQueueButton 							{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } render { 1="image( x0 + 5, y0 + 2, x1, y1, graphics/icons/topofqueue )" } }
-		topOfQueueButton:hover 				{ render_bg { } render { 1="image( x0 + 5, y0 + 2, x1, y1, graphics/icons/topofqueue_hover )" } }
-		topOfQueueButton:active 			{ render_bg { } render { 1="image( x0 + 5, y0 + 2, x1, y1, graphics/icons/topofqueue_hover )" } }
+		topOfQueueButton 							{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } render { 1="image( x0 + 5, y0 + 4, x1, y1, graphics/material/web/top )" } }
+		topOfQueueButton:hover 				{ render_bg { } render { 1="image( x0 + 5, y0 + 4, x1, y1, graphics/material/web/top_hover )" } }
+		topOfQueueButton:active 			{ render_bg { } render { 1="image( x0 + 5, y0 + 4, x1, y1, graphics/material/web/top_hover )" } }
 
-		downarrow 				{ image="graphics/buttons/sm_down" }
-		downarrow:hover 	{ image="graphics/buttons/sm_down_hover" }
+		downarrow 				{ image="graphics/material/nav/caret_down_secondary" }
+		uparrow 					{ image="graphics/material/nav/caret_up_secondary" }
+		rightarrow 				{ image="graphics/material/nav/caret_right_secondary" }
+		leftarrow 				{ image="graphics/material/nav/caret_left_secondary" }
 
-		uparrow 					{ image="graphics/buttons/sm_up" }
-		uparrow:hover 		{ image="graphics/buttons/sm_up_hover" }
-
-		rightarrow 				{ image="graphics/buttons/sm_right" }
-		rightarrow:hover 	{ image="graphics/buttons/sm_right_hover" }
-
-		leftarrow 				{ image="graphics/buttons/sm_left" }
-		leftarrow:hover 	{ image="graphics/buttons/sm_left_hover" }
+		"CSteamRootDialog downarrow" 				{ image="graphics/material/nav/caret_down_onfocus" }
+		"CSteamRootDialog uparrow" 					{ image="graphics/material/nav/caret_up_onfocus" }
+		"CSteamRootDialog rightarrow" 			{ image="graphics/material/nav/caret_right_onfocus" }
+		"CSteamRootDialog leftarrow" 				{ image="graphics/material/nav/caret_left_onfocus" }
 
 		CheckButton 										{ image=graphics/chkUnselStd }
 		//CheckButton:hover 							{ }
@@ -301,6 +275,10 @@ steam.styles
 		"ListPanelColumnheader ListPanelCheckBox" {
 			inset-top=-2
 			inset-left=9
+		}
+
+		"CAddShortcutDialog ListPanelColumnheader ListPanelCheckBox" {
+			inset-top=7
 		}
 
 		RadioButton 								{ image=graphics/RadUnselStd }
@@ -335,141 +313,12 @@ steam.styles
 			//image=graphics/resizer_over
 		}
 
-		FrameMinimizeButton 				{ render_bg { 1="image( x0 - 3, y0 + 6, x1, y1, graphics/controls/win_min_dark )" } }
-		FrameMinimizeButton:hover 	{ render_bg { 1="image( x0 - 3, y0 + 6, x1, y1, graphics/controls/win_min_dark_hover )" } }
-		FrameMinimizeButton:active 	{ render_bg { 1="image( x0 - 3, y0 + 6, x1, y1, graphics/controls/win_min_dark_hover )" } }
-
-		FrameMaximizeButton 				{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_max_dark )" } }
-		FrameMaximizeButton:hover 	{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_max_dark_hover )" } }
-		FrameMaximizeButton:active 	{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_max_dark_hover )" } }
-
-		FrameRestoreButton 					{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_restore_dark )" } }
-		FrameRestoreButton:hover 		{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_restore_dark_hover )" } }
-		FrameRestoreButton:active 	{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_restore_dark_hover )" } }
-
-		FrameCloseButton 						{ render_bg { 0="image( x0 + 3, y0 + 6, x1, y1, graphics/controls/win_close_dark )" } }
-		FrameCloseButton:hover 			{ render_bg { 1="image( x0 + 3, y0 + 6, x1, y1, graphics/controls/win_close_dark_hover )" } }
-		FrameCloseButton:active 		{ render_bg { 1="image( x0 + 3, y0 + 6, x1, y1, graphics/controls/win_close_dark_hover )" } }
-
-
-		"CSteamRootDialog FrameMinimizeButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
-		"CSteamRootDialog FrameMinimizeButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-		"CSteamRootDialog FrameMinimizeButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-
-		"CSteamRootDialog FrameMaximizeButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_max_light )" } }
-		"CSteamRootDialog FrameMaximizeButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_max_light_hover )" } }
-		"CSteamRootDialog FrameMaximizeButton:active"	 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_max_light_hover )" } }
-
-		"CSteamRootDialog FrameRestoreButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_restore_light )" } }
-		"CSteamRootDialog FrameRestoreButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_restore_light_hover )" } }
-		"CSteamRootDialog FrameRestoreButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_restore_light_hover )" } }
-
-		"CSteamRootDialog FrameCloseButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
-		"CSteamRootDialog FrameCloseButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-		"CSteamRootDialog FrameCloseButton:active" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-
-
-		"ToolWindow FrameMinimizeButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
-		"ToolWindow FrameMinimizeButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-		"ToolWindow FrameMinimizeButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-
-		"ToolWindow FrameMaximizeButton" 									{ render_bg { } }
-		"ToolWindow FrameRestoreButton" 									{ render_bg { } }
-
-		"ToolWindow FrameCloseButton" 										{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
-		"ToolWindow FrameCloseButton:hover" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-		"ToolWindow FrameCloseButton:active" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-
-
-		"CFriendsDialog FrameMinimizeButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
-		"CFriendsDialog FrameMinimizeButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-		"CFriendsDialog FrameMinimizeButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-
-		"CFriendsDialog FrameMaximizeButton" 							{ render_bg { } }
-		"CFriendsDialog FrameRestoreButton" 							{ render_bg { } }
-
-		"CFriendsDialog FrameCloseButton" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
-		"CFriendsDialog FrameCloseButton:hover" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-		"CFriendsDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-
-
-		"CGamesPage_Mini FrameMinimizeButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
-		"CGamesPage_Mini FrameMinimizeButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-		"CGamesPage_Mini FrameMinimizeButton:active"			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-
-		"CGamesPage_Mini FrameMaximizeButton" 						{ render_bg { } }
-		"CGamesPage_Mini FrameRestoreButton" 							{ render_bg { } }
-
-		"CGamesPage_Mini FrameCloseButton" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
-		"CGamesPage_Mini FrameCloseButton:hover" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-		"CGamesPage_Mini FrameCloseButton:active" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-
-
-		"HTMLPopup FrameMinimizeButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
-		"HTMLPopup FrameMinimizeButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-		"HTMLPopup FrameMinimizeButton:active" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-
-		"HTMLPopup FrameMaximizeButton" 									{ render_bg { } }
-		"HTMLPopup FrameRestoreButton" 										{ render_bg { } }
-
-		"HTMLPopup FrameCloseButton" 											{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
-		"HTMLPopup FrameCloseButton:hover" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-		"HTMLPopup FrameCloseButton:active" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-
-
-		"CMusicPlayerPanel FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
-		"CMusicPlayerPanel FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-		"CMusicPlayerPanel FrameMinimizeButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-
-		"CMusicPlayerPanel FrameMaximizeButton" 					{ render_bg { } }
-		"CMusicPlayerPanel FrameRestoreButton" 						{ render_bg { } }
-
-		"CMusicPlayerPanel FrameCloseButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
-		"CMusicPlayerPanel FrameCloseButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-		"CMusicPlayerPanel FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-
-
-		"CSteamLoginDialog FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
-		"CSteamLoginDialog FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-		"CSteamLoginDialog FrameMinimizeButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-
-		"CSteamLoginDialog FrameMaximizeButton" 					{ render_bg { } }
-		"CSteamLoginDialog FrameRestoreButton" 						{ render_bg { } }
-
-		"CSteamLoginDialog FrameCloseButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
-		"CSteamLoginDialog FrameCloseButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-		"CSteamLoginDialog FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-
-
-		"CScreenshotManager FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
-		"CScreenshotManager FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-		"CScreenshotManager FrameMinimizeButton:active" 	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-
-		"CScreenshotManager FrameMaximizeButton" 					{ render_bg { } }
-		"CScreenshotManager FrameRestoreButton" 					{ render_bg { } }
-
-		"CScreenshotManager FrameCloseButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
-		"CScreenshotManager FrameCloseButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-		"CScreenshotManager FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-
-
-		"CDialogSettings FrameMinimizeButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
-		"CDialogSettings FrameMinimizeButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-		"CDialogSettings FrameMinimizeButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
-
-		"CDialogSettings FrameMaximizeButton" 						{ render_bg { } }
-		"CDialogSettings FrameRestoreButton" 							{ render_bg { } }
-
-		"CDialogSettings FrameCloseButton" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
-		"CDialogSettings FrameCloseButton:hover" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-		"CDialogSettings FrameCloseButton:active" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
-
 		ProgressBox {
 			minimum-height=128
 			//width is 384
 			render {
 				0="fill( x0, y0, x1, y1, A2.Background )"
-				2="image( x0, y0, x1, y1, graphics/icons/air_lg )"
+				2="image( x0, y0, x1, y1, graphics/air/air_lg )"
 			}
 		}
 
@@ -515,6 +364,18 @@ steam.styles
 		}
 
 		"CSteamRootDialog ListPanelColumnheader" {
+			inset-top=-8
+			padding-left=2
+			render_bg { }
+		}
+
+		"CPlayersDialog ListPanelColumnheader" {
+			inset-top=-8
+			padding-left=2
+			render_bg { }
+		}
+
+		"CAddShortcutDialog ListPanelColumnheader" {
 			inset-top=-8
 			padding-left=2
 			render_bg { }
@@ -627,26 +488,26 @@ steam.styles
 			textcolor=none
 			padding-left=4 padding-right=0
 			render_bg {
-				0="image( x0 + 7, y0 + 9, x1, y1, graphics/buttons/collapser_down )"
+				0="image( x0 + 7, y0 + 9, x1, y1, graphics/material/nav/expand_less )"
 			}
 		}
 
 		ListPanelSectionCollapser:hover {
 			render_bg {
-				0="image( x0 + 7, y0 + 9, x1, y1, graphics/buttons/collapser_down )"
+				0="image( x0 + 7, y0 + 9, x1, y1, graphics/material/nav/expand_less )"
 			}
 		}
 
 		ListPanelSectionCollapser:selected {
 			padding-left=2 padding-right=0
 			render_bg {
-				0="image( x0 + 7, y0 + 9, x1, y1, graphics/buttons/collapser_up )"
+				0="image( x0 + 7, y0 + 9, x1, y1, graphics/material/nav/expand_more )"
 			}
 		}
 
 		ListPanelSectionCollapser:selected:hover {
 			render_bg {
-				0="image( x0 + 7, y0 + 9, x1, y1, graphics/buttons/collapser_up )"
+				0="image( x0 + 7, y0 + 9, x1, y1, graphics/material/nav/expand_more )"
 			}
 		}
 
@@ -655,26 +516,26 @@ steam.styles
 			textcolor=none
 			padding-left=4 padding-right=0
 			render_bg {
-				0="image( x0 + 7, y0 + 5, x1, y1, graphics/buttons/collapser_down )"
+				0="image( x0 + 7, y0 + 5, x1, y1, graphics/material/nav/expand_less )"
 			}
 		}
 
 		SectionedListPanelCollapser:hover {
 			render_bg {
-				0="image( x0 + 7, y0 + 5, x1, y1, graphics/buttons/collapser_down )"
+				0="image( x0 + 7, y0 + 5, x1, y1, graphics/material/nav/expand_less )"
 			}
 		}
 
 		SectionedListPanelCollapser:selected {
 			padding-left=2 padding-right=0
 			render_bg {
-				0="image( x0 + 7, y0 + 5, x1, y1, graphics/buttons/collapser_up )"
+				0="image( x0 + 7, y0 + 5, x1, y1, graphics/material/nav/expand_more )"
 			}
 		}
 
 		SectionedListPanelCollapser:selected:hover {
 			render_bg {
-				0="image( x0 + 7, y0 + 5, x1, y1, graphics/buttons/collapser_up )"
+				0="image( x0 + 7, y0 + 5, x1, y1, graphics/material/nav/expand_more )"
 			}
 		}
 
@@ -723,7 +584,7 @@ steam.styles
 		"MenuBar MenuButton:hover" {
 			textcolor=none
 			render_bg {
-				1="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger_hover )"
+				1="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger )"
 			}
 		}
 
@@ -731,7 +592,7 @@ steam.styles
 			textcolor=none
 			render_bg {
 				1="image( x0 + 17, y0 + 7, x1, y1, graphics/material/layout/active_circle )"
-				2="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger_hover )"
+				2="image( x0 + 24, y0 + 14, x1, y1, graphics/material/icons/hamburger )"
 			}
 		}
 
@@ -780,6 +641,23 @@ steam.styles
 			render_bg {
 				0="fill( x0, y0, x1 + 2, y1, A2.Background )"
 			}
+		}
+
+		"CGamePropertiesDialog PageTab" {
+			inset-top=-5
+			padding-left=10
+		}
+
+		"CGamePropertiesDialog PageTab:selected" {
+			render_bg { }
+		}
+
+		"CPlayersDialog PageTab" {
+			inset-top=-999
+		}
+
+		"CPlayersDialog PageTab:selected" {
+			render_bg { }
 		}
 
 		TabCloseButton {
@@ -858,13 +736,13 @@ steam.styles
 			padding-left=0 padding-right=0 //reset
 			bgcolor=Scroll.Gutter
 			minimum-height=19
-			image=graphics/buttons/sm_up
+			image=graphics/scroll/sm_up
 			render_bg { }
 		}
 
 		ScrollBarButton.up:hover {
 			bgcolor=Scroll.Gutter
-			image=graphics/buttons/sm_up_hover
+			image=graphics/scroll/sm_up_hover
 			render_bg { }
 		}
 
@@ -873,13 +751,13 @@ steam.styles
 			bgcolor=Scroll.Gutter
 			minimum-height=19
 			inset-top=3
-			image=graphics/buttons/sm_down
+			image=graphics/scroll/sm_down
 			render_bg { }
 		}
 
 		ScrollBarButton.down:hover {
 			bgcolor=Scroll.Gutter
-			image=graphics/buttons/sm_down_hover
+			image=graphics/scroll/sm_down_hover
 			render_bg { }
 		}
 
@@ -887,13 +765,13 @@ steam.styles
 			padding-left=0 padding-right=0 //reset
 			bgcolor=Scroll.Gutter
 			minimum-width=19
-			image=graphics/buttons/sm_left
+			image=graphics/scroll/sm_left
 			render_bg { }
 		}
 
 		ScrollBarButton.left:hover {
 			bgcolor=Scroll.Gutter
-			image=graphics/buttons/sm_left_hover
+			image=graphics/scroll/sm_left_hover
 			render_bg { }
 		}
 
@@ -901,13 +779,13 @@ steam.styles
 			padding-left=0 padding-right=0 //reset
 			bgcolor=Scroll.Gutter
 			minimum-width=19
-			image=graphics/buttons/sm_right
+			image=graphics/scroll/sm_right
 			render_bg { }
 		}
 
 		ScrollBarButton.right:hover {
 			bgcolor=Scroll.Gutter
-			image=graphics/buttons/sm_right_hover
+			image=graphics/scroll/sm_right_hover
 			render_bg { }
 		}
 
@@ -963,6 +841,18 @@ steam.styles
 		}
 
 		"CSteamRootDialog ListPanelInterior:scrollbar" {
+			render_bg {
+				0="fill( x1, y0, x1 + 1, y1, Scroll.Gutter )" //1px missing from scrollbar on right side of list panel
+			}
+		}
+
+		"CPlayersDialog ListPanelInterior:scrollbar" {
+			render_bg {
+				0="fill( x1, y0, x1 + 1, y1, Scroll.Gutter )" //1px missing from scrollbar on right side of list panel
+			}
+		}
+
+		"CAddShortcutDialog ListPanelInterior:scrollbar" {
 			render_bg {
 				0="fill( x1, y0, x1 + 1, y1, Scroll.Gutter )" //1px missing from scrollbar on right side of list panel
 			}
@@ -1099,28 +989,30 @@ steam.styles
 		WrapPanel { }
 
 		BackButton 							{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/material/web/back }
-		BackButton:hover 				{ render_bg { } image=graphics/material/web/back }
+		BackButton:hover 				{ render_bg { } image=graphics/material/web/back_hover }
 		BackButton:disabled 		{ render_bg { } image=graphics/none }
 
-		ForwardButton 					{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/buttons/web_forward }
-		ForwardButton:hover 		{ render_bg { } image=graphics/buttons/web_forward_hover }
+		ForwardButton 					{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/material/web/forward }
+		ForwardButton:hover 		{ render_bg { } image=graphics/material/web/forward_hover }
 		ForwardButton:disabled 	{ render_bg { } image=graphics/none }
 
-		ReloadButton 						{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/buttons/web_reload }
-		ReloadButton:hover 			{ render_bg { } image=graphics/buttons/web_reload_hover }
+		ReloadButton 						{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/material/web/refresh }
+		ReloadButton:hover 			{ render_bg { } image=graphics/material/web/refresh_hover }
 		ReloadButton:disabled 	{ render_bg { } image=graphics/none }
 
-		StopButton 							{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/buttons/web_stop }
-		StopButton:hover 				{ render_bg { } image=graphics/buttons/web_stop_hover }
+		StopButton 							{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/material/web/stop }
+		StopButton:hover 				{ render_bg { } image=graphics/material/web/stop_hover }
 		StopButton:disabled 		{ render_bg { } image=graphics/none }
 
 		BackButtonSm 							{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/material/web/back }
 		BackButtonSm:hover 				{ render_bg { } image=graphics/material/web/back_hover }
 		BackButtonSm:disabled 		{ render_bg { } image=graphics/none }
 
-		ForwardButtonSm 					{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/buttons/web_forward }
-		ForwardButtonSm:hover 		{ render_bg { } image=graphics/buttons/web_forward_hover }
+		ForwardButtonSm 					{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/material/web/forward }
+		ForwardButtonSm:hover 		{ render_bg { } image=graphics/material/web/forward_hover }
 		ForwardButtonSm:disabled 	{ render_bg { } image=graphics/none }
+
+		"CSteamRootDialog BackButton:hover" 				{ render_bg { } image=graphics/material/web/back }
 
 		LibrarySearch {
 			minimum-height=0 //reset for text entry height
@@ -1180,10 +1072,6 @@ steam.styles
 		rightcolumnheadertext-blue {
 			textcolor=none
 			bgcolor=Focus3
-		}
-
-		html-findbar {
-			bgcolor=A2.Background
 		}
 	}
 }

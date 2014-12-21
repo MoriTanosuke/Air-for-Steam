@@ -12,21 +12,7 @@
 			minimum-width=16
 			render {
 				0="fill( x0, y0, x1, y1, Focus )"
-				1="image( x0 + 2, y0 + 7, x1, y1, graphics/buttons/caret_down_light )"
-			}
-		}
-
-		MenuButton:hover {
-			render {
-				0="fill( x0, y0, x1, y1, Focus )"
-				1="image( x0 + 2, y0 + 7, x1, y1, graphics/buttons/caret_down_light_hover )"
-			}
-		}
-
-		MenuButton:selected {
-			render {
-				0="fill( x0, y0, x1, y1, Focus )"
-				1="image( x0 + 2, y0 + 7, x1, y1, graphics/buttons/caret_down_light_hover )"
+				1="image( x0 + 2, y0 + 6, x1, y1, graphics/material/nav/caret_down_onfocus )"
 			}
 		}
 
@@ -34,7 +20,7 @@
 			bgcolor=none
 			render {
 				0="fill( x0, y0, x1, y1, PropertySheet.FlashTabColor )"
-				1="image( x0 + 2, y0 + 7, x1, y1, graphics/buttons/caret_down_light_hover )"
+				1="image( x0 + 2, y0 + 6, x1, y1, graphics/material/nav/caret_down_onfocus )"
 			}
 		}
 

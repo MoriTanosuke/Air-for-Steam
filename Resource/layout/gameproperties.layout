@@ -1,0 +1,12 @@
+"resource/layout/gameproperties.layout"
+{
+	layout {
+		place { control=frame_minimize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
+		place { control=frame_captiongrip margin=2 width=max height=80 } //entire focus area grabbable
+
+		place { control=Sheet height=max width=max y=52 }
+
+		region { name=buttons align=bottom height=40 }
+		place { control=OKButton region=buttons align=right spacing=10 margin-right=26 }
+	}
+}

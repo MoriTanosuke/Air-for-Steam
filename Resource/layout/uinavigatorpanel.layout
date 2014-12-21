@@ -67,13 +67,10 @@
 		}
 
 		MusicPlayerIcon {
-			image="graphics/icons/music_player"
+			image="graphics/material/music/player"
 		}
 
-		MusicPlayerIcon:hover {
-			image="graphics/icons/music_player_hover"
-		}
-
+		//music page list panel collapser icon (overriden below for game filter button)
 		NavLabel2 {
 			image=graphics/icons/collapse
 		}
@@ -81,7 +78,7 @@
 		CGameFilterMenuButton {
 			render {
 				0="fill( x0, y0, x1, y1, focus )"
-				0="image( x0, y0 + 9, x1, y1, graphics/buttons/caret_down_light_hover )"
+				0="image( x0, y0 + 8, x1, y1, graphics/material/nav/caret_down_soft )"
 			}
 		}
 	}
@@ -132,10 +129,10 @@
 		place { control=ScreenshotsPage 			region=body width=max height=max start=emailreminderbar dir=down }
 		place { control=MediaPage 						region=body width=max height=max start=emailreminderbar dir=down }
 		place { control=MusicPage_Details 		region=body width=max height=max start=emailreminderbar dir=down margin-top=-1 }
-		place { control=ToolsPage 						region=body width=max height=max start=emailreminderbar dir=down }
+		place { control=ToolsPage 						region=body width=max height=max start=emailreminderbar dir=down y=9 }
 		place { control=ConsolePage 					region=body width=max height=max start=emailreminderbar dir=down }
 
-		place { control="library_music_player_icon" align=right y=63 height=16 width=16 margin-right=24 }
+		place { control="library_music_player_icon" align=right y=64 height=24 width=24 margin-right=24 }
 
 		place { control="library_music_add_button,URLBar,forward,URLStatusImage,label_search_icon,label_library_zoom,home,refresh,stop,EVCert,subnavgroup_library,label_zoom_separator,label_library_view,library_filters_details,library_filters_list,library_filters_grid,label_community_new,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_friends,label_community_profile,label_community_marketplace,label_community_groups,BetaFlagBigPicture,fullscreen" height=0 width=0 }
 	}

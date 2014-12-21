@@ -11,13 +11,13 @@
 		Button {
 			textcolor=none
 			render_bg {
-				0="image( x0, y0, x1, y1, graphics/material/web/close )"
+				0="image( x0, y0, x1, y1, graphics/material/web/stop )"
 			}
 		}
 
 		Button:hover {
 			render_bg {
-				1="image( x0, y0, x1, y1, graphics/material/web/close_hover )"
+				1="image( x0, y0, x1, y1, graphics/material/web/stop_hover )"
 			}
 		}
 
@@ -31,7 +31,7 @@
 		place { control=InviteLabel,GameLabel region=box y=8 margin-right=40 spacing=3 align=top-center }
 		place { control=ApproveLabel,OrLabel,IgnoreLabel region=box y=29 margin-right=40 spacing=3 align=top-center }
 
-		place { control=CloseButton region=box align=right width=14 height=14 y=20 }
+		place { control=CloseButton region=box align=right width=14 height=14 y=21 }
 
 		place { control=InviteImage width=0 height=0 }
 	}

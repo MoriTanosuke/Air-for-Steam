@@ -14,17 +14,17 @@
 		}
 
 		CChatActionsButton {
-			image="graphics/icons/gear"
+			image="graphics/material/icons/gear"
 			render_bg { }
 		}
 
 		CChatActionsButton:hover {
-			image="graphics/icons/gear_hover"
+			image="graphics/material/icons/gear"
 			render_bg { }
 		}
 
 		CChatActionsButton:selected {
-			image="graphics/icons/gear_hover"
+			image="graphics/material/icons/gear"
 			render_bg { }
 		}
 

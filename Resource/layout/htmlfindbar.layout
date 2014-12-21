@@ -1,34 +1,34 @@
 "resource/layout/htmlfindbar.layout"
 {
-	styles
-	{
-		FindEntry {
+	styles {
+
+		CHTMLFindBar {
+			minimum-height=50
 			render_bg {
-				0="fill( x0, y0, x1 + 50, y1, Button.Hover )"
+				0="fill( x0, y0, x1, y1, A2.Bar )"
 			}
 		}
 
-		CloseButtonSm {
+		FindEntry {
 			render_bg { }
-			image=graphics/icons/close
+		}
+
+		label { font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
+
+		CloseButtonSm {
+			image=graphics/none
+			render_bg { 0="image( x0, y0, x1, y1, graphics/material/web/stop )" }
 		}
 
 		CloseButtonSm:hover {
-			image=graphics/icons/close_hover
+			render_bg { 0="image( x0, y0, x1, y1, graphics/material/web/stop_hover )" }
 		}
 
 		NextButtonSm {
 			textcolor=none
 			render_bg {
 				0="fill( x0, y0, x1, y1, Button.Hover )"
-				1="image( x0 + 2, y0 + 6, x1, y1, graphics/buttons/caret_down )"
-			}
-		}
-
-		NextButtonSm:hover {
-			render_bg {
-				0="fill( x0, y0, x1, y1, Button.Hover )"
-				1="image( x0 + 2, y0 + 6, x1, y1, graphics/buttons/caret_down_hover )"
+				1="image( x0 + 4, y0 + 8, x1, y1, graphics/material/nav/caret_down_onfocus )"
 			}
 		}
 
@@ -36,26 +36,20 @@
 			textcolor=none
 			render_bg {
 				0="fill( x0, y0, x1, y1, Button.Hover )"
-				1="image( x0 + 2, y0 + 6, x1, y1, graphics/buttons/caret_up )"
-			}
-		}
-
-		PrevButtonSm:hover {
-			render_bg {
-				0="fill( x0, y0, x1, y1, Button.Hover )"
-				1="image( x0 + 2, y0 + 6, x1, y1, graphics/buttons/caret_up_hover )"
+				1="image( x0 + 4, y0 + 8, x1, y1, graphics/material/nav/caret_up_onfocus )"
 			}
 		}
 	}
 
-	layout
-	{
-		region { name=body x=7 y=7 width=max height=max }
+	layout {
+		region { name=box y=10 width=max height=max margin-left=26 margin-right=26 }
 
-		place { control="FindEntry" region=body width=max align=left margin-right=58 end-right=Next }
-		place { control="FindCount" region=body align=right end-right=Next margin-right=16 margin-top=4 }
-		place { control="Next,Previous" region=body align=right height=24 width=16 spacing=8 margin-right=35 }
-		place { control="Close" region=body align=right height=24 width=24 margin-right=8 }
+		place { control=FindEntry 				region=box align=left width=max margin-right=84 end-right=Next }
+		place { control=FindCount 				region=box align=right end-right=Next margin-right=20 margin-top=7 }
+		place { control=Next,Previous 		region=box align=right height=30 width=20 spacing=10 margin-right=39 }
+
+		place { control=Close 						region=box align=right width=14 height=14 y=8 }
+
 		place { control="SearchThisPage" height=0 width=0 }
 	}
 }

@@ -1,0 +1,188 @@
+"" {
+
+	styles {
+
+		FrameMinimizeButton 				{ render_bg { 1="image( x0 - 3, y0 + 6, x1, y1, graphics/material/controls/win_min_primary )" } }
+		FrameMinimizeButton:hover 	{ render_bg { 1="image( x0 - 3, y0 + 6, x1, y1, graphics/material/controls/win_min_primary )" } }
+		FrameMinimizeButton:active 	{ render_bg { 1="image( x0 - 3, y0 + 6, x1, y1, graphics/material/controls/win_min_primary )" } }
+
+		FrameMaximizeButton 				{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/material/controls/win_max_primary )" } }
+		FrameMaximizeButton:hover 	{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/material/controls/win_max_primary )" } }
+		FrameMaximizeButton:active 	{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/material/controls/win_max_primary )" } }
+
+		FrameRestoreButton 					{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/material/controls/win_restore_primary )" } }
+		FrameRestoreButton:hover 		{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/material/controls/win_restore_primary )" } }
+		FrameRestoreButton:active 	{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/material/controls/win_restore_primary )" } }
+
+		FrameCloseButton 						{ render_bg { 0="image( x0 + 3, y0 + 6, x1, y1, graphics/material/controls/win_close_primary )" } }
+		FrameCloseButton:hover 			{ render_bg { 1="image( x0 + 3, y0 + 6, x1, y1, graphics/material/controls/win_close_primary )" } }
+		FrameCloseButton:active 		{ render_bg { 1="image( x0 + 3, y0 + 6, x1, y1, graphics/material/controls/win_close_primary )" } }
+
+		//-------------------------------------------------------------------------------------------------------------------------------//
+		//-------------------------------------------------------------------------------------------------------------------------------//
+
+		"CSteamRootDialog FrameMinimizeButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
+		"CSteamRootDialog FrameMinimizeButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"CSteamRootDialog FrameMinimizeButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+
+		"CSteamRootDialog FrameMaximizeButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_max_onfocus )" } }
+		"CSteamRootDialog FrameMaximizeButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_max_soft )" } }
+		"CSteamRootDialog FrameMaximizeButton:active"	 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_max_soft )" } }
+
+		"CSteamRootDialog FrameRestoreButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_restore_onfocus )" } }
+		"CSteamRootDialog FrameRestoreButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_restore_soft )" } }
+		"CSteamRootDialog FrameRestoreButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_restore_soft )" } }
+
+		"CSteamRootDialog FrameCloseButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CSteamRootDialog FrameCloseButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CSteamRootDialog FrameCloseButton:active" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+		//-------------------------------------------------------------------------------------------------------------------------------//
+		//-------------------------------------------------------------------------------------------------------------------------------//
+
+		"ToolWindow FrameMinimizeButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
+		"ToolWindow FrameMinimizeButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"ToolWindow FrameMinimizeButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+
+		"ToolWindow FrameMaximizeButton" 									{ render_bg { } }
+		"ToolWindow FrameRestoreButton" 									{ render_bg { } }
+
+		"ToolWindow FrameCloseButton" 										{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"ToolWindow FrameCloseButton:hover" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"ToolWindow FrameCloseButton:active" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+
+		"CFriendsDialog FrameMinimizeButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
+		"CFriendsDialog FrameMinimizeButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"CFriendsDialog FrameMinimizeButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+
+		"CFriendsDialog FrameMaximizeButton" 							{ render_bg { } }
+		"CFriendsDialog FrameRestoreButton" 							{ render_bg { } }
+
+		"CFriendsDialog FrameCloseButton" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CFriendsDialog FrameCloseButton:hover" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CFriendsDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+
+		"CGamesPage_Mini FrameMinimizeButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
+		"CGamesPage_Mini FrameMinimizeButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"CGamesPage_Mini FrameMinimizeButton:active"			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+
+		"CGamesPage_Mini FrameMaximizeButton" 						{ render_bg { } }
+		"CGamesPage_Mini FrameRestoreButton" 							{ render_bg { } }
+
+		"CGamesPage_Mini FrameCloseButton" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CGamesPage_Mini FrameCloseButton:hover" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CGamesPage_Mini FrameCloseButton:active" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+
+		"HTMLPopup FrameMinimizeButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
+		"HTMLPopup FrameMinimizeButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"HTMLPopup FrameMinimizeButton:active" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+
+		"HTMLPopup FrameMaximizeButton" 									{ render_bg { } }
+		"HTMLPopup FrameRestoreButton" 										{ render_bg { } }
+
+		"HTMLPopup FrameCloseButton" 											{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"HTMLPopup FrameCloseButton:hover" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"HTMLPopup FrameCloseButton:active" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+
+		"CMusicPlayerPanel FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
+		"CMusicPlayerPanel FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"CMusicPlayerPanel FrameMinimizeButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+
+		"CMusicPlayerPanel FrameMaximizeButton" 					{ render_bg { } }
+		"CMusicPlayerPanel FrameRestoreButton" 						{ render_bg { } }
+
+		"CMusicPlayerPanel FrameCloseButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CMusicPlayerPanel FrameCloseButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CMusicPlayerPanel FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+
+		"CSteamLoginDialog FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
+		"CSteamLoginDialog FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"CSteamLoginDialog FrameMinimizeButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+
+		"CSteamLoginDialog FrameMaximizeButton" 					{ render_bg { } }
+		"CSteamLoginDialog FrameRestoreButton" 						{ render_bg { } }
+
+		"CSteamLoginDialog FrameCloseButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CSteamLoginDialog FrameCloseButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CSteamLoginDialog FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+
+		"CScreenshotManager FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
+		"CScreenshotManager FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"CScreenshotManager FrameMinimizeButton:active" 	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+
+		"CScreenshotManager FrameMaximizeButton" 					{ render_bg { } }
+		"CScreenshotManager FrameRestoreButton" 					{ render_bg { } }
+
+		"CScreenshotManager FrameCloseButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CScreenshotManager FrameCloseButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CScreenshotManager FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+
+		"CDialogSettings FrameMinimizeButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
+		"CDialogSettings FrameMinimizeButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"CDialogSettings FrameMinimizeButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+
+		"CDialogSettings FrameMaximizeButton" 						{ render_bg { } }
+		"CDialogSettings FrameRestoreButton" 							{ render_bg { } }
+
+		"CDialogSettings FrameCloseButton" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CDialogSettings FrameCloseButton:hover" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CDialogSettings FrameCloseButton:active" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+
+		"CGamePropertiesDialog FrameMinimizeButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
+		"CGamePropertiesDialog FrameMinimizeButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"CGamePropertiesDialog FrameMinimizeButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+
+		"CGamePropertiesDialog FrameMaximizeButton" 						{ render_bg { } }
+		"CGamePropertiesDialog FrameRestoreButton" 							{ render_bg { } }
+
+		"CGamePropertiesDialog FrameCloseButton" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CGamePropertiesDialog FrameCloseButton:hover" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CGamePropertiesDialog FrameCloseButton:active" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+		//-------------------------------------------------------------------------------------------------------------------------------//
+		//-------------------------------------------------------------------------------------------------------------------------------//
+
+		"CPlayersDialog FrameMinimizeButton" 							{ render_bg { } }
+		"CPlayersDialog FrameMinimizeButton:hover" 				{ render_bg { } }
+		"CPlayersDialog FrameMinimizeButton:active" 			{ render_bg { } }
+
+		"CPlayersDialog FrameMaximizeButton" 							{ render_bg { } }
+		"CPlayersDialog FrameRestoreButton" 							{ render_bg { } }
+
+		"CPlayersDialog FrameCloseButton" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CPlayersDialog FrameCloseButton:hover" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CPlayersDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+
+		"CAddShortcutDialog FrameMinimizeButton" 							{ render_bg { } }
+		"CAddShortcutDialog FrameMinimizeButton:hover" 				{ render_bg { } }
+		"CAddShortcutDialog FrameMinimizeButton:active" 			{ render_bg { } }
+
+		"CAddShortcutDialog FrameMaximizeButton" 							{ render_bg { } }
+		"CAddShortcutDialog FrameRestoreButton" 							{ render_bg { } }
+
+		"CAddShortcutDialog FrameCloseButton" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CAddShortcutDialog FrameCloseButton:hover" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CAddShortcutDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+
+
+		"CProductMarketingDialog FrameMinimizeButton" 							{ render_bg { } }
+		"CProductMarketingDialog FrameMinimizeButton:hover" 				{ render_bg { } }
+		"CProductMarketingDialog FrameMinimizeButton:active" 				{ render_bg { } }
+
+		"CProductMarketingDialog FrameMaximizeButton" 							{ render_bg { } }
+		"CProductMarketingDialog FrameRestoreButton" 								{ render_bg { } }
+
+		"CProductMarketingDialog FrameCloseButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"CProductMarketingDialog FrameCloseButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CProductMarketingDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+	}
+}

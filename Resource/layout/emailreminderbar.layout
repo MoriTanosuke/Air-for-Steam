@@ -12,13 +12,13 @@
 		CloseStyle {
 			textcolor=none
 			render_bg {
-				0="image( x0, y0, x1, y1, graphics/material/web/close )"
+				0="image( x0, y0, x1, y1, graphics/material/web/stop )"
 			}
 		}
 
 		CloseStyle:hover {
 			render_bg {
-				0="image( x0, y0, x1, y1, graphics/material/web/close_hover )"
+				0="image( x0, y0, x1, y1, graphics/material/web/stop_hover )"
 			}
 		}
 	}
@@ -29,6 +29,6 @@
 		place { control=emailreminderbarlabel,emailreminderbaremail_email,emailreminderbar_yesbutton,emailreminderbar_nobutton y=9 margin-right=40 spacing=10 align=top-center }
 		place { control=emailreminderbar_info,emailreminderbar_infolink y=29 margin-right=40 spacing=10 align=top-center }
 
-		place { control=emailreminderbar_close region=box align=right width=14 height=14 y=20 }
+		place { control=emailreminderbar_close region=box align=right width=14 height=14 y=21 }
 	}
 }
