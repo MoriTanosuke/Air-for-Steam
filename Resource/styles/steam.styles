@@ -467,7 +467,7 @@ steam.styles
 			minimum-height=30
 			padding-left=3
 			render_bg {
-				0="fill( x0 - 26, y1 - 1, x1, y1, A2.Divider )"
+				//0="fill( x0 - 26, y1 - 1, x1, y1, A2.Divider )"
 			}
 		}
 
@@ -475,7 +475,7 @@ steam.styles
 			minimum-height=30
 			padding-left=3
 			render_bg {
-				0="fill( x0 - 26, y1 - 1, x1, y1, A2.Divider )"
+				//0="fill( x0 - 26, y1 - 1, x1, y1, A2.Divider )"
 			}
 		}
 

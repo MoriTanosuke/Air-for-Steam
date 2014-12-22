@@ -181,8 +181,8 @@
 		"CProductMarketingDialog FrameMaximizeButton" 							{ render_bg { } }
 		"CProductMarketingDialog FrameRestoreButton" 								{ render_bg { } }
 
-		"CProductMarketingDialog FrameCloseButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_primary )" } }
-		"CProductMarketingDialog FrameCloseButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_primary )" } }
-		"CProductMarketingDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_primary )" } }
+		"CProductMarketingDialog FrameCloseButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_primary )" } }
+		"CProductMarketingDialog FrameCloseButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_primary )" } }
+		"CProductMarketingDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_primary )" } }
 	}
 }
