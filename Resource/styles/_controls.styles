@@ -100,16 +100,16 @@
 		"CMusicPlayerPanel FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
 
 
-		"CSteamLoginDialog FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }
-		"CSteamLoginDialog FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
-		"CSteamLoginDialog FrameMinimizeButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_soft )" } }
+		"CSteamLoginDialog FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_primary )" } }
+		"CSteamLoginDialog FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_secondary )" } }
+		"CSteamLoginDialog FrameMinimizeButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_secondary )" } }
 
 		"CSteamLoginDialog FrameMaximizeButton" 					{ render_bg { } }
 		"CSteamLoginDialog FrameRestoreButton" 						{ render_bg { } }
 
-		"CSteamLoginDialog FrameCloseButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
-		"CSteamLoginDialog FrameCloseButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
-		"CSteamLoginDialog FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"CSteamLoginDialog FrameCloseButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_primary )" } }
+		"CSteamLoginDialog FrameCloseButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_secondary )" } }
+		"CSteamLoginDialog FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_secondary )" } }
 
 
 		"CScreenshotManager FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_onfocus )" } }

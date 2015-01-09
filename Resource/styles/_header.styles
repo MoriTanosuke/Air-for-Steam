@@ -126,17 +126,6 @@
 			}
 		}
 
-		CSteamLoginDialog {
-			minimum-height=460
-			bgcolor=A2.Background
-			render_bg {
-				0="fill( x0, y0, x1, y0 + 50, Focus )"
-			}
-			render {
-				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/layout/shadow )"
-			}
-		}
-
 		CDialogSettings {
 			minimum-width=595
 			minimum-height=655
