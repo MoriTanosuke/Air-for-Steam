@@ -16,10 +16,10 @@
 		place { control=frame_captiongrip margin=2 width=max height=50 }
 
 		region { name=buttons width=max height=40 align=bottom }
-		region { name=body margin-bottom=50 margin-top=40 margin-left=18 margin-right=26 }
+		region { name=body margin-bottom=50 margin-top=25 margin-left=18 margin-right=26 }
 
 		place { control=settingslist region=body width=150 height=max }
-		place { control=sheet start=settingslist region=body width=max height=max y=29 x=21 }
+		place { control=sheet start=settingslist region=body width=max height=max y=25 x=21 }
 		place {
 			control=okbutton,cancelbutton
 			region=buttons

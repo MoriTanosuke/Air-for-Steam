@@ -29,5 +29,9 @@
 		place { control=ShowChatCombo 																				start=ShowChatHeader dir=down y=5 width=max }
 
 		place { control=IncludeDesktop,RecordMic,ShowDebugInfo 								start=ShowChatCombo dir=down y=20 }
+
+		place { control=RequiresRestartLabel 																	align=bottom margin-bottom=20 }
+
+		place { control=ConfigMic height=0 width=0 }
 	}
 }
