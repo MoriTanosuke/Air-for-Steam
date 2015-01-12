@@ -36,7 +36,7 @@
 		region { name=status align=bottom height=90 width=max margin-bottom=60 }
 		region { name=bottom align=bottom height=60 width=max }
 
-		place { control="ChatHistory" region=chat start=VoiceBar width=max height=max dir=down margin-bottom=-15 }
+		place { control="ChatHistory" region=chat width=max height=max dir=down margin-bottom=-15 }
 
 		place { control="StatusLabel"					region=status width=max height=max margin-left=10 margin-right=10 }
 
