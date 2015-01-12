@@ -16,6 +16,8 @@
 		place { control=ScreenshotsDetailPanel 		width=289 } //200 //246
 		place { control=FriendsDetailPanel,CommunityHubDetailPanel,ScreenshotsDetailPanel region=links align=top-center height=60 }
 
+		place { control=BroadcastDetailPanel align=top-center height=50 width=max }
+
 		region { name=hidden height=0 width=0 margin-left=-9999 }
 		place { controls="GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,GuidesButton,GuidesDetailPanel,NewsDetailPanel,CommunityDiscussionsDetailPanel" region=hidden }
 	}

@@ -184,5 +184,17 @@
 		"CProductMarketingDialog FrameCloseButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_primary )" } }
 		"CProductMarketingDialog FrameCloseButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_secondary )" } }
 		"CProductMarketingDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_secondary )" } }
+
+
+		"COverlayBroadcastChatDialog FrameMinimizeButton" 							{ render_bg { } }
+		"COverlayBroadcastChatDialog FrameMinimizeButton:hover" 				{ render_bg { } }
+		"COverlayBroadcastChatDialog FrameMinimizeButton:active" 				{ render_bg { } }
+
+		"COverlayBroadcastChatDialog FrameMaximizeButton" 							{ render_bg { } }
+		"COverlayBroadcastChatDialog FrameRestoreButton" 								{ render_bg { } }
+
+		"COverlayBroadcastChatDialog FrameCloseButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
+		"COverlayBroadcastChatDialog FrameCloseButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
+		"COverlayBroadcastChatDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
 	}
 }

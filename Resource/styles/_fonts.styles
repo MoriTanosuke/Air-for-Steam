@@ -363,6 +363,10 @@
 	taskbar																						{ font-family=condensed font-size=60 font-weight=400 textcolor=Text.Overlay font-style=uppercase } //in overlaytaskbar
 	taskbar:hover																			{ textcolor=Text.OverlaySoft }
 
+	//Broadcast
+
+	ViewersTextStyle																	{ font-family=medium font-size=18 font-weight=500 textcolor="144 153 161 255" font-style=regular }
+
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
