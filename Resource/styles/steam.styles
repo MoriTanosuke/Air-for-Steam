@@ -444,6 +444,17 @@ steam.styles
 		"CMusicPlayerPanel FrameCloseButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
 		"CMusicPlayerPanel FrameCloseButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
 
+		"COverlayBroadcastChatDialog FrameMinimizeButton" 							{ render_bg { } }
+		"COverlayBroadcastChatDialog FrameMinimizeButton:hover" 				{ render_bg { } }
+		"COverlayBroadcastChatDialog FrameMinimizeButton:active" 				{ render_bg { } }
+
+		"COverlayBroadcastChatDialog FrameMaximizeButton" 							{ render_bg { } }
+		"COverlayBroadcastChatDialog FrameRestoreButton" 								{ render_bg { } }
+
+		"COverlayBroadcastChatDialog FrameCloseButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_light )" } }
+		"COverlayBroadcastChatDialog FrameCloseButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_light_hover )" } }
+		"COverlayBroadcastChatDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_light_hover )" } }
+
 		ProgressBox {
 			minimum-height=128
 			//width is 384
