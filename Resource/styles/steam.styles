@@ -607,6 +607,10 @@ steam.styles
 			padding-left=5
 		}
 
+		MenuItem:hover {
+			bgcolor=A2.Ribbon
+		}
+
 		MenuSeparator {
 			textcolor=none
 			render_bg {

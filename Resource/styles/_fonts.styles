@@ -349,7 +349,7 @@
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
 	MenuItem																					{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular }
-	MenuItem:hover																		{ textcolor=Focus }
+//MenuItem:hover																		{ }
 	MenuItem:disabled																	{ textcolor=Text.Hint }
 	MenuItem:disabled:hover														{ textcolor=Text.Hint }
 
