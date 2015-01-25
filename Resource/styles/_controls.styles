@@ -147,6 +147,17 @@
 		"CGamePropertiesDialog FrameCloseButton:hover" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
 		"CGamePropertiesDialog FrameCloseButton:active" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
 
+		"CProductMarketingDialog FrameMinimizeButton" 							{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_primary )" } }
+		"CProductMarketingDialog FrameMinimizeButton:hover" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_secondary )" } }
+		"CProductMarketingDialog FrameMinimizeButton:active" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_min_secondary )" } }
+
+		"CProductMarketingDialog FrameMaximizeButton" 							{ render_bg { } }
+		"CProductMarketingDialog FrameRestoreButton" 								{ render_bg { } }
+
+		"CProductMarketingDialog FrameCloseButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_primary )" } }
+		"CProductMarketingDialog FrameCloseButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_secondary )" } }
+		"CProductMarketingDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_secondary )" } }
+
 		//-------------------------------------------------------------------------------------------------------------------------------//
 		//-------------------------------------------------------------------------------------------------------------------------------//
 
@@ -172,18 +183,6 @@
 		"CAddShortcutDialog FrameCloseButton" 											{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_onfocus )" } }
 		"CAddShortcutDialog FrameCloseButton:hover" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
 		"CAddShortcutDialog FrameCloseButton:active" 								{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_soft )" } }
-
-
-		"CProductMarketingDialog FrameMinimizeButton" 							{ render_bg { } }
-		"CProductMarketingDialog FrameMinimizeButton:hover" 				{ render_bg { } }
-		"CProductMarketingDialog FrameMinimizeButton:active" 				{ render_bg { } }
-
-		"CProductMarketingDialog FrameMaximizeButton" 							{ render_bg { } }
-		"CProductMarketingDialog FrameRestoreButton" 								{ render_bg { } }
-
-		"CProductMarketingDialog FrameCloseButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_primary )" } }
-		"CProductMarketingDialog FrameCloseButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_secondary )" } }
-		"CProductMarketingDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_secondary )" } }
 
 
 		"COverlayBroadcastChatDialog FrameMinimizeButton" 							{ render_bg { } }

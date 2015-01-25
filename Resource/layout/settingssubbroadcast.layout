@@ -14,7 +14,7 @@
 		place { control=BroadcastDisabledLabel,BroadcastDisabledSupportURL 		width=max dir=right spacing=4 }
 
 		place { control=BroadcastStatusHeader 																start=BroadcastDisabledLabel dir=down }
-		place { control=BroadcastStatus 																			start=BroadcastStatusHeader width=max dir=right x=4 }
+		place { control=BroadcastStatus 																			start=BroadcastStatusHeader dir=right x=4 }
 
 		place { control=PermissionsHeader 																		start=BroadcastStatusHeader dir=down y=20 width=max }
 		place { control=Permissions 																					start=PermissionsHeader dir=down y=5 width=max }
@@ -32,6 +32,6 @@
 
 		place { control=RequiresRestartLabel 																	align=bottom margin-bottom=20 }
 
-		place { control=ConfigMic height=0 width=0 }
+		place { control=BroadcastHelpHeader,BroadcastHelpURL,Divider1,ConfigMic height=0 width=0 }
 	}
 }

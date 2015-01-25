@@ -346,6 +346,10 @@ steam.styles
 			inset="2 2 2 2"
 		}
 
+		"CWebURLDialog CSteamAuthedHTML" {
+			inset="0 0 0 0" //received gift window
+		}
+
 		ListPanel {
 			padding-left=8
 			selectedbgcolor=A2.Ribbon  // games list selected game bg color
