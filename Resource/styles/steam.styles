@@ -687,10 +687,16 @@ steam.styles
 			}
 		}
 
-		TextEntryClearButton:hover {
+		TextEntryClearButton {
 			render {
-				1="image( x0 + 3, y0, x1, y1, resource/icon_clear_field_hover )"
+				0="fill( x0, y0, x1, y1, focus )"
 			}
+		}
+
+		TextEntryClearButton:hover {
+			//render {
+			//	1="image( x0 + 3, y0, x1, y1, resource/icon_clear_field_hover )"
+			//}
 		}
 
 		CEmoticonButton {
@@ -1023,19 +1029,21 @@ steam.styles
 		"CSteamRootDialog BackButton:hover" 				{ render_bg { } image=graphics/material/web/back }
 
 		LibrarySearch {
-			minimum-height=0 //reset for text entry height
-			inset-left=3 //rest for text entry inset
+			minimum-height=30 //reset for text entry height
+			inset-left=3 //reset for text entry inset
 			render_bg { }
 		}
 
 		LibrarySearch:focus {
 			render_bg {
-				0="fill( x0 - 6, y0 - 3, x1, y1 + 5, AL20 )"
+				0="fill( x0 + 5, y1 - 1, x1, y1 + 1, Focus2 )"
 			}
 		}
 
 		LibrarySearch:empty:focus {
-			render_bg { }
+			render_bg {
+				0="fill( x0 + 5, y1 - 1, x1, y1 + 1, Focus2 )"
+			}
 		}
 
 		LibrarySearchIcon {
@@ -1043,19 +1051,21 @@ steam.styles
 		}
 
 		FriendsSearch {
-			minimum-height=0 //reset for text entry height
-			inset-left=3 //rest for text entry inset
+			minimum-height=30 //reset for text entry height
+			inset-left=3 //reset for text entry inset
 			render_bg { }
 		}
 
 		FriendsSearch:focus {
 			render_bg {
-				0="fill( x0 - 6, y0 - 3, x1, y1 + 5, AL20 )"
+				0="fill( x0 + 5, y1 - 1, x1, y1 + 1, Focus2 )"
 			}
 		}
 
 		FriendsSearch:empty:focus {
-			render_bg { }
+			render_bg {
+				0="fill( x0 + 5, y1 - 1, x1, y1 + 1, Focus2 )"
+			}
 		}
 
 		FriendsSearchIcon {

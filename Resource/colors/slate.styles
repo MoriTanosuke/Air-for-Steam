@@ -4,5 +4,6 @@
 		Focus="96 125 139 255"		//material 500
 		Focus2="144 164 174 255"	//material 300
 		Focus3="144 164 174 150"	//material 300
+		Focus4="84 110 122 255"		//material 600
 	}
 }

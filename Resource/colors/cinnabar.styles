@@ -1,0 +1,9 @@
+"" {
+
+	colors {
+		Focus="232 78 64 255"		//material 400
+		Focus2="243 108 96 255"	//material 300
+		Focus3="243 108 96 150"	//material 300
+		Focus4="219 75 61 255"	//-5% brightness
+	}
+}

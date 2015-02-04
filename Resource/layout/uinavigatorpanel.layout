@@ -106,7 +106,7 @@
 		}
 		place {
 			control=library_search
-			region=nav start=label_me height=22 x=12 y=10
+			region=nav start=label_me height=22 x=12 y=6
 		}
 		place {
 			control=label_console

@@ -1,8 +1,9 @@
 "" {
 
 	colors {
-		Focus="45 45 45 255"	//dark-grey
+		Focus="45 45 45 255"		//dark-grey
 		Focus2="214 73 55 255"	//light-red
-		Focus3="214 73 55 255"	//light-red
+		Focus3="214 73 55 150"	//light-red
+		Focus4="33 33 33 255"		//-5% brightness
 	}
 }

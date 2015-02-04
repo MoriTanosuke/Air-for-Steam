@@ -51,7 +51,7 @@
 
 		place { control="gameslist" region=body width=max height=max }
 
-		place { control="library_search" region=nav start=library_filters y=0 x=0 height=22 width=92 }
+		place { control="library_search" region=nav start=library_filters y=-4 x=0 height=22 width=92 }
 		place { control="library_filters" region=nav align=left height=22 y=3 x=8 }
 
 		place { control="label_search_icon,subnavgroup_library" height=0 width=0 }

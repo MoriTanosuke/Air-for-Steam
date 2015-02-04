@@ -48,7 +48,7 @@
 
 		place { control=FriendsDialogSheet region=body y=2 width=max height=max }
 
-		place { control=friends_search region=nav y=13 x=56 height=22 width=92 }
+		place { control=friends_search region=nav y=9 x=56 height=22 width=92 }
 
 		place { control=DownLabel y=77 width=max margin=16 }
 		place { control=NoFriendsAddFriendButton start=DownLabel dir=down margin-top=13 }
