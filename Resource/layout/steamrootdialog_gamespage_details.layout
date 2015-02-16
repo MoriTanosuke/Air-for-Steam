@@ -53,7 +53,7 @@
 
 		place
 		{
-			control=welcomedetails,nonsteamdetails,achievementsdetails,friendsdetails,newsdetails,screenshotsdetails,clouddetails
+			control=welcomedetails,turnnotifications,nonsteamdetails,achievementsdetails,friendsdetails,newsdetails,screenshotsdetails,dlcdetails,clouddetails
 			region=detailsbody
 			dir=down
 			width=max
