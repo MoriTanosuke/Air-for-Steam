@@ -11,14 +11,11 @@
 
 		place { control=ShowIngameFPSContrastCheck					dir=down start=ShowIngameFPSCombo y=20 }
 
-		place { control=OverlayHomePageLabel								dir=down x=200 start=ShowIngameFPSContrastCheck y=30 }
-		place { control=OverlayHomePage											dir=down width=180 start=OverlayHomePageLabel y=5 }
-
 		place { control=HotKeySelectorLabel									dir=down start=ShowIngameFPSContrastCheck y=30 }
-		place { control=HotKeySelector											dir=down width=180 start=HotKeySelectorLabel y=5 }
+		place { control=HotKeySelector											dir=down width=max start=HotKeySelectorLabel y=5 }
 
 		place { control=ScreenshotLabel											dir=down start=HotKeySelector y=30 }
-		place { control=ScreenshotHotKeySelector						dir=down width=180 start=ScreenshotLabel y=5 }
+		place { control=ScreenshotHotKeySelector						dir=down width=max start=ScreenshotLabel y=5 }
 
 		place { control=ScreenshotActionLabel								dir=down start=ScreenshotHotKeySelector y=30 }
 		place {

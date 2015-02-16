@@ -30,7 +30,8 @@
 
 		PageTab {
 			inset-top=-5
-			padding-left=10
+			padding-left=20
+			minimum-width=75
 		}
 
 		PageTab:selected {
@@ -41,14 +42,14 @@
 		layout {
 		place { control=frame_minimize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
 		place { control=frame_captiongrip margin=2 width=max height=80 } //entire focus area grabbable
-		place [!$OSX] { control=MenuBar align=top width=52 height=49 margin-left=-10 }
+		place [!$OSX] { control=MenuBar align=top width=52 height=49 }
 
 		region { name=nav height=50 width=max }
 		region { name=body y=50 height=max width=max }
 
 		place { control=FriendsDialogSheet region=body y=2 width=max height=max }
 
-		place { control=friends_search region=nav y=9 x=56 height=22 width=92 }
+		place { control=friends_search region=nav y=9 x=66 height=22 width=82 }
 
 		place { control=DownLabel y=77 width=max margin=16 }
 		place { control=NoFriendsAddFriendButton start=DownLabel dir=down margin-top=13 }

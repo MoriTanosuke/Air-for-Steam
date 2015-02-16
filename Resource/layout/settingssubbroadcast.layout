@@ -2,11 +2,11 @@
 {
 	styles {
 		rightcolumnlink {
-			textcolor=Text.Primary
+			textcolor=Focus
 		}
 
 		rightcolumnlink:hover {
-			textcolor=Text.Primary
+			//textcolor=Text.Primary
 		}
 	}
 
@@ -25,10 +25,16 @@
 		place { control=BitrateLimitHeader 																		start=Dimensions dir=down y=20 width=max }
 		place { control=BitrateLimit 																					start=BitrateLimitHeader dir=down y=5 width=max }
 
-		place { control=ShowChatHeader 																				start=BitrateLimit dir=down y=20 width=max }
+		place { control=EncoderHeader 																				start=BitrateLimit dir=down y=20 width=max }
+		place { control=EncoderSetting 																				start=EncoderHeader dir=down y=5 width=max }
+
+		place { control=ShowChatHeader 																				start=EncoderSetting dir=down y=20 width=max }
 		place { control=ShowChatCombo 																				start=ShowChatHeader dir=down y=5 width=max }
 
-		place { control=IncludeDesktop,RecordMic,ShowDebugInfo 								start=ShowChatCombo dir=down y=20 }
+		place {
+			control=IncludeDesktop,RecordSystemAudio,RecordMic,EnableHardwareSupport,ShowDebugInfo,ShowReminder
+			start=ShowChatCombo dir=down y=20
+		}
 
 		place { control=RequiresRestartLabel 																	align=bottom margin-bottom=20 }
 

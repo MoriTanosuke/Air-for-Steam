@@ -1,0 +1,17 @@
+"resource/layout/subpaneloptionsbrowser.layout"
+{
+	styles {
+	}
+
+	layout {
+		place { controls=DescriptionLabel 				width=max }
+		place { controls=OverlayHomePageLabel 		start=DescriptionLabel dir=down y=30 }
+		place { controls=OverlayHomePage 					start=OverlayHomePageLabel width=max dir=down y=5 }
+
+		place { controls=ClearAllCookiesButton 		start=OverlayHomePage dir=down y=30 }
+
+		place { controls=Divider1 height=0 width=0 }
+	}
+}
+place { control=HotKeySelectorLabel									dir=down start=ShowIngameFPSContrastCheck y=30 }
+		place { control=HotKeySelector											dir=down width=180 start=HotKeySelectorLabel y=5 }

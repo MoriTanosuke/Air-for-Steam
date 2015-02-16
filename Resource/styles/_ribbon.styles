@@ -4,8 +4,8 @@
 
 		CDialogSettings {
 			render_bg {
-				0="fill( x0 + 168, y0, x0 + 169, y1 - 50, A2.Divider )"
-				1="fill( x0, y1 - 50, x1, y1, A2.Ribbon )"
+				0="fill( x0, y0, x0 + 174, y1, A2.Ribbon )"
+				//1="fill( x0, y1 - 50, x1, y1, A2.Ribbon )"
 			}
 		}
 

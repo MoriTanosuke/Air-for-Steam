@@ -133,6 +133,9 @@
 	GameItem_Decrypting																{ textcolor=Focus2 selectedtextcolor=Focus2 }
 	GameItem_Syncing																	{ textcolor=Focus2 selectedtextcolor=Focus2 }
 
+	DLC_Uninstalled																		{ textcolor=Text.Secondary selectedtextcolor=Text.Secondary } //details dlc panel
+	DLC_Installed																			{ textcolor=Text.Primary selectedtextcolor=Text.Primary } //details dlc panel
+
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
@@ -316,9 +319,12 @@
 //CUINavButton:hover																{ }
 	CUINavButton:selected															{ textcolor=Text.OnFocusHover }
 
-	NavLabel2																					{ font-family=condensed font-size=24 font-weight=400 textcolor=Text.OnFocus font-style=regular } //mini mode filter name
-//NavLabel2:hover																		{ }
+	NavLabel2																					{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.OnFocus font-style=uppercase }
+	NavLabel2:hover																		{ textcolor=Text.OnFocusHover }
 	NavLabel2:selected																{ textcolor=Text.OnFocusHover }
+//NavLabel2																					{ font-family=condensed font-size=24 font-weight=400 textcolor=Text.OnFocus font-style=regular } //mini mode filter name
+//NavLabel2:hover																		{ }
+//NavLabel2:selected																{ textcolor=Text.OnFocusHover }
 
 	LibrarySearch																			{
 																											font-family=condensed font-size=24 font-weight=400 textcolor=Text.OnFocus font-style=regular

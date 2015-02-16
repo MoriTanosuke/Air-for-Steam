@@ -58,9 +58,10 @@
 			bgcolor=A2.Background
 			render_bg {
 				0="fill( x0, y0, x1, y0 + 50, Focus )"
+				1="fill( x0, y0 + 50, x1, y0 + 80, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow )"
 			}
 		}
 
@@ -127,16 +128,9 @@
 		}
 
 		CDialogSettings {
-			minimum-width=595
+			minimum-width=605
 			minimum-height=655
 			bgcolor=A2.Background
-			//render_bg {
-				//0="fill( x0 + 168, y0, x0 + 169, y1, A2.Divider )"
-				//1="fill( x0, y0, x1, y0 + 50, Focus )"
-			//}
-			render {
-				//0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/layout/shadow )"
-			}
 		}
 
 		CGamePropertiesDialog {

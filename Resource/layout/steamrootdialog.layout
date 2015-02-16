@@ -91,14 +91,14 @@
 	}
 
 	colors {
-
 		support_flag_red "169 72 71 255"
 	}
 
-	layout
-	{
-		place { control=frame_minimize,frame_maximize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
-		place { control=frame_captiongrip margin=2 width=max height=50 }
+	layout {
+		place { control=frame_captiongrip width=max height=50 margin=2 }
+		place [$WINDOWS||$LINUX] { control=frame_minimize,frame_maximize,frame_close height=22 width=22 align=right y=13 margin-right=19 spacing=0 }
+		place [$OSX] { control=frame_minimize,frame_maximize,frame_close height=22 width=22 align=left y=13 margin-left=0 spacing=0 }
+
 		place [!$OSX] { control=MenuBar align=top width=52 height=49 }
 
 		region { name=nav height=50 width=max }

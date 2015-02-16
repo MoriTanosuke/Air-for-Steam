@@ -23,14 +23,10 @@
 		}
 
 		CMiniGameFilterMenuButton {
-			//image="graphics/icons/filter"
 			render {
-				0="fill( x1 - 16, y0, x1 - 6, y1, focus )"
+				0="fill( x1 - 16, y0 + 12, x1 - 4, y1 - 10, Focus4 )"
+				1="image( x1 - 16, y0 + 9, x1, y1, graphics/material/nav/caret_down_onfocus )"
 			}
-		}
-
-		CMiniGameFilterMenuButton:hover {
-			//image="graphics/icons/filter_hover"
 		}
 
 		LibrarySearch:empty {
@@ -40,20 +36,21 @@
 		}
 	}
 
-		layout
-		{
-		place { control=frame_minimize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
-		place { control=frame_captiongrip margin=2 width=max height=50 }
+	layout {
+		place { control=frame_captiongrip width=max height=50 margin=2 }
+		place [$WINDOWS||$LINUX] { control=frame_minimize,frame_close height=22 width=22 align=right y=13 margin-right=19 spacing=0 }
+		place [$OSX] { control=frame_minimize,frame_close height=22 width=22 align=right y=13 margin-right=19 spacing=0 }
+
 		place [!$OSX] { control=MenuBar align=top width=52 height=49 }
 
-		region { name=nav height=36 width=max y=10 x=55 }
-		region { name="body" y=49 height=max width=max }
+		region { name=nav height=50 width=max }
+		region { name=body y=79 height=max width=max }
 
-		place { control="gameslist" region=body width=max height=max }
+		place { control=gameslist region=body width=max height=max }
 
-		place { control="library_search" region=nav start=library_filters y=-4 x=0 height=22 width=92 }
-		place { control="library_filters" region=nav align=left height=22 y=3 x=8 }
+		place { control=library_search region=nav y=9 x=66 height=22 width=162 }
+		place { control=library_filters height=30 y=50 x=20 }
 
-		place { control="label_search_icon,subnavgroup_library" height=0 width=0 }
-		}
+		place { control=label_search_icon,subnavgroup_library height=0 width=0 }
+	}
 }

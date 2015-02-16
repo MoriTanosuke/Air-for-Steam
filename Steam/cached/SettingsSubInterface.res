@@ -11,11 +11,11 @@
 		place { control=SkinCombo										dir=down width=max start=Label3 y=5 }
 
 		place {
-			control=AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck
+			control=AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,H264HWAccelCheck
 			dir=down start=SkinCombo y=20
 		}
 
-		place { control=NotifyAvailableGamesCheck		dir=down start=DWriteCheck y=4 }
+		place { control=NotifyAvailableGamesCheck		dir=down start=H264HWAccelCheck y=4 }
 
 		place { control=SetJumpListOptionsButton		dir=down start=NotifyAvailableGamesCheck y=10 }
 
