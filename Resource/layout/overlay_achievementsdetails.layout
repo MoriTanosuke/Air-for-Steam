@@ -5,7 +5,7 @@
 
 		detailsboxtitle {
 			font-family=condensed
-			font-size=40
+			font-size=30
 			font-weight=700
 			textcolor=Focus
 			font-style=uppercase
@@ -41,7 +41,7 @@
 
 	layout
 	{
-		place { control=TitleText align=top-center y=33 }
+		place { control=TitleText align=top-center y=38 }
 
 		place { control=*achievement y=51 width=0 height=0 align=top-center }
 

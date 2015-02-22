@@ -4,7 +4,7 @@
 
 		sidemenu {
 			font-family=condensed
-			font-size=40
+			font-size=30
 			font-weight=700
 			textcolor=Focus
 			font-style=uppercase
@@ -20,7 +20,7 @@
 
 	layout {
 
-		region { name=achievements width=max height=73 align=bottom }
+		region { name=achievements width=max height=137 align=bottom }
 		place { control=AchievementsButton region=achievements align=top-center }
 
 		region { name=links width=max align=top y=90 }

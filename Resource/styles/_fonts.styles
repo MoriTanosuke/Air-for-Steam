@@ -369,9 +369,9 @@
 
 	//Overlay
 
-	sidemenu																					{ font-family=condensed font-size=40 font-weight=400 textcolor=Text.OverlaySoft font-style=uppercase } //web browser, settings, music buttons in overlaydesktop
-	sidemenu:hover																		{ textcolor=Text.OverlaySoft }
-	taskbar																						{ font-family=condensed font-size=60 font-weight=400 textcolor=Text.Overlay font-style=uppercase } //in overlaytaskbar
+//sidemenu																					{ }
+//sidemenu:hover																		{ }
+	taskbar																						{ font-family=condensed font-size=30 font-weight=700 textcolor=Text.Overlay font-style=uppercase } //in overlaytaskbar
 	taskbar:hover																			{ textcolor=Text.OverlaySoft }
 
 	//Broadcast

@@ -8,9 +8,9 @@
 
 		button {
 			minimum-height=0 //reset for button height
-			padding-right=4 padding-left=0
+			padding-right=1 padding-left=3
 			font-family=condensed
-			font-size=40
+			font-size=30
 			font-weight=700
 			textcolor=Focus
 			font-style=uppercase
@@ -24,7 +24,7 @@
 
 	layout
 	{
-		place { control=ViewScreenshots height=60 align=top-center margin-right=25 }
+		place { control=ViewScreenshots height=60 align=top-center margin-right=30 }
 
 		place { control="TitleText,InstructionText,DarkRegion,SS0,SS1,SS2,SetShortcut" height=0 width=0 }
 	}

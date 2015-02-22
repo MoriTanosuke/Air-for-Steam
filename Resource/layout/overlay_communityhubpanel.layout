@@ -8,9 +8,9 @@
 
 		button {
 			minimum-height=0 //reset for button height
-			padding-right=4 padding-left=0
+			padding-right=0 padding-left=3
 			font-family=condensed
-			font-size=40
+			font-size=30
 			font-weight=700
 			textcolor=Focus
 			font-style=uppercase
