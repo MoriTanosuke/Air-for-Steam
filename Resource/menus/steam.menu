@@ -2,8 +2,8 @@
 {
 	Steam
 	{
-		text = [!$OSX]	"#steam_menu_file"
-		text = [$OSX]	"#SteamRootAccount"
+		text = [!$OSX] "#steam_menu_file"
+		text = [$OSX] "#SteamRootAccount"
 
 		Friends										{ text="#steam_menu_view_friends"			shellcmd="steam://open/friends" }
 
