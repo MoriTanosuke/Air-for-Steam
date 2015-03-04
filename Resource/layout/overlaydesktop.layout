@@ -6,7 +6,7 @@
 
 	layout
 	{
-		region { name=achievements width=max height=107 align=bottom }
+		region { name=achievements width=max height=149 align=bottom }
 		place { control=AchievementsDetailPanel region=achievements width=max height=max }
 
 		region { name=links width=max align=top y=90 }

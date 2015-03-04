@@ -17,7 +17,9 @@
 		}
 
 		button:hover {
-			bgcolor=AL10
+			render_bg {
+				0="fill( x0, y0 - 62, x1, y1, AL10 )"
+			}
 		}
 
 		highlight {
@@ -41,14 +43,14 @@
 
 	layout
 	{
-		place { control=TitleText align=top-center y=38 }
+		place { control=TitleText align=top-center y=80 }
 
-		place { control=*achievement y=51 width=0 height=0 align=top-center }
+		place { control=*achievement width=64 height=64 align=top-center spacing=10 }
 
-		place { control=progressbackground width=max height=12 align=bottom }
+		place { control=progressbackground height=12 align=bottom width=max }
 		place { control=progressbarimage height=12 align=bottom }
 
-		place { controls=ViewAchievementsButton height=max width=max }
+		place { controls=ViewAchievementsButton height=45 width=max align=bottom }
 
 		place { controls=ProgressTextEarned height=0 width=0 }
 	}
