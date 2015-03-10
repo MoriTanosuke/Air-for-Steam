@@ -641,13 +641,13 @@ steam.styles
 
 		PageTab:selected {
 			render_bg {
-				0="fill( x0, y0, x1 + 2, y1, A2.Background )"
+				0="fill( x0, y0, x1 + 2, y1, Focus4 )"
 			}
 		}
 
 		PageTab:selected:hover {
 			render_bg {
-				0="fill( x0, y0, x1 + 2, y1, A2.Background )"
+				0="fill( x0, y0, x1 + 2, y1, Focus4 )"
 			}
 		}
 
@@ -671,13 +671,13 @@ steam.styles
 		TabCloseButton {
 			textcolor=none //don't render "X" as text
 			render_bg {
-				0="image( x0 + 5, y0 + 7, x1, y1, graphics/buttons/tiny_x )"
+				0="image( x0 + 5, y0 + 7, x1, y1, graphics/material/nav/tiny_x )"
 			}
 		}
 
 		TabCloseButton:hover {
 			render_bg {
-				1="image( x0 + 5, y0 + 7, x1, y1, graphics/buttons/tiny_x_hover )"
+				1="image( x0 + 5, y0 + 7, x1, y1, graphics/material/nav/tiny_x_soft )"
 			}
 		}
 

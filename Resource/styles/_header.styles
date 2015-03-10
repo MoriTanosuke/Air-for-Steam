@@ -81,7 +81,11 @@
 		ToolWindow {
 			bgcolor=A2.Background
 			render_bg {
-				1="fill( x0, y0, x1, y0 + 50, focus )"
+				0="fill( x0, y0, x1, y0 + 50, focus )"
+				1="fill( x0, y0 + 50, x1, y0 + 80, Focus4 )"
+			}
+			render {
+				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow )"
 			}
 		}
 
