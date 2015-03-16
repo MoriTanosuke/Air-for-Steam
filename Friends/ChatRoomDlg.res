@@ -13,30 +13,14 @@
 			render_bg { }
 		}
 
-		CChatActionsButton {
-			inset-left=12
-			image="graphics/material/nav/more_vert"
-			render_bg { }
-		}
-
-		CChatActionsButton:hover {
-			image="graphics/material/nav/more_vert"
-			render_bg { }
-		}
-
-		CChatActionsButton:selected {
-			image="graphics/material/nav/more_vert"
-			render_bg { }
-		}
-
 		"RichText Scrollbar" {
 			inset-bottom=21
 		}
 	}
 
 	layout {
-		region { name=chat y=6 margin-bottom=120 height=max width=max }
-		region { name=bottom align=bottom height=120 width=max }
+		region { name=chat y=6 margin-bottom=90 height=max width=max }
+		region { name=bottom align=bottom height=90 width=max }
 
 		place { control=VoiceChat						region=chat align=right y=12 margin-right=26 }
 		place { control=VoiceBar						region=chat align=left width=max height=55 end-right=VoiceChat }

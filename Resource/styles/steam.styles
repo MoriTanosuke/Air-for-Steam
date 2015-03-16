@@ -602,6 +602,22 @@ steam.styles
 
 		MenuButton { }
 
+		CChatActionsButton {
+			inset-left=12
+			image="graphics/material/nav/more_vert"
+			render_bg { }
+		}
+
+		CChatActionsButton:hover {
+			image="graphics/material/nav/more_vert_hover"
+			render_bg { }
+		}
+
+		CChatActionsButton:selected {
+			image="graphics/material/nav/more_vert_hover"
+			render_bg { }
+		}
+
 		MenuItem {
 			padding-right=5
 			padding-left=5
@@ -641,13 +657,13 @@ steam.styles
 
 		PageTab:selected {
 			render_bg {
-				//0="fill( x0, y0, x1 + 2, y1, Focus4 )"
+				0="fill( x0, y0, x1 + 2, y1, Focus4 )"
 			}
 		}
 
 		PageTab:selected:hover {
 			render_bg {
-				//0="fill( x0, y0, x1 + 2, y1, Focus4 )"
+				0="fill( x0, y0, x1 + 2, y1, Focus4 )"
 			}
 		}
 
@@ -671,13 +687,13 @@ steam.styles
 		TabCloseButton {
 			textcolor=none //don't render "X" as text
 			render_bg {
-				0="image( x0 + 5, y0 + 7, x1, y1, graphics/material/nav/tiny_x )"
+				0="image( x0 + 5, y0 + 8, x1, y1, graphics/material/nav/tiny_x )"
 			}
 		}
 
 		TabCloseButton:hover {
 			render_bg {
-				1="image( x0 + 5, y0 + 7, x1, y1, graphics/material/nav/tiny_x_soft )"
+				1="image( x0 + 5, y0 + 8, x1, y1, graphics/material/nav/tiny_x_soft )"
 			}
 		}
 
