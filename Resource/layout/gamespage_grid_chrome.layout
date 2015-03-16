@@ -11,7 +11,7 @@
 		GridNavDivider { }
 
 		CUILaunchButton {
-			padding-left=0 padding-right=0
+			padding-left=20 padding-right=20
 			textcolor=none
 			image=graphics/material/icons/game_launch
 			render { }
@@ -20,6 +20,14 @@
 
 		CUILaunchButton:hover {
 			image=graphics/material/icons/game_launch_hover
+		}
+
+		"GameItem_Uninstalled CUILaunchButton" {
+			image=graphics/material/icons/game_install
+		}
+
+		"GameItem_Uninstalled CUILaunchButton:hover" {
+			image=graphics/material/icons/game_install_hover
 		}
 	}
 
