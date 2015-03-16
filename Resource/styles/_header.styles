@@ -83,6 +83,7 @@
 			render_bg {
 				0="fill( x0, y0, x1, y0 + 50, focus )"
 				1="fill( x0, y0 + 50, x1, y0 + 80, Focus4 )"
+				2="fill( x0, y1 - 90, x1, y1 - 60, A2.Bar )"
 			}
 			render {
 				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow )"

@@ -640,14 +640,16 @@ steam.styles
 		}
 
 		PageTab:selected {
+			textcolor=Text.OnFocusHover
 			render_bg {
-				0="fill( x0, y0, x1 + 2, y1, Focus4 )"
+				//0="fill( x0, y0, x1 + 2, y1, Focus4 )"
 			}
 		}
 
 		PageTab:selected:hover {
+			textcolor=Text.OnFocusHover
 			render_bg {
-				0="fill( x0, y0, x1 + 2, y1, Focus4 )"
+				//0="fill( x0, y0, x1 + 2, y1, Focus4 )"
 			}
 		}
 
