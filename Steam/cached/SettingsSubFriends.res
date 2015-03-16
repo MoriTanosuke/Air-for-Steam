@@ -30,7 +30,7 @@
 			dir=down start=Label6 y=5
 		}
 
-		place { control=Label4			dir=down x=200 start=AlwaysNewChatCheck y=30 }
+		place { control=Label4			dir=down x=215 start=AlwaysNewChatCheck y=30 }
 		place {
 			control=JoinGameNotifyCheck,JoinGamePlaySoundCheck
 			dir=down start=Label4 y=5

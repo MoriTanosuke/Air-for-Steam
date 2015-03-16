@@ -11,9 +11,15 @@
 		GridNavDivider { }
 
 		CUILaunchButton {
-			padding-left=30
-			padding-right=30
-			padding-bottom=6
+			padding-left=0 padding-right=0
+			textcolor=none
+			image=graphics/material/icons/game_launch
+			render { }
+			render_bg { }
+		}
+
+		CUILaunchButton:hover {
+			image=graphics/material/icons/game_launch_hover
 		}
 	}
 

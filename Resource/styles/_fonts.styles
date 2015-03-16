@@ -159,8 +159,8 @@
 
 	PageTab																						{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.OnFocus font-style=uppercase }
 	PageTab:hover																			{ textcolor=Text.OnFocus }
-	PageTab:selected																	{ textcolor=Text.OnFocus }
-	PageTab:selected:hover														{ textcolor=Text.OnFocus }
+	PageTab:selected																	{ textcolor=Text.OnFocusHover }
+	PageTab:selected:hover														{ textcolor=Text.OnFocusHover }
 
 	"CFriendsDialog PageTab:selected"									{ textcolor=Text.OnFocusHover } //mimic ListPanelColumnHeader
 	"CGamePropertiesDialog PageTab:selected"					{ textcolor=Text.OnFocusHover } //mimic ListPanelColumnHeader
@@ -228,15 +228,15 @@
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
-	"GridItemChrome CUILaunchButton"									{ font-family=condensed font-size=40 font-weight=700 textcolor=Text.White font-style=uppercase }
-	"GridItemChrome CUILaunchButton:hover"						{ textcolor=Text.WhiteHover }
+//"GridItemChrome CUILaunchButton"									{ font-family=condensed font-size=40 font-weight=700 textcolor=Text.White font-style=uppercase }
+//"GridItemChrome CUILaunchButton:hover"						{ textcolor=Text.WhiteHover }
 
 	//-------------------------------------------------------------------------------------------------------------------------------//
 	//-------------------------------------------------------------------------------------------------------------------------------//
 
 	//Details
 
-	headertextlarge																		{ font-family=condensed font-size=60 font-weight=400 textcolor=Text.White font-style=regular }
+	headertextlarge																		{ font-family=condensed font-size=50 font-weight=400 textcolor=Text.White font-style=regular }
 
 	//subheader labels
 	"CGamesPage_Details headertext"										{ font-family=medium font-size=18 font-weight=500 textcolor=Text.White font-style=regular }
@@ -245,9 +245,9 @@
 	"CGamesPage_Details headertext-blue"							{ font-family=medium font-size=18 font-weight=500 textcolor=Text.White font-style=regular }
 	valuetext																					{ font-family=basefont font-size=16 font-weight=500 textcolor=Text.White font-style=regular }
 
-	"CGamesPage_Details DetailsLaunchButton"					{ font-family=condensed font-size=40 font-weight=700 textcolor=Text.White font-style=uppercase }
-	"CGamesPage_Details DetailsInstallButton"					{ font-family=condensed font-size=40 font-weight=700 textcolor=Text.White font-style=uppercase }
-	"CGamesPage_Details DetailsBuyButton"							{ font-family=condensed font-size=40 font-weight=700 textcolor=Text.White font-style=uppercase }
+//"CGamesPage_Details DetailsLaunchButton"					{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
+//"CGamesPage_Details DetailsInstallButton"					{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
+//"CGamesPage_Details DetailsBuyButton"							{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
 
 	//links
 	rightcolumnlink																		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.OnFocus font-style=regular }

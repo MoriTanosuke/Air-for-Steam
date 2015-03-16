@@ -1,7 +1,6 @@
 "friends/ChatRoomDlgFriend.res"
 {
-	styles
-	{
+	styles {
 		CChatRoomDlg {
 			render_bg {
 				//status bar defined on ToolWindow in _header.styles
@@ -41,8 +40,7 @@
 		}
 	}
 
-	layout
-	{
+	layout {
 		region { name=chat y=6 margin-bottom=120 height=max width=max }
 		region { name=bottom align=bottom height=120 width=max }
 

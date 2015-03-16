@@ -36,14 +36,13 @@
 		Button {
 			textcolor=none //don't render "X" as text
 			render_bg {
-				//0="fill( x0 + 2, y0 + 5, x1 + 1, y1 + 4, A2.Bar )"
-				1="image( x0 + 5, y0 + 8, x1, y1, graphics/icons/new_tab )"
+				1="image( x0 + 5, y0 + 6, x1, y1, graphics/material/icons/add )"
 			}
 		}
 
 		Button:hover {
 			render_bg {
-				1="image( x0 + 5, y0 + 8, x1, y1, graphics/icons/new_tab_hover )"
+				1="image( x0 + 5, y0 + 6, x1, y1, graphics/material/icons/add_hover )"
 			}
 		}
 	}

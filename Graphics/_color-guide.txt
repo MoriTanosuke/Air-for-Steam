@@ -17,3 +17,7 @@ Light img on dark bg
 Primary 	255 255 255 255
 Primary hover 	230 230 230 255
 Primary select	205 205 205 255
+
+FOR SUPER LIGHT ICONS (bigpic/web/mobile & parental control)
+Primary		70% black painted on top of 255 icon
+Hover		50% black painted on top of 255 icon

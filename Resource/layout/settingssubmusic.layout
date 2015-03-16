@@ -27,7 +27,7 @@
 			dir=down start=PauseMusicHeader y=5
 		}
 
-		place { control=NotificationHeader 												dir=down x=200 start=EnableMediaKeysCheckbox y=30 }
+		place { control=NotificationHeader 												dir=down x=215 start=EnableMediaKeysCheckbox y=30 }
 		place { control=NotificationPlaylistNowPlayingCheckbox 		dir=down start=NotificationHeader y=5 }
 
 		place { control=LoggingHeader 														dir=down start=PauseMusicWhenVoiceChatCheckbox y=30 }

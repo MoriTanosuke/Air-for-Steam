@@ -64,28 +64,28 @@
 		parental_lock_button {
 			image=graphics/none
 			render_bg {
-				0="image( x0 - 2, y0 - 5, x1, y1, graphics/icons/unlock)"
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/material/icons/unlock)"
 			}
 		}
 
 		parental_lock_button:hover {
 			image=graphics/none
 			render_bg {
-				0="image( x0 - 2, y0 - 5, x1, y1, graphics/icons/unlock_hover)"
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/material/icons/unlock_hover)"
 			}
 		}
 
 		parental_lock_button:selected {
 			image=graphics/none
 			render_bg {
-				0="image( x0 - 2, y0 - 5, x1, y1, graphics/icons/lock)"
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/material/icons/lock)"
 			}
 		}
 
 		parental_lock_button:selected:hover {
 			image=graphics/none
 			render_bg {
-				0="image( x0 - 2, y0 - 5, x1, y1, graphics/icons/lock_hover)"
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/material/icons/lock_hover)"
 			}
 		}
 	}

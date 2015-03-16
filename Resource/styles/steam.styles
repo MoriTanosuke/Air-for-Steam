@@ -4,8 +4,7 @@ steam.styles
 	include "resource/styles/_colors.styles"
 	include "resource/styles/_fonts.styles"
 	include "resource/styles/_controls.styles"
-	include "resource/styles/_header.styles"
-	include "resource/styles/_ribbon.styles"
+	include "resource/styles/_layout.styles"
 
 	colors {
 		Frame.ClientInsetX       	 						"10"
@@ -386,42 +385,42 @@ steam.styles
 		}
 
 		ListPanelColumnSelectButton {
-			image=graphics/icons/collapse
+			image=graphics/material/icons/add
 		}
 
 		ListPanelColumnSelectButton:hover {
-			image=graphics/icons/collapse_hover
+			image=graphics/material/icons/add_hover
 		}
 
 		ListPanelColumnSelectButton:selected {
-			image=graphics/icons/collapse_hover
+			image=graphics/material/icons/add_hover
 		}
 
 		"CGamesListPanel ListPanelColumnSelectButton" {
 			image=graphics/none
 			render {
-				0="image( x0 - 1, y0 - 2, x1, y1, graphics/icons/collapse )"
+				0="image( x0 - 1, y0 - 2, x1, y1, graphics/material/icons/add )"
 			}
 		}
 
 		"CGamesListPanel ListPanelColumnSelectButton:hover" {
 			image=graphics/none
 			render {
-				0="image( x0 - 1, y0 - 2, x1, y1, graphics/icons/collapse_hover )"
+				0="image( x0 - 1, y0 - 2, x1, y1, graphics/material/icons/add_hover )"
 			}
 		}
 
 		"CGamesListPanel ListPanelColumnSelectButton:selected" {
 			image=graphics/none
 			render {
-				0="image( x0 - 1, y0 - 2, x1, y1, graphics/icons/collapse_hover )"
+				0="image( x0 - 1, y0 - 2, x1, y1, graphics/material/icons/add_hover )"
 			}
 		}
 
 		"CGamesPage_Details ListPanelColumnSelectButton" {
 			padding-left=1
 			padding-top=2
-			image=graphics/icons/collapse
+			image=graphics/material/icons/add
 			render { }
 			render_bg {
 				0="fill( x0 + 7, y0, x1, y1 + 1, Scroll.Gutter )"
@@ -429,18 +428,18 @@ steam.styles
 		}
 
 		"CGamesPage_Details ListPanelColumnSelectButton:hover" {
-			image=graphics/icons/collapse
+			image=graphics/material/icons/add
 			render { }
 		}
 
 		"CGamesPage_Details ListPanelColumnSelectButton:selected" {
-			image=graphics/icons/collapse
+			image=graphics/material/icons/add
 			render { }
 		}
 
 		"CGamesPage_Mini ListPanelColumnSelectButton" {
 			padding-left=1
-			image=graphics/icons/collapse
+			image=graphics/material/icons/add
 			render { }
 			render_bg {
 				0="fill( x0 + 7, y0 + 1, x1, y1 + 1, Scroll.Gutter )"
@@ -448,12 +447,12 @@ steam.styles
 		}
 
 		"CGamesPage_Mini ListPanelColumnSelectButton:hover" {
-			image=graphics/icons/collapse
+			image=graphics/material/icons/add
 			render { }
 		}
 
 		"CGamesPage_Mini ListPanelColumnSelectButton:selected" {
-			image=graphics/icons/collapse
+			image=graphics/material/icons/add
 			render { }
 		}
 
@@ -550,8 +549,9 @@ steam.styles
 			inset="0 5 0 5"
 			render {
 				1="fill( x0, y1 - 1, x1, y1, A2.MenuDivider )" //btm
-				2="gradient( x0, y0, x0 + 1, y1, A2.Menu, A2.MenuDivider )"
-				3="gradient( x1 - 1, y0, x1, y1, A2.Menu, A2.MenuDivider )"
+				2="fill( x0, y0, x1, y0 + 1, A2.MenuDivider )" //top
+				3="fill( x0, y0, x0 + 1, y1, A2.MenuDivider )" //lt
+				4="fill( x1 - 1, y0, x1, y1, A2.MenuDivider )" //rt
 			}
 		}
 
@@ -570,8 +570,8 @@ steam.styles
 			inset="0 -2 1 1"
 			render {
 				1="fill( x0, y1 - 1, x1, y1, A2.MenuDivider )" //btm
-				2="fill( x0, y0, x0 + 1, y1, A2.MenuDivider )"
-				3="fill( x1 - 1, y0, x1, y1, A2.MenuDivider )"
+				2="fill( x0, y0, x0 + 1, y1, A2.MenuDivider )" //lt
+				3="fill( x1 - 1, y0, x1, y1, A2.MenuDivider )" //rt
 			}
 		}
 
@@ -640,14 +640,12 @@ steam.styles
 		}
 
 		PageTab:selected {
-			textcolor=Text.OnFocusHover
 			render_bg {
 				//0="fill( x0, y0, x1 + 2, y1, Focus4 )"
 			}
 		}
 
 		PageTab:selected:hover {
-			textcolor=Text.OnFocusHover
 			render_bg {
 				//0="fill( x0, y0, x1 + 2, y1, Focus4 )"
 			}
@@ -703,15 +701,15 @@ steam.styles
 
 		CEmoticonButton {
 			padding-left=8
-			image="graphics/icons/emoticon"
+			image="graphics/material/icons/emoticon"
 		}
 
 		CEmoticonButton:hover {
-			image="graphics/icons/emoticon_hover"
+			image="graphics/material/icons/emoticon_hover"
 		}
 
 		CEmoticonButton:selected {
-			image="graphics/icons/emoticon_hover"
+			image="graphics/material/icons/emoticon_hover"
 		}
 
 		EmoticonMenuItemStyle {

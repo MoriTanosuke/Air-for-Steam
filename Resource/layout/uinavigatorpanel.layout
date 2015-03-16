@@ -72,7 +72,7 @@
 
 		//music page list panel collapser icon (overriden below for game filter button)
 		NavLabel2 {
-			image=graphics/icons/collapse
+			image=graphics/material/icons/add
 		}
 
 		CGameFilterMenuButton {

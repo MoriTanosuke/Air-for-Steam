@@ -5,7 +5,7 @@
 		SettingsList {
 			selectedbgcolor=none
 			selectedtextcolor=Focus
-			font-size=18
+			font-family=medium font-size=18 font-weight=500 textcolor=Text.Notification font-style=regular
 		}
 
 		PropertySheet { }

@@ -13,10 +13,10 @@
 		}
 
 		place { control=AutoUpdateTimeRestrictStartLabel				dir=down start=AutoUpdateTimeRestrictCheckbox y=10 }
-		place { control=AutoUpdateTimeRestrictStart							dir=down width=180 start=AutoUpdateTimeRestrictStartLabel y=5 }
+		place { control=AutoUpdateTimeRestrictStart							dir=down width=205 start=AutoUpdateTimeRestrictStartLabel y=5 }
 
-		place { control=AutoUpdateTimeRestrictEndLabel					dir=down x=200 start=AutoUpdateTimeRestrictCheckbox y=10 }
-		place { control=AutoUpdateTimeRestrictEnd								dir=down width=180 start=AutoUpdateTimeRestrictEndLabel y=5 }
+		place { control=AutoUpdateTimeRestrictEndLabel					dir=down x=225 start=AutoUpdateTimeRestrictCheckbox y=10 }
+		place { control=AutoUpdateTimeRestrictEnd								dir=down width=205 start=AutoUpdateTimeRestrictEndLabel y=5 }
 
 		place { control=ManageInstalledappsLabel								dir=down start=AutoUpdateTimeRestrictStart y=30 }
 		place { control=ManageInstalledApps											dir=down start=ManageInstalledappsLabel y=10 }

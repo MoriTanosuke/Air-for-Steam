@@ -66,7 +66,7 @@
 	}
 
 	layout {
-		region { name=box height=max width=max margin-left=26 margin-right=26 }
+		region { name=box height=max width=max margin-left=26 margin-right=21 }
 		region { name=column1 region=box width=184 height=max align=left }
 		region { name=column2 region=box x=184 width=max height=max align=left margin-left=20 margin-right=330 }
 		region { name=column3 region=box width=330 height=max align=right margin-left=20 }
@@ -81,8 +81,10 @@
 		place { control=launchbutton,newslink,settingslink region=column2 y=64 spacing=10 }
 
 		// right column
-		place { control=downloadtotallabel,starttimelabel,timecompletedlabel,timeremaininglabel region=column3 dir=down spacing=11 y=20 height=19 }
-		place { control=downloadtotalfield,starttimefield,timecompletedfield,timeremainingfield region=column3 dir=down spacing=11 y=20 x=116 height=19 }
+		place { control=downloadtotallabel,downloadtotalfield region=column3 spacing=20 y=20 height=19 }
+		place { control=starttimelabel,starttimefield region=column3 spacing=20 y=50 height=19 }
+		place { control=timecompletedlabel,timecompletedfield,timeremaininglabel,timeremainingfield region=column3 spacing=20 y=80 height=19 }
+
 
 		place { control=topofqueuebutton region=column3 y=18 align=right height=24 width=24 }
 		place { control=removefromqueuebutton region=column3 y=48 align=right height=24 width=24 }

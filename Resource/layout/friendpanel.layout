@@ -6,22 +6,22 @@
 		menuButtonStyle:hover { }
 
 		WebStatusStyle
-		{ image="graphics/icons/status_web" padding-top=2 padding-left=4 }
+		{ image="graphics/material/icons/status_web" }
 
 		BigPictureStatusStyle
-		{ image="graphics/icons/status_bigpic" padding-top=2 padding-left=4 }
+		{ image="graphics/material/icons/status_bigpic" }
 
 		MobileStatusStyle
-		{ image="graphics/icons/status_mobile" padding-top=2 padding-left=4 }
+		{ image="graphics/material/icons/status_mobile" }
 
 		WebStatusStyleInGame
-		{ image="graphics/icons/status_web" padding-top=2 padding-left=4 }
+		{ image="graphics/material/icons/status_web" }
 
 		BigPictureStatusStyleInGame
-		{ image="graphics/icons/status_bigpic" padding-top=2 padding-left=4 }
+		{ image="graphics/material/icons/status_bigpic" }
 
 		MobileStatusStyleInGame
-		{ image="graphics/icons/status_mobile" padding-top=2 padding-left=4 }
+		{ image="graphics/material/icons/status_mobile" }
 	}
 
 	layout
@@ -31,8 +31,13 @@
 		place { control="Clanstatusimage"		height=20 }
 
 		place {
-			control=ClanStatusImage,NameLabel,FriendsNameInstanceLabel,BigPictureStatusImage,MobileStatusImage,WebStatusImage
+			control=ClanStatusImage,NameLabel,FriendsNameInstanceLabel
 			x=53 y=7 spacing=4
+		}
+
+		place {
+			control=BigPictureStatusImage,MobileStatusImage,WebStatusImage
+			y=14 align=right margin-right=19
 		}
 
 		// All 3 controls should have same y position

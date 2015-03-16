@@ -10,7 +10,7 @@
 
 		"CSteamRootDialog WebPanelStyle" {
 			render {
-				0="image_tiled( x0, y0 + 2, x1, y0 + 8, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 2, x1, y0 + 8, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
@@ -19,13 +19,13 @@
 				0="fill( x0, y0 - 10, x1, y0 + 21, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 21, x1, y0 + 27, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 21, x1, y0 + 27, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
 		CGamesPage_Details {
 			render {
-				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
@@ -34,13 +34,13 @@
 				0="fill( x0, y0 - 30, x1, y0, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/layout/shadow_horizlayout/shadow_horiz )"
 			}
 		}
 
 		CMusicPage_Details {
 			render {
-				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0, x1, y0 + 6, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
@@ -49,7 +49,7 @@
 				0="fill( x0, y0, x1, y0 + 130, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 130, x1, y0 + 136, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 130, x1, y0 + 136, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
@@ -61,7 +61,7 @@
 				1="fill( x0, y0 + 50, x1, y0 + 80, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
@@ -74,7 +74,7 @@
 				1="fill( x0, y0 + 50, x1, y0 + 80, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
@@ -86,21 +86,21 @@
 				2="fill( x0, y1 - 90, x1, y1 - 60, A2.Bar )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
 		HTMLPopup {
 			bgcolor=A2.Background
 			render_bg {
-				1="fill( x0, y0, x1, y0 + 50, focus )"
+				1="fill( x0, y0, x1, y0 + 50, Focus )"
 			}
 		}
 
 		COverlayWebBrowser {
 			bgcolor=A2.Background
 			render_bg {
-				1="fill( x0, y0, x1, y0 + 6, focus )"
+				1="fill( x0, y0, x1, y0 + 6, Focus4 )"
 				2="fill( x0, y0 + 6, x1, y0 + 56, A2.Bar )"
 			}
 		}
@@ -110,11 +110,11 @@
 			minimum-height=132
 			bgcolor=A2.Background
 			render_bg {
-				0="fill( x0, y0, x1, y0 + 50, focus )"
+				0="fill( x0, y0, x1, y0 + 50, Focus )"
 				1="fill( x0, y0 + 132, x1, y1, A2.Background )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 50, x1, y0 + 56, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
@@ -128,14 +128,21 @@
 				2="fill( x0, y0 + 50, x1, y0 + 100, A2.Bar )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 100, x1, y0 + 106, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 100, x1, y0 + 106, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
 		CDialogSettings {
-			minimum-width=605
-			minimum-height=655
+			minimum-width=656
+			minimum-height=656
 			bgcolor=A2.Background
+			render_bg {
+				0="fill( x0, y0, x0 + 174, y1, A2.Bar )"
+				1="fill( x0 + 174, y1 - 50, x1, y1, A2.Ribbon )"
+			}
+			render {
+				0="image_tiled( x0 + 174, y0, x0 + 180, y1, graphics/material/layout/shadow_vert )"
+			}
 		}
 
 		CGamePropertiesDialog {
@@ -144,7 +151,7 @@
 				1="fill( x0, y0 + 50, x1, y0 + 80, Focus4 )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
@@ -156,7 +163,7 @@
 				2="fill( x0, y1 - 50, x1, y1, A2.Ribbon )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow_horiz )"
 			}
 		}
 
@@ -164,9 +171,22 @@
 			render_bg {
 				0="fill( x0, y0, x1, y0 + 50, Focus )"
 				1="fill( x0, y0 + 50, x1, y0 + 80, Focus4 )"
+				2="fill( x0, y1 - 50, x1, y1, A2.Ribbon )"
 			}
 			render {
-				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow )"
+				0="image_tiled( x0, y0 + 80, x1, y0 + 86, graphics/material/layout/shadow_horiz )"
+			}
+		}
+
+		CSetJumplistOptions {
+			render_bg {
+				0="fill( x0, y1 - 50, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CProductMarketingDialog {
+			render_bg {
+				0="fill( x0, y1 - 50, x1, y1, A2.Ribbon )"
 			}
 		}
 	}
