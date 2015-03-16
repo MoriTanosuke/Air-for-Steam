@@ -16,7 +16,7 @@
 
 		Textentryfocus_chat:focus {
 			render_bg {
-				0="fill( x0 + 3, y1 - 1, x1, y1 + 1, Focus )"
+				//0="fill( x0 + 3, y1 - 1, x1, y1 + 1, Focus )"
 			}
 		}
 
