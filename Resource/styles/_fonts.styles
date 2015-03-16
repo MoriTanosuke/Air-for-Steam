@@ -55,7 +55,7 @@
 																											selectedtextcolor=Text.Primary
 																										}
 
-	"ToolWindow Label"																{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Label font-style=regular } //"Last message received..." text
+	"ToolWindow Label"																{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular } //"Last message received..." text
 	"CFriendsDialog Label"														{ textcolor=Text.Label }	// friends list offline/disconnected msg !!ALSO CONNECTED TO "2 IN GAME, 2 ONLINE" text
 	"CFriendsDialog Panel"														{ textcolor=Text.Secondary }	//friends list section header
 
