@@ -159,8 +159,8 @@
 
 	PageTab																						{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.OnFocus font-style=uppercase }
 	PageTab:hover																			{ textcolor=Text.OnFocus }
-	PageTab:selected																	{ textcolor=Text.OnFocus }
-	PageTab:selected:hover														{ textcolor=Text.OnFocus }
+	PageTab:selected																	{ textcolor=Text.OnFocusHover }
+	PageTab:selected:hover														{ textcolor=Text.OnFocusHover }
 
 	"CFriendsDialog PageTab:selected"									{ textcolor=Text.OnFocusHover } //mimic ListPanelColumnHeader
 	"CGamePropertiesDialog PageTab:selected"					{ textcolor=Text.OnFocusHover } //mimic ListPanelColumnHeader

@@ -657,13 +657,13 @@ steam.styles
 
 		PageTab:selected {
 			render_bg {
-				0="fill( x0, y0, x1 + 2, y1, Focus4 )"
+				//0="fill( x0, y0, x1 + 2, y1, Focus4 )"
 			}
 		}
 
 		PageTab:selected:hover {
 			render_bg {
-				0="fill( x0, y0, x1 + 2, y1, Focus4 )"
+				//0="fill( x0, y0, x1 + 2, y1, Focus4 )"
 			}
 		}
 

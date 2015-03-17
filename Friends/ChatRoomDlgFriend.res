@@ -25,8 +25,8 @@
 	}
 
 	layout {
-		region { name=chat y=6 margin-bottom=90 height=max width=max }
-		region { name=bottom align=bottom height=90 width=max }
+		region { name=chat y=6 margin-bottom=120 height=max width=max }
+		region { name=bottom align=bottom height=120 width=max }
 
 		place { control=VoiceBar,TradeInviteBar,GameInviteBar,BIBar,BABar width=max height=55 }
 
