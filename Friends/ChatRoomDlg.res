@@ -31,7 +31,7 @@
 		place { control=StatusLabel					region=bottom height=30 width=max margin-left=10 end-right=ChatActionsButton }
 		place { control=ChatActionsButton		region=bottom height=30 width=42 align=right margin-right=12 }
 
-		place { control=TextEntry						region=bottom x=7 y=51 height=22 width=max end-right=EmoticonButton margin-right=9 }
+		place { control=TextEntry						region=bottom x=7 y=42 height=36 width=max end-right=EmoticonButton margin-right=9 }
 		place { control=EmoticonButton			region=bottom align=right y=36 height=50 end-right=TitlePanel margin-right=7 }
 		place { control=TitlePanel					region=bottom align=right y=44 height=50 width=30 margin-right=19 }
 
