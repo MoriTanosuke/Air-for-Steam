@@ -17,6 +17,10 @@
 			}
 		}
 
+		"CSteamRootDialog BroadcastPanelMinimized" {
+			inset="0 0 0 0" //reset for html inset
+		}
+
 		FriendsPanel {
 			minimum-width=230
 			minimum-height=250
