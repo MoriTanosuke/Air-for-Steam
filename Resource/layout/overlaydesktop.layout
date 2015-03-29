@@ -1,13 +1,33 @@
 "resource/layout/overlaydesktop.layout"
 {
-	styles
-	{
+	styles {
+
+		topbar {
+			font-family=condensed
+			textcolor=Text.OverlaySoft
+			font-size=30
+			font-weight=700
+		}
+
+		clocksuffix {
+			font-family=condensed
+			textcolor=Text.OverlaySoft
+			font-size=30
+			font-weight=700
+		}
+
+		timeStrings {
+			//this is the session text
+		}
 	}
 
-	layout
-	{
+	layout {
+
 		region { name=achievements width=max height=149 align=bottom }
 		place { control=AchievementsDetailPanel region=achievements width=max height=max }
+
+		region { name=bottom align=bottom height=64 width=max }
+		place { control=Clock,Clocksuffix region=bottom height=20 align=right margin-right=120 }
 
 		region { name=links width=max align=top y=90 }
 
@@ -19,6 +39,6 @@
 		place { control=BroadcastDetailPanel align=top-center height=50 width=360 }
 
 		region { name=hidden height=0 width=0 margin-left=-9999 }
-		place { controls="GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,GuidesButton,GuidesDetailPanel,NewsDetailPanel,CommunityDiscussionsDetailPanel" region=hidden }
+		place { controls="SessionText,ForeverText,TwoWeeksText,GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,GuidesButton,GuidesDetailPanel,NewsDetailPanel,CommunityDiscussionsDetailPanel" region=hidden }
 	}
 }

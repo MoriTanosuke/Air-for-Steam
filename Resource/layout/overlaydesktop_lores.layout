@@ -2,6 +2,24 @@
 {
 	styles {
 
+		topbar {
+			font-family=condensed
+			textcolor=Text.OverlaySoft
+			font-size=30
+			font-weight=700
+		}
+
+		clocksuffix {
+			font-family=condensed
+			textcolor=Text.OverlaySoft
+			font-size=30
+			font-weight=700
+		}
+
+		timeStrings {
+			//this is the session text
+		}
+
 		sidemenu {
 			font-family=condensed
 			font-size=30
@@ -23,12 +41,15 @@
 		region { name=achievements width=max height=137 align=bottom }
 		place { control=AchievementsButton region=achievements align=top-center }
 
+		region { name=bottom align=bottom height=64 width=max }
+		place { control=Clock,Clocksuffix region=bottom height=20 align=right margin-right=120 }
+
 		region { name=links width=max align=top y=90 }
 
 		place { controls="FriendsButton,PlayersButton,GameHubButton,ScreenshotsButton" region=links align=top-center height=60 spacing=28 }
 
 		place { control=BroadcastDetailPanel align=top-center height=50 width=360 }
 
-		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton" height=0 width=0 margin-left=-9999 }
+		place { controls="SessionText,ForeverText,TwoWeeksText,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton" height=0 width=0 margin-left=-9999 }
 	}
 }

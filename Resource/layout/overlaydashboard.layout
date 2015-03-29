@@ -8,24 +8,6 @@
 			}
 		}
 
-		topbar {
-			font-family=condensed
-			textcolor=Text.OverlaySoft
-			font-size=30
-			font-weight=700
-		}
-
-		clocksuffix {
-			font-family=condensed
-			textcolor=Text.OverlaySoft
-			font-size=30
-			font-weight=700
-		}
-
-		timeStrings {
-			//this is the session text
-		}
-
 		OverlayURLLabel {
 			textcolor=none
 		}
@@ -44,10 +26,10 @@
 
 		place { control=CloseButton align=right height=60 width=60 }
 		place { control=TaskbarPanel region=bottom width=max height=20 margin-right=120 margin-left=120 }
-		place { control=clock,clocksuffix region=bottom height=20 align=right margin-right=120 }
+
 
 		place { control=PowerMeterDim align=top-center y=40 height=0 }
 
-		place { control=BottomFadePanel,SessionText,TopFadePanel,gamename,HotkeyLabel,HotkeyExplain,TwoWeeksText,ForeverText height=0 width=0 }
+		place { control=BottomFadePanel,TopFadePanel,gamename,HotkeyLabel,HotkeyExplain height=0 width=0 }
 	}
 }

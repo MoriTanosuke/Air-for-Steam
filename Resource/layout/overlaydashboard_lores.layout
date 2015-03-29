@@ -1,29 +1,10 @@
 "resource/layout/overlaydashboard_lores.layout"
 {
 	styles {
-
 		overlaymain {
 			render_bg {
 				0="fill( x0, y0, x1, y1, Overlay.Background )"
 			}
-		}
-
-		topbar {
-			font-family=condensed
-			textcolor=Text.OverlaySoft
-			font-size=30
-			font-weight=700
-		}
-
-		clocksuffix {
-		font-family=condensed
-			textcolor=Text.OverlaySoft
-			font-size=30
-			font-weight=700
-		}
-
-		timeStrings {
-			//this is the session text
 		}
 
 		OverlayURLLabel {
@@ -44,8 +25,7 @@
 
 		place { control=CloseButton align=right height=60 width=60 }
 		place { control=TaskbarPanel region=bottom width=max height=20 margin-right=120 margin-left=120 }
-		place { control=clock,clocksuffix region=bottom height=20 align=right margin-right=120 }
 
-		place { control=PowerMeterDim,BottomFadePanel,SessionText,TopFadePanel,gamename,HotkeyLabel,HotkeyExplain,TwoWeeksText,ForeverText height=0 width=0 }
+		place { control=PowerMeterDim,BottomFadePanel,TopFadePanel,gamename,HotkeyLabel,HotkeyExplain height=0 width=0 }
 	}
 }
