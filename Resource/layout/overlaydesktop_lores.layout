@@ -48,7 +48,7 @@
 
 		place { controls="FriendsButton,PlayersButton,GameHubButton,ScreenshotsButton" region=links align=top-center height=60 spacing=28 }
 
-		place { control=BroadcastDetailPanel align=top-center height=50 width=360 }
+		place { control=BroadcastDetailPanel align=top-center y=20 height=50 width=360 }
 
 		place { controls="SessionText,ForeverText,TwoWeeksText,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton" height=0 width=0 margin-left=-9999 }
 	}
