@@ -2,9 +2,7 @@
 {
 	styles {
 		CChatRoomDlg {
-			render_bg {
-				//status bar defined on ToolWindow in _header.styles
-			}
+			//styles defined within ToolWindow in _layout.styles
 		}
 
 		Textentryfocus_chat {

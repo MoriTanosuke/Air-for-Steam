@@ -2,25 +2,19 @@
 {
 	styles {
 		COverlayBroadcastChatDialog {
-			render_bg {
-				0="fill( x0, y0, x1, y0 + 50, Focus )"
-				1="fill( x0, y1 - 90, x1, y1 - 60, A2.Ribbon )"
-			}
-		}
-
-		FrameTitle {
-			inset-left=3
-			inset-top=18
-			textcolor=white
-		}
-
-		FrameTitle:framefocus {
-			textcolor=white
+			//styles defined in _layout.styles
 		}
 
 		Textentryfocus_chat {
-			inset-left=3
+			minimum-height=0
+			inset-left=0
 			render_bg { }
+		}
+
+		Textentryfocus_chat:focus {
+			render_bg {
+				//0="fill( x0 + 3, y1 - 1, x1, y1 + 1, Focus )"
+			}
 		}
 
 		"RichText Scrollbar" {
@@ -33,16 +27,22 @@
 		place { control=frame_captiongrip margin=2 width=max height=50 }
 
 		region { name=chat y=50 margin-bottom=90 height=max width=max }
-		region { name=status align=bottom height=90 width=max margin-bottom=60 }
-		region { name=bottom align=bottom height=60 width=max }
+		region { name=bottom align=bottom height=90 width=max }
 
-		place { control="ChatHistory" 				region=chat width=max height=max dir=down margin-bottom=-15 }
+		place {
+			control=ChatHistory
+			region=chat
+			width=max
+			height=max
+			dir=down
+			margin-bottom=-15
+		}
 
-		place { control="StatusLabel"					region=status width=max height=max margin-left=10 margin-right=10 }
+		place { control=StatusLabel					region=bottom height=30 width=max margin-left=10 margin-right=10 }
 
-		place { control="TextEntry"						region=bottom x=4 y=12 height=36 width=max margin-right=145 }
-		place { control="EmoticonButton"			region=bottom align=right y=6 height=50 margin-right=12 }
+		place { control=TextEntry						region=bottom x=7 y=42 height=36 width=max end-right=EmoticonButton margin-right=9 }
+		place { control=EmoticonButton			region=bottom align=right y=36 height=50 margin-right=17 }
 
-		place { control="SendButton" height=0 width=0 }
+		place { control=SendButton height=0 width=0 }
 	}
 }

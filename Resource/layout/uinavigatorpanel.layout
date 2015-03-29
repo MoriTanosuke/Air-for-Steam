@@ -121,16 +121,19 @@
 
 		place { control=emailreminderbar region=body width=max height=55 }
 
-		place { control=WebPanel 							region=body width=max height=max start=emailreminderbar dir=down margin-top=-2 margin-bottom=-2 margin-right=-2 margin-left=-2 }
-		place { control=GamesPage_Details 		region=body width=max height=max start=emailreminderbar dir=down margin-top=-1 }
-		place { control=GamesPage_List 				region=body width=max height=max start=emailreminderbar dir=down y=9 }
-		place { control=GamesPage_Grid 				region=body width=max height=max start=emailreminderbar dir=down y=30 margin-bottom=-2 }
-		place { control=DownloadsPage 				region=body width=max height=max start=emailreminderbar dir=down }
-		place { control=ScreenshotsPage 			region=body width=max height=max start=emailreminderbar dir=down }
-		place { control=MediaPage 						region=body width=max height=max start=emailreminderbar dir=down }
-		place { control=MusicPage_Details 		region=body width=max height=max start=emailreminderbar dir=down margin-top=-1 }
-		place { control=ToolsPage 						region=body width=max height=max start=emailreminderbar dir=down y=9 }
-		place { control=ConsolePage 					region=body width=max height=max start=emailreminderbar dir=down }
+		place { control=WebPanel							region=body width=max height=max start=emailreminderbar dir=down margin-top=-2 margin-bottom=-2 margin-right=-2 margin-left=-2 }
+		place { control=BroadcastPage					region=body width=max height=max start=emailreminderbar dir=down }
+		place { control=BroadcastPageMin			region=body width=300 height=168 margin-right=26 margin-bottom=26 dir=down align=bottom-right }
+		place { control=BroadcastPageMinHoriz	region=body width=300 height=168 margin-right=26 margin-bottom=26 dir=down align=bottom-right }
+		place { control=GamesPage_Details			region=body width=max height=max start=emailreminderbar dir=down margin-top=-1 }
+		place { control=GamesPage_List				region=body width=max height=max start=emailreminderbar dir=down y=9 }
+		place { control=GamesPage_Grid				region=body width=max height=max start=emailreminderbar dir=down y=30 margin-bottom=-2 }
+		place { control=DownloadsPage					region=body width=max height=max start=emailreminderbar dir=down }
+		place { control=ScreenshotsPage				region=body width=max height=max start=emailreminderbar dir=down }
+		place { control=MediaPage							region=body width=max height=max start=emailreminderbar dir=down }
+		place { control=MusicPage_Details			region=body width=max height=max start=emailreminderbar dir=down margin-top=-1 }
+		place { control=ToolsPage							region=body width=max height=max start=emailreminderbar dir=down y=9 }
+		place { control=ConsolePage						region=body width=max height=max start=emailreminderbar dir=down }
 
 		place { control="library_music_player_icon" align=right y=64 height=24 width=24 margin-right=24 }
 

@@ -36,7 +36,7 @@
 		place { control=ScreenshotsDetailPanel 		width=259 } //189 + 40 + 30
 		place { control=FriendsDetailPanel,CommunityHubDetailPanel,ScreenshotsDetailPanel region=links align=top-center height=60 }
 
-		place { control=BroadcastDetailPanel align=top-center height=50 width=360 }
+		place { control=BroadcastDetailPanel align=top-center y=20 height=50 width=360 }
 
 		region { name=hidden height=0 width=0 margin-left=-9999 }
 		place { controls="SessionText,ForeverText,TwoWeeksText,GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,GuidesButton,GuidesDetailPanel,NewsDetailPanel,CommunityDiscussionsDetailPanel" region=hidden }
