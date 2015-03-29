@@ -3,7 +3,7 @@
 	styles
 	{
 		GridItemChrome {
-			bgcolor=Overlay.Background
+			//bgcolor=Overlay.Background
 		}
 
 		ChromeBorderItem { }

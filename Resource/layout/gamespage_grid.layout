@@ -9,7 +9,7 @@
 		// value defining the extra vertical distance to leave below
 		// the picture for drop shadow room, in px. This value should
 		// match the margin values in the layout statements in the gamespage_grid_*.layout files.
-		GridView.DropShadowLeading "0"
+		GridView.DropShadowLeading "7"
 	}
 
 	styles
